@@ -12,6 +12,7 @@ import MainLogin from "./pages/MainLogin";
 import LoginAppGivingDashboard from "./pages/LoginAppGivingDashboard";
 import LoginAppDashboard from "./pages/LoginAppDashboard";
 import { useEffect } from "react";
+import { RequireAuth } from "react-auth-kit";
 
 function App() {
   const action = useNavigationType();
@@ -76,13 +77,17 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/maininteraction" element={<MainInteraction />} />
+      <Route path="/maininteraction" element={
+        <RequireAuth loginPath={'/mainlogin'}>
+          <MainInteraction />
+        </RequireAuth>
+      } />
       <Route path="/livestream" element={<LiveStream />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/mainlogin" element={<MainLogin />} />
       <Route
         path="/loginappgivingdashboard"
-        element={<LoginAppGivingDashboard />}
+        element={ <LoginAppGivingDashboard />}
       />
       <Route path="/loginappdashboard" element={<LoginAppDashboard />} />
     </Routes>
