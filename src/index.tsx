@@ -4,14 +4,30 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
+import { AuthProvider } from "react-auth-kit";
+import refreshApi from "./components/refreshApi";
+import axios from "axios";
+import { Dfn } from "./global-config";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
+axios.defaults.baseURL = Dfn.BASE_URL;
+
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <AuthProvider
+      authType={"localstorage"}
+      authName={"token"}
+      refresh={refreshApi}
+      cookieDomain={window.location.hostname}
+      cookieSecure={window.location.protocol === "https:"}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AuthProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
