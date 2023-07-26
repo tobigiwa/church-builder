@@ -13,6 +13,7 @@ import LoginAppGivingDashboard from "./pages/LoginAppGivingDashboard";
 import LoginAppDashboard from "./pages/LoginAppDashboard";
 import { useEffect } from "react";
 import { RequireAuth } from "react-auth-kit";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const action = useNavigationType();
@@ -87,9 +88,10 @@ function App() {
       <Route path="/mainlogin" element={<MainLogin />} />
       <Route
         path="/loginappgivingdashboard"
-        element={ <LoginAppGivingDashboard />}
+        element={<LoginAppGivingDashboard />}
       />
       <Route path="/loginappdashboard" element={<LoginAppDashboard />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
