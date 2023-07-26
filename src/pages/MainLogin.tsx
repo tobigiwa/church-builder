@@ -6,6 +6,7 @@ import { redirect, useNavigate } from "react-router-dom";
 import { useIsAuthenticated } from "react-auth-kit";
 import { Navigate } from "react-router-dom";
 import Header from "../components/Header";
+import { log } from "console";
 
 const MainLogin: FunctionComponent = () => {
 
@@ -47,10 +48,15 @@ const MainLogin: FunctionComponent = () => {
   const onSubmitClick = useCallback(async (event: FormEvent) => {
     event.preventDefault();
     setError("");
+
+    const submitButton = document.querySelector("[type=\"submit\"]");""
+    submitButton?.setAttribute("disabled", "");
+    
     const { email, password } = document.forms[0];
     console.log(email.value, password.value);
     const credentials = { email: email.value, password: password.value };
     try {
+
       const response = await axios.post(
         `/auth/jwt/create/`,
         credentials,
@@ -60,7 +66,7 @@ const MainLogin: FunctionComponent = () => {
           }
         }
       );
-
+      
       console.log(response);
       if (signIn({
         token: response.data.access,
@@ -77,6 +83,7 @@ const MainLogin: FunctionComponent = () => {
       }
     }
     catch (err) {
+      submitButton?.removeAttribute("disabled");
       if (err && err instanceof AxiosError)
         setError(err.response?.data.message);
       else if (err && err instanceof Error)
@@ -161,6 +168,7 @@ const MainLogin: FunctionComponent = () => {
             <button
               className="cursor-pointer [border:none] py-[23px] px-[289px] bg-royalblue-100 rounded-lg w-[624px] flex flex-row box-border items-center justify-center md:w-[300px] md:py-5 md:px-[100px] md:box-border"
               type="submit"
+              name="submit"
             >
               <div className="flex-1 relative text-base leading-[18px] font-medium font-public-sans text-white text-center flex items-center justify-center h-3 md:w-[200px]">
                 Log in

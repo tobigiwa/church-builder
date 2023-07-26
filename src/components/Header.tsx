@@ -1,6 +1,6 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, MouseEvent, useCallback } from "react";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header: FunctionComponent = () => {
 
@@ -9,12 +9,13 @@ const Header: FunctionComponent = () => {
     const signOut = useSignOut();
 
     const onLoginButtonClick = useCallback(() => {
-        if (isAuthenticated()) {
-            signOut();
-            navigate("/");
-        }
-        else
-            navigate("/mainlogin");
+        console.log("onLoginButtonClick()");
+        navigate("/mainlogin");
+    }, [navigate]);
+
+    const onSignOutClick = useCallback(() => {
+        signOut();
+        navigate("/");
     }, [navigate]);
 
     return (
@@ -76,7 +77,7 @@ const Header: FunctionComponent = () => {
             </div>
             <div className="w-[281px] flex flex-row py-0.5 px-0 box-border items-center justify-end gap-[20px] md:hidden md:w-0 md:gap-[0px] md:items-center md:justify-center">
                 <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
-                        onClick={onLoginButtonClick}>
+                        onClick={ isAuthenticated() ? onSignOutClick : onLoginButtonClick}>
                     <div className="flex-1 relative text-xs tracking-[2.16px] leading-[14px] uppercase font-extrabold font-heading-x-small-600 text-royalblue-100 text-center">
                         {isAuthenticated() ? "LOG OUT" : "LOGIN"}
                     </div>
