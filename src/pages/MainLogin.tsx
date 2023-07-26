@@ -16,7 +16,7 @@ const MainLogin: FunctionComponent = () => {
   const isAuthenticated = useIsAuthenticated();
 
   if (isAuthenticated()) {
-      return (<Navigate to="/maininteraction" replace={true} />);
+    return (<Navigate to="/maininteraction" replace={true} />);
   }
 
   const onForgetPasswordClick = useCallback(() => {
@@ -49,9 +49,14 @@ const MainLogin: FunctionComponent = () => {
     event.preventDefault();
     setError("");
 
-    const submitButton = document.querySelector("[type=\"submit\"]");""
+    const submitButton = document.querySelector("[type=\"submit\"]");
+    const loadingIndicator       = document.getElementById("loadingIndicator");
+
+    console.log(loadingIndicator);
+
     submitButton?.setAttribute("disabled", "");
-    
+    loadingIndicator?.classList.remove("hidden");
+
     const { email, password } = document.forms[0];
     console.log(email.value, password.value);
     const credentials = { email: email.value, password: password.value };
@@ -66,7 +71,7 @@ const MainLogin: FunctionComponent = () => {
           }
         }
       );
-      
+
       console.log(response);
       if (signIn({
         token: response.data.access,
@@ -84,6 +89,8 @@ const MainLogin: FunctionComponent = () => {
     }
     catch (err) {
       submitButton?.removeAttribute("disabled");
+      loadingIndicator?.classList.add("hidden");
+
       if (err && err instanceof AxiosError)
         setError(err.response?.data.message);
       else if (err && err instanceof Error)
@@ -149,7 +156,8 @@ const MainLogin: FunctionComponent = () => {
                   <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6 overflow-hidden shrink-0"
                     onMouseDown={(e) => setPasswordVisible(true)}
                     onMouseUp={(e) => setPasswordVisible(false)}
-                    onMouseLeave={(e) => setPasswordVisible(false)}>
+                    onMouseLeave={(e) => setPasswordVisible(false)}
+                    onClick={(e) => e.preventDefault()}>
                     <img
                       className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
                       alt="view password"
@@ -165,12 +173,19 @@ const MainLogin: FunctionComponent = () => {
                 Forget password?
               </button>
             </div>
+
             <button
-              className="cursor-pointer [border:none] py-[23px] px-[289px] bg-royalblue-100 rounded-lg w-[624px] flex flex-row box-border items-center justify-center md:w-[300px] md:py-5 md:px-[100px] md:box-border"
+              className="cursor-pointer [border:none] py-[23px] bg-royalblue-100 rounded-lg w-[624px] flex flex-row box-border items-center justify-center md:w-[300px] md:py-5 md:px-[100px] md:box-border"
               type="submit"
               name="submit"
             >
-              <div className="flex-1 relative text-base leading-[18px] font-medium font-public-sans text-white text-center flex items-center justify-center h-3 md:w-[200px]">
+              <div className="flex text-white px-4 py-2 rounded-md hidden" id="loadingIndicator">
+                <svg className="h-5 w-5 mr-3 animate-spin" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647zM12 20.735a8 8 0 008-8h4a12 12 0 01-12 12v-4.265zM20 12a8 8 0 01-8 8v4.265a12 12 0 0012-12h-4zm-8-6.735a8 8 0 018-8v-4.265a12 12 0 00-12 12h4z" />
+                </svg>
+              </div>
+              <div className="text-base leading-[18px] font-medium font-public-sans text-white text-center flex items-center justify-center h-3 md:w-[200px]">
                 Log in
               </div>
             </button>

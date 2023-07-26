@@ -2,6 +2,7 @@ import { FunctionComponent, useCallback, useEffect } from "react";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 import { Navigate, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
+import Sponsors from "../components/Sponsors";
 
 const LandingPage: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -91,64 +92,7 @@ const LandingPage: FunctionComponent = () => {
             </a>
           </div>
         </div>
-        <div className="self-stretch relative bg-aliceblue h-[107px] overflow-hidden shrink-0 sm:overflow-hidden sm:mt-5">
-          <div className="absolute top-[36px] left-[-185px] w-[5735.13px] h-[50px]">
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[260.8px] w-[172.39px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75398dac142bb765c1a43-seslogopngwebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[513.19px] w-[120px] h-[50px] object-cover"
-              alt=""
-              src="/62c7537b4421cc411aaee9d8-rtswebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[713.19px] w-[175.7px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75366bfc2c35e0cb61587-covenanttheologicalseminarylogowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[968.89px] w-[103px] h-[50px] object-cover"
-              alt=""
-              src="/62a412d0ae6491d139b742a1-harvestlogowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[1151.89px] w-[117.6px] h-[49.98px] object-cover"
-              alt=""
-              src="/63ed33f4c6d54853bc37f726-billygraham-logowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_16.44px)] left-[1349.49px] w-[200px] h-[32.88px] object-cover"
-              alt=""
-              src="/62a3c989c488718ef4da4b3b-angelus-temple-logo-3x201webp@2x.png"
-            />
-            <div className="absolute top-[0px] left-[1629.49px] w-[448.11px] h-[49.98px] overflow-hidden">
-              <img
-                className="absolute top-[calc(50%_-_12.99px)] left-[0px] w-[200px] h-[26px] object-cover"
-                alt=""
-                src="/63ed33f4d786962305aab5ba-freshlife-logop500png@2x.png"
-              />
-              <img
-                className="absolute top-[calc(50%_-_24.99px)] left-[279.46px] w-[168.65px] h-[49.98px] object-cover"
-                alt=""
-                src="/6286cf3f50c6ba22b1dfbf0b-subsplasmarqueelogocristapng@2x.png"
-              />
-            </div>
-            <div className="absolute top-[0px] left-[2157.6px] w-[330px] h-[50px] overflow-hidden">
-              <img
-                className="absolute top-[calc(50%_-_22.21px)] left-[130px] w-[200px] h-[44.4px] object-cover"
-                alt=""
-                src="/63ed33f497d1c7e6ac68903e-transformation-logop500webp@2x.png"
-              />
-              <img
-                className="absolute top-[calc(50%_-_25px)] left-[0px] w-[50px] h-[50px] object-cover"
-                alt=""
-                src="/6286cf404380e64617fa596d-subsplasmarqueelogohillsongpng@2x.png"
-              />
-            </div>
-          </div>
-        </div>
+        <Sponsors />
       </div>
       <div className="self-stretch flex-1 bg-aliceblue flex flex-col items-center justify-between md:flex-1 md:items-center md:justify-center md:pt-20 md:pb-20 md:box-border sm:flex-1 sm:gap-[0px]">
         <div className="self-stretch flex-1 overflow-hidden flex flex-row py-[191px] px-0 items-center justify-center gap-[30px] md:flex-1 md:flex-col md:gap-[10px] md:pt-10 md:pb-10 md:box-border md:m-auto sm:flex-col sm:gap-[20px] sm:items-center sm:justify-center sm:pt-0 sm:pb-0 sm:box-border">
