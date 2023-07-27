@@ -7,6 +7,7 @@ import { useIsAuthenticated } from "react-auth-kit";
 import { Navigate } from "react-router-dom";
 import Header from "../components/Header";
 import { log } from "console";
+import Footer from "../components/Footer";
 
 const MainLogin: FunctionComponent = () => {
 
@@ -50,7 +51,7 @@ const MainLogin: FunctionComponent = () => {
     setError("");
 
     const submitButton = document.querySelector("[type=\"submit\"]");
-    const loadingIndicator       = document.getElementById("loadingIndicator");
+    const loadingIndicator = document.getElementById("loadingIndicator");
 
     console.log(loadingIndicator);
 
@@ -116,10 +117,9 @@ const MainLogin: FunctionComponent = () => {
             </span>
           </div>
           <div className="w-[302px] flex flex-row py-0 px-[3px] box-border items-center justify-center text-left text-3xl text-dimgray-100">
-            <div className="relative leading-[37.2px] flex items-center w-[185px] shrink-0">
-              Are you a donor?
+            <div className="relative leading-[37.2px] flex items-center w-[150px] shrink-0">Are you a donor?
             </div>
-            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-3xl leading-[37.2px] font-heading-x-small-600 text-mediumslateblue text-left flex items-center w-[114px] shrink-0 hover:[text-decoration:underline]">
+            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-lg leading-[37.2px] font-heading-x-small-600 text-mediumslateblue text-left flex items-center  shrink-0 hover:[text-decoration:underline]">
               Click here
             </button>
           </div>
@@ -127,10 +127,8 @@ const MainLogin: FunctionComponent = () => {
         <form onSubmit={onSubmitClick}>
           <div className="flex flex-col items-center justify-start gap-[33px] text-left text-sm-3 md:gap-[40px]">
             <div className="flex flex-col items-start justify-start gap-[12px]">
-              <div className="relative w-[53px] h-[18px]">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.57px] leading-[18px] uppercase font-extrabold">
-                  eMAIL
-                </div>
+                <div className="font-rasa text-lg">
+                  Email
               </div>
               <input
                 className="font-medium font-public-sans text-base bg-white rounded-lg box-border w-[692px] h-[58px] flex flex-row py-0 px-[31px] items-center justify-center [outline:none] border-[1px] border-solid border-lightgray-200 md:w-[400px] sm:w-[300px]"
@@ -143,7 +141,7 @@ const MainLogin: FunctionComponent = () => {
             </div>
             <div className="flex flex-col items-end justify-start">
               <div className="flex flex-col py-0 px-1 items-start justify-start gap-[12px]">
-                <div className="relative tracking-[2.57px] leading-[18px] uppercase font-extrabold">
+                <div className="font-rasa text-lg">
                   Password
                 </div>
                 <div className="rounded-lg bg-white box-border w-[685px] h-[58px] flex flex-row py-0 px-6 items-center justify-center gap-[10px] border-[1px] border-solid border-lightgray-200 md:w-[400px] sm:w-[300px]">
@@ -175,7 +173,7 @@ const MainLogin: FunctionComponent = () => {
             </div>
 
             <button
-              className="cursor-pointer [border:none] py-[23px] bg-royalblue-100 rounded-lg w-[624px] flex flex-row box-border items-center justify-center md:w-[300px] md:py-5 md:px-[100px] md:box-border"
+              className="cursor-pointer [border:none] py-[23px] bg-royalblue-100 rounded-lg w-[624px] flex flex-row box-border items-center justify-center md:w-[300px] md:py-5 md:box-border"
               type="submit"
               name="submit"
             >
@@ -192,89 +190,7 @@ const MainLogin: FunctionComponent = () => {
           </div>
         </form>
       </div>
-      <div className="self-stretch bg-royalblue-100 h-auto flex flex-row py-[31px] px-[69px] box-border items-center justify-between text-left text-mini text-white">
-        <div className="self-stretch flex-1 flex flex-col items-center justify-between sm:self-stretch sm:h-auto sm:gap-[0px]">
-          <div className="self-stretch flex flex-row items-start justify-between flex-wrap gap-[20px]">
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-40 h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  HELP
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Support
-              </a>
-              <div className="relative bg-gray-400 w-[232.88px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                  System status
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] text-base">
-              <div className="relative box-border w-40 h-8 text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  PLATFORM
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative text-mini leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Security
-              </a>
-              <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[-1px] left-[0px] leading-[18px] font-semibold text-[inherit] hover:cursor-pointer">
-                  FAQs
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-[167px] h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro lg:items-start lg:justify-start">
-                <div className="absolute top-[0px] left-[0.33px] tracking-[2.16px] leading-[14px] uppercase">
-                  <span className="font-extrabold">ABOUT</span>
-                  <span className="font-extrabold font-heading-x-small-600">
-                    {" "}
-                    US
-                  </span>
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Company
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Careers
-              </a>
-              <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                  Newsroom
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-public-sans sm:w-[167px] sm:flex sm:flex-wrap">
-              <div className="relative box-border w-40 h-8 text-base text-gainsboro border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  LEGAL
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Terms of service
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Terms of use
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Privacy
-              </a>
-              <a className="[text-decoration:none] relative text-base leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                GDPR
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Do not sell my personal information
-              </a>
-            </div>
-          </div>
-          <div className="relative text-lg leading-[28px] font-medium font-public-sans text-center mt-10 sm:text-sm">
-            ©2023 . All rights reserved.
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

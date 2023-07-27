@@ -2,28 +2,28 @@ import { FunctionComponent } from "react";
 
 const MainInteraction: FunctionComponent = () => {
   return (
-    <div className="relative w-full h-[1322px] flex flex-col items-start justify-start text-left text-base text-white font-heading-x-small-600">
+    <div className="relative w-full h-[1322px] flex flex-col items-start justify-start text-left text-base text-white font-heading-x-small-600 font-public-sans">
       <div className="self-stretch bg-white overflow-hidden flex flex-col py-[13px] pr-0 pl-[105px] items-start justify-start border-b-[1px] border-solid border-lightgray-300">
         <div className="self-stretch flex flex-row py-0 pr-[21px] pl-0 items-center justify-between">
           <div className="rounded-lg bg-gainsboro w-[325px] flex flex-row py-[23px] px-[31px] box-border items-center justify-start">
             <input
-              className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+              className="[border:none] font-medium  text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
               type="text"
               placeholder="Search for projects"
             />
           </div>
           <div className="w-[376px] flex flex-row items-center justify-between">
             <div className="flex flex-row items-center justify-center gap-[12.25px]">
-              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold font-public-sans text-black text-center inline-block">
+              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold  text-black text-center inline-block">
                 People
               </button>
-              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold font-public-sans text-black text-center inline-block">
+              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold  text-black text-center inline-block">
                 Event
               </button>
-              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold font-public-sans text-black text-center inline-block">
+              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold  text-black text-center inline-block">
                 Give now
               </button>
-              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold font-public-sans text-black text-center inline-block">
+              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[26.5px] font-semibold  text-black text-center inline-block">
                 Worship Planning
               </button>
             </div>
@@ -241,7 +241,7 @@ const MainInteraction: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 h-[1181px] flex flex-col py-0 pr-[30px] pl-0 box-border items-start justify-start gap-[92px] text-29xl text-black">
+        <div className="flex-1 h-[1181px] flex flex-col py-0 pr-[30px] pl-0 box-border items-start justify-start gap-[92px] text-21xl text-black">
           <div className="self-stretch bg-white h-[226px] overflow-hidden shrink-0 flex flex-col py-11 px-7 box-border items-start justify-start">
             <div className="w-[430px] flex flex-row p-2.5 box-border items-center justify-start">
               <div className="relative tracking-[-0.05em] leading-[64px] font-semibold">
@@ -278,7 +278,7 @@ const MainInteraction: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex-1 flex flex-row py-0 pr-0 pl-[30px] items-start justify-start text-center text-sm text-gray-200 font-public-sans">
+          <div className="self-stretch flex-1 flex flex-row py-0 pr-0 pl-[30px] items-start justify-start text-center text-sm text-gray-200 ">
             <div className="self-stretch flex-1 rounded-lg bg-white flex flex-col py-[62px] px-11 box-border items-start justify-start relative gap-[30px] max-w-[1440px]">
               <div className="flex flex-col items-start justify-start gap-[8px] z-[0]">
                 <div className="relative leading-[18px] font-extrabold">
@@ -287,7 +287,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
                 <div className="rounded-lg bg-gainsboro w-[484px] h-12 overflow-hidden shrink-0 flex flex-row py-0 px-4 box-border items-center justify-start gap-[8px]">
                   <input
-                    className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+                    className="[border:none] font-medium  text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
                     type="email"
                     placeholder="Email"
                   />
@@ -305,7 +305,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
                 <div className="self-stretch rounded-lg bg-gainsboro h-12 overflow-hidden shrink-0 flex flex-row py-0 px-6 box-border items-start justify-start">
                   <input
-                    className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+                    className="[border:none] font-medium  text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
                     type="text"
                     placeholder="E.g Emmanuel"
                   />
@@ -321,7 +321,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
                 <div className="self-stretch rounded-lg bg-gainsboro h-12 overflow-hidden shrink-0 flex flex-row py-0 px-6 box-border items-start justify-start">
                   <input
-                    className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+                    className="[border:none] font-medium  text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
                     type="text"
                     placeholder="E.g Emmanuel"
                   />
@@ -344,7 +344,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
                 <div className="self-stretch rounded-lg bg-gainsboro h-12 overflow-hidden shrink-0 flex flex-row py-0 px-6 box-border items-center justify-between">
                   <input
-                    className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+                    className="[border:none] font-medium  text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
                     type="date"
                     placeholder="17/06/23"
                   />

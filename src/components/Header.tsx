@@ -1,15 +1,16 @@
-import { FunctionComponent, MouseEvent, useCallback } from "react";
+import { FunctionComponent, MouseEvent, useCallback, useEffect, useState } from "react";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 import { useNavigate } from "react-router-dom";
+import PortalDrawer from "./PortalDrawer";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Header: FunctionComponent = () => {
-
     const navigate = useNavigate();
     const isAuthenticated = useIsAuthenticated();
     const signOut = useSignOut();
+    const [isHamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
     const onLoginButtonClick = useCallback(() => {
-        console.log("onLoginButtonClick()");
         navigate("/mainlogin");
     }, [navigate]);
 
@@ -18,77 +19,106 @@ const Header: FunctionComponent = () => {
         navigate("/");
     }, [navigate]);
 
+    const openHamburgerMenu = useCallback(() => {
+        setHamburgerMenuOpen(true);
+    }, []);
+
+    const closeHamburgerMenu = useCallback(() => {
+        setHamburgerMenuOpen(false);
+    }, []);
+
+    useEffect(() => {
+        function autoCloseHamburgerMenu() {
+            if (!isHamburgerMenuOpen)
+                return;
+            const md = window.matchMedia(`(max-width: 960px)`);
+            setHamburgerMenuOpen(md.matches);
+        }
+
+        window.addEventListener('resize', autoCloseHamburgerMenu);
+    });
+
     return (
-        <header className="self-stretch bg-white flex flex-row py-0 px-5 items-center justify-between text-left text-17xl text-royalblue-100 font-public-sans md:flex md:gap-[0px] md:pr-5 md:box-border">
-            <div className="w-[110px] h-24 flex flex-row items-center justify-between md:flex-1 md:gap-[0px]">
-                <a className="[text-decoration:none] flex-1 flex flex-row py-[39px] px-0 items-center justify-between text-[inherit] md:flex-1 md:self-stretch md:h-auto md:text-[70%]">
-                    <div className="flex-1 relative tracking-[2.16px] leading-[18px] uppercase font-extrabold">
-                        LOGO
-                    </div>
-                </a>
-                <button className="cursor-pointer [border:none] p-0 bg-[transparent] w-11 hidden flex-row items-center justify-between md:flex">
-                    <img className="relative w-11 h-11" alt="" src="/icon.svg" />
-                </button>
-            </div>
-            <div className="w-[558px] h-4 flex flex-col py-0 pr-[31px] pl-0 box-border items-center justify-between text-smi text-black md:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
-                <div className="self-stretch flex flex-row py-0 px-3 items-center justify-between md:hidden sm:pr-0 sm:box-border">
-                    <div className="w-[76px] flex flex-row items-start justify-start text-sm">
-                        <div className="relative tracking-[2.52px] leading-[16px] uppercase font-extrabold flex items-center w-[76px] shrink-0 hover:cursor-pointer hover:[text-decoration:underline] md:leading-[12px]">
-                            PRICING
+        <>
+            <header className="self-stretch bg-night-ghost-text flex flex-row py-0 px-5 items-center justify-between text-left text-17xl text-royalblue-100 font-rasa md:flex md:gap-[0px] md:pr-5 md:box-border">
+                <div className="w-[110px] h-24 flex flex-row items-center justify-between md:flex-1 md:gap-[0px]">
+                    <a className="[text-decoration:none] flex-1 flex flex-row py-[39px] px-0 items-center justify-between text-[inherit] md:flex-1 md:self-stretch md:h-auto md:text-[70%]">
+                        <b className="flex-1 relative uppercase">LOGO</b>
+                    </a>
+                    <button
+                        className="cursor-pointer [border:none] p-0 bg-[transparent] w-[30px] h-[30px] hidden flex-row items-center justify-between md:flex"
+                        onClick={openHamburgerMenu}
+                    >
+                        <img className="relative w-11 h-11" alt="" src="/icon.svg" />
+                    </button>
+                </div>
+                <div className="h-4 flex flex-row py-0 pr-[31px] pl-0 box-border items-center justify-start text-mini text-primary-black-100 font-overlock md:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
+                    <div className="w-[552px] flex flex-row py-0 px-3 box-border items-center justify-center gap-[74px] md:hidden sm:pr-0 sm:box-border">
+                        <div className="flex flex-row items-start justify-start hover:cursor-pointer hover:[text-decoration:underline]">
+                            <b className="relative leading-[16px] capitalize hover:cursor-pointer md:leading-[12px]">
+                                Pricing
+                            </b>
                         </div>
-                    </div>
-                    <div className="w-[102px] flex flex-row items-center justify-between">
-                        <div className="relative tracking-[2.52px] leading-[16px] uppercase font-extrabold flex items-center w-[91px] shrink-0 hover:cursor-pointer hover:[text-decoration:underline] md:leading-[12px]">
-                            products
+                        <div className="w-[70px] flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
+                            <b className="relative leading-[16px] capitalize md:leading-[12px]">
+                                products
+                            </b>
+                            <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
+                                <img
+                                    className="relative w-[8.94px] h-[5.03px]"
+                                    alt=""
+                                    src="/vector2.svg"
+                                />
+                            </div>
                         </div>
-                        <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center">
-                            <img
-                                className="relative w-[8.94px] h-[5.03px]"
-                                alt=""
-                                src="/vector.svg"
-                            />
+                        <div className="w-20 flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
+                            <b className="relative leading-[16px] capitalize md:leading-[12px]">
+                                use cases
+                            </b>
+                            <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
+                                <img
+                                    className="relative w-[8.94px] h-[5.03px]"
+                                    alt=""
+                                    src="/vector2.svg"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="w-[107px] flex flex-row items-center justify-between">
-                        <div className="flex-1 relative tracking-[2.52px] leading-[16px] uppercase font-extrabold hover:cursor-pointer hover:[text-decoration:underline] md:leading-[12px]">
-                            use cases
-                        </div>
-                        <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center">
-                            <img
-                                className="relative w-[8.94px] h-[5.03px]"
-                                alt=""
-                                src="/vector1.svg"
-                            />
-                        </div>
-                    </div>
-                    <div className="w-[115px] flex flex-row items-center justify-between">
-                        <div className="relative tracking-[2.52px] leading-[16px] uppercase font-extrabold flex items-center w-[103px] shrink-0 hover:cursor-pointer hover:[text-decoration:underline]">
-                            RESOURCES
-                        </div>
-                        <div className="w-[8.94px] h-3.5 overflow-hidden shrink-0 flex flex-col py-1 px-0 box-border items-center justify-between">
-                            <img
-                                className="relative w-[8.94px] h-[5.03px]"
-                                alt=""
-                                src="/vector2.svg"
-                            />
+                        <div className="w-20 flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
+                            <b className="relative leading-[16px] capitalize">Resources</b>
+                            <div className="w-[8.94px] h-3.5 overflow-hidden shrink-0 flex flex-col py-1 px-0 box-border items-center justify-between hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
+                                <img
+                                    className="relative w-[8.94px] h-[5.03px]"
+                                    alt=""
+                                    src="/vector2.svg"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="w-[281px] flex flex-row py-0.5 px-0 box-border items-center justify-end gap-[20px] md:hidden md:w-0 md:gap-[0px] md:items-center md:justify-center">
-                <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
-                        onClick={ isAuthenticated() ? onSignOutClick : onLoginButtonClick}>
-                    <div className="flex-1 relative text-xs tracking-[2.16px] leading-[14px] uppercase font-extrabold font-heading-x-small-600 text-royalblue-100 text-center">
-                        {isAuthenticated() ? "LOG OUT" : "LOGIN"}
-                    </div>
-                </button>
-                <button className="cursor-pointer [border:none] py-2.5 px-[21px] bg-royalblue-100 rounded-lg w-[151px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-xs tracking-[2.16px] leading-[16px] uppercase font-extrabold font-heading-x-small-600 text-white text-center flex items-center justify-center w-[122px] shrink-0">
-                        BOOK A DEMO
-                    </div>
-                </button>
-            </div>
-        </header>
+                <div className="flex flex-row py-0.5 px-0 items-center justify-end gap-[20px] md:hidden md:w-0 md:gap-[0px] md:items-center md:justify-center">
+                    <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
+                        onClick={isAuthenticated() ? onSignOutClick : onLoginButtonClick}>
+                        <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
+                            {isAuthenticated() ? "Log out" : "Login"}
+                        </b>
+                    </button>
+                    <button className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg flex flex-row items-center justify-center">
+                        <b className="relative text-sm leading-[16px] capitalize flex font-overlock text-night-ghost-text text-center items-center justify-center w-[122px] shrink-0">
+                            Book A Demo
+                        </b>
+                    </button>
+                </div>
+            </header>
+            {isHamburgerMenuOpen && (
+                <PortalDrawer
+                    overlayColor="rgba(113, 113, 113, 0.3)"
+                    placement="Top"
+                    onOutsideClick={closeHamburgerMenu}
+                >
+                    <HamburgerMenu onClose={closeHamburgerMenu} />
+                </PortalDrawer>
+            )}
+        </>
     );
 };
 
