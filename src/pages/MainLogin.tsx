@@ -110,7 +110,7 @@ const MainLogin: FunctionComponent = () => {
           <div className="relative tracking-[2.4px] leading-[37.2px] uppercase font-extrabold flex items-center justify-center w-[156px] h-[38px] shrink-0">
             LOG IN
           </div>
-          <div className="relative text-16xl leading-[40px] font-black font-public-sans flex items-center w-[253px]">
+          <div className="relative text-16xl leading-[40px] font-black font-open-sansflex items-center w-[253px]">
             <span className="[line-break:anywhere] w-full">
               <p className="m-0">Manage your</p>
               <p className="m-0"> Platform</p>
@@ -127,11 +127,8 @@ const MainLogin: FunctionComponent = () => {
         <form onSubmit={onSubmitClick}>
           <div className="flex flex-col items-center justify-start gap-[33px] text-left text-sm-3 md:gap-[40px]">
             <div className="flex flex-col items-start justify-start gap-[12px]">
-                <div className="font-rasa text-lg">
-                  Email
-              </div>
               <input
-                className="font-medium font-public-sans text-base bg-white rounded-lg box-border w-[692px] h-[58px] flex flex-row py-0 px-[31px] items-center justify-center [outline:none] border-[1px] border-solid border-lightgray-200 md:w-[400px] sm:w-[300px]"
+                className="font-medium font-open-sanstext-base bg-white rounded-lg box-border w-[692px] h-[58px] flex flex-row py-0 px-[31px] items-center justify-center [outline:none] border-[1px] border-solid border-lightgray-200 md:w-[400px] sm:w-[300px]"
                 type="text"
                 placeholder="Enter your email here"
                 name="email"
@@ -141,14 +138,12 @@ const MainLogin: FunctionComponent = () => {
             </div>
             <div className="flex flex-col items-end justify-start">
               <div className="flex flex-col py-0 px-1 items-start justify-start gap-[12px]">
-                <div className="font-rasa text-lg">
-                  Password
-                </div>
                 <div className="rounded-lg bg-white box-border w-[685px] h-[58px] flex flex-row py-0 px-6 items-center justify-center gap-[10px] border-[1px] border-solid border-lightgray-200 md:w-[400px] sm:w-[300px]">
                   <input
-                    className="[border:none] font-medium font-public-sans text-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
+                    className="[border:none] font-medium font-open-sanstext-base bg-[transparent] self-stretch flex-1 relative leading-[18px] text-dimgray-200 text-left flex items-center [outline:none]"
                     type={passwordVisible ? "text" : "password"}
                     name="password"
+                    placeholder="Enter your password"
                     required
                   />
                   <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6 overflow-hidden shrink-0"
@@ -165,7 +160,7 @@ const MainLogin: FunctionComponent = () => {
                 </div>
               </div>
               <button
-                className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[37.2px] font-public-sans text-mediumslateblue text-center inline-block hover:[text-decoration:underline]"
+                className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[37.2px] font-overlock text-mediumslateblue text-center inline-block hover:[text-decoration:underline]"
                 onClick={onForgetPasswordClick}
               >
                 Forget password?
@@ -183,7 +178,7 @@ const MainLogin: FunctionComponent = () => {
                   <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647zM12 20.735a8 8 0 008-8h4a12 12 0 01-12 12v-4.265zM20 12a8 8 0 01-8 8v4.265a12 12 0 0012-12h-4zm-8-6.735a8 8 0 018-8v-4.265a12 12 0 00-12 12h4z" />
                 </svg>
               </div>
-              <div className="text-base leading-[18px] font-medium font-public-sans text-white text-center flex items-center justify-center h-3 md:w-[200px]">
+              <div className="text-base leading-[18px] font-medium font-overlock text-white text-center flex items-center justify-center h-3 md:w-[200px]">
                 Log in
               </div>
             </button>

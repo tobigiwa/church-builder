@@ -15,7 +15,7 @@ const DashboardCard: FunctionComponent<DashboardCardProps> = ({
 }) => {
 
   return (
-    <div className="rounded-mid bg-white shadow-[6px_6px_25px_7px_rgba(157,_157,_157,_0.15)] w-[250px] h-[250px] overflow-hidden shrink-0 flex flex-col pt-[68px] pb-[54px] pr-[54.00001525878906px] pl-[54px] box-border items-center justify-center gap-[32px]">
+    <div className="font-overlock rounded-mid bg-white shadow-[6px_6px_25px_7px_rgba(157,_157,_157,_0.15)] w-[250px] h-[250px] overflow-hidden shrink-0 flex flex-col pt-[68px] pb-[54px] pr-[54.00001525878906px] pl-[54px] box-border items-center justify-center gap-[32px]">
               <div className="flex flex-row py-0 pr-[0.1999969482421875px] pl-0 items-start justify-start">
                 <div className="relative leading-[40px] font-extrabold">
                   <p className="m-0">{displayText[0]}</p>
@@ -49,7 +49,7 @@ const LoginAppGivingDashboard: FunctionComponent = () => {
           <div className="relative tracking-[2.4px] leading-[37.2px] uppercase font-extrabold flex items-center justify-center w-[156px] h-[38px] shrink-0">
             LOG IN
           </div>
-          <div className="relative text-16xl leading-[40px] font-black font-public-sans flex items-center w-[253px]">
+          <div className="relative text-16xl leading-[40px] font-black font-open-sansflex items-center w-[253px]">
             <span className="[line-break:anywhere] w-full">
               <p className="m-0">Manage your</p>
               <p className="m-0"> Platform</p>

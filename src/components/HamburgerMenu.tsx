@@ -66,12 +66,14 @@ const HamburgerMenu: FunctionComponent<HamburgerMenuType> = ({ onClose }) => {
             <img className="relative w-4 h-4" alt="" src="/vector10.svg" />
           </button>
         </a>
-        <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
+        <div className="group">
+        <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100 group-hover:bg-royalblue-100"
           onClick={isAuthenticated() ? onSignOutClick : onLoginButtonClick}>
-          <b className="self-stretch flex-1 relative text-xs capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
+          <b className="self-stretch flex-1 relative text-xs capitalize flex font-open-sanstext-royalblue-100 text-center items-center justify-center group-hover:text-white">
             {isAuthenticated() ? "Log out" : "Login"}
           </b>
         </button>
+        </div>
       </div>
       <div className="self-stretch h-2.5 flex flex-row py-2.5 px-0 box-border items-center justify-center">
         <div className="flex-1 relative box-border h-px border-t-[1px] border-solid border-gainsboro-200" />
