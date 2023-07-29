@@ -96,17 +96,22 @@ const Header: FunctionComponent = () => {
                     </div>
                 </div>
                 <div className="flex flex-row py-0.5 px-0 items-center justify-end gap-[20px] md:hidden md:w-0 md:gap-[0px] md:items-center md:justify-center">
-                    <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
+                    <div className="group">
+                    <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100 group-hover:bg-royalblue-100"
                         onClick={isAuthenticated() ? onSignOutClick : onLoginButtonClick}>
-                        <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
+                        <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center group-hover:text-white">
                             {isAuthenticated() ? "Log out" : "Login"}
                         </b>
                     </button>
-                    <button className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg flex flex-row items-center justify-center">
-                        <b className="relative text-sm leading-[16px] capitalize flex font-overlock text-night-ghost-text text-center items-center justify-center w-[122px] shrink-0">
+                    </div>
+                    {/* bg-royalblue-100 */}
+                    <div className="group">
+                    <button className="cursor-pointer py-2.5 px-0 bg-[transparent] box-border rounded-lg flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100 group-hover:bg-royalblue-100">
+                        <b className="relative text-sm leading-[16px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center w-[122px] shrink-0 group-hover:text-white">
                             Book A Demo
                         </b>
                     </button>
+                    </div>
                 </div>
             </header>
             {isHamburgerMenuOpen && (

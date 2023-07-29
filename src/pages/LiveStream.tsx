@@ -1,6 +1,8 @@
 import { FunctionComponent, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Sponsors from "../components/Sponsors";
 
 const LiveStream: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -10,9 +12,10 @@ const LiveStream: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="relative w-full h-[2272px] overflow-hidden flex flex-col items-center justify-center text-center text-mid text-black font-heading-x-small-600">
+    <div className="relative w-full overflow-hidden flex flex-col items-center justify-center text-center text-mid text-black font-heading-x-small-600">
       <Header />
-      <div className="self-stretch flex-1 [background:linear-gradient(180deg,_#91a8ea,_#fff_85.92%,_rgba(255,_255,_255,_0))] flex flex-col pt-[150px] px-0 pb-0 items-center justify-center gap-[50px] md:gap-[0px] md:items-center md:justify-between md:pt-0 md:pb-0 md:box-border md:max-h-[700px]">
+      <div className="self-stretch flex-1 [background:linear-gradient(180deg,_#91a8ea,_#fff_85.92%,_rgba(255,_255,_255,_0))] flex flex-col pt-[150px] px-0 pb-0 items-center 
+        justify-center gap-[50px] md:gap-[80px] md:items-center md:justify-between md:pt-[80px] md:pb-0 md:box-border">
         <div className="self-stretch flex flex-col py-0 px-[127px] items-center justify-start gap-[60px] md:flex-1 md:gap-[0px] md:pl-2.5 md:pr-2.5 md:box-border">
           <div className="self-stretch flex flex-row items-center justify-between md:flex-1">
             <div className="flex-1 h-[222px] flex flex-col items-center justify-center gap-[10px] md:gap-[20px]">
@@ -57,145 +60,9 @@ const LiveStream: FunctionComponent = () => {
             src="/vector15.svg"
           />
         </div>
-        <div className="self-stretch bg-aliceblue h-[100px] overflow-hidden shrink-0 flex flex-col py-[25px] px-0 box-border items-center justify-between">
-          <div className="overflow-hidden flex flex-row py-0 px-[261px] items-center justify-center gap-[80px]">
-            <img
-              className="relative w-[172.39px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75398dac142bb765c1a43-seslogopngwebp1@2x.png"
-            />
-            <img
-              className="relative w-[120px] h-[50px] object-cover"
-              alt=""
-              src="/62c7537b4421cc411aaee9d8-rtswebp1@2x.png"
-            />
-            <img
-              className="relative w-[175.7px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75366bfc2c35e0cb61587-covenanttheologicalseminarylogowebp1@2x.png"
-            />
-            <img
-              className="relative w-[103px] h-[50px] object-cover"
-              alt=""
-              src="/62a412d0ae6491d139b742a1-harvestlogowebp1@2x.png"
-            />
-            <img
-              className="relative w-[117.6px] h-[49.98px] object-cover"
-              alt=""
-              src="/63ed33f4c6d54853bc37f726-billygraham-logowebp1@2x.png"
-            />
-            <img
-              className="relative w-[200px] h-[32.88px] object-cover"
-              alt=""
-              src="/62a3c989c488718ef4da4b3b-angelus-temple-logo-3x201webp1@2x.png"
-            />
-            <img
-              className="relative w-[200px] h-[26px] object-cover"
-              alt=""
-              src="/63ed33f4d786962305aab5ba-freshlife-logop500png1@2x.png"
-            />
-            <img
-              className="relative w-[168.65px] h-[49.98px] object-cover"
-              alt=""
-              src="/6286cf3f50c6ba22b1dfbf0b-subsplasmarqueelogocristapng1@2x.png"
-            />
-            <img
-              className="relative w-[50px] h-[50px] object-cover"
-              alt=""
-              src="/6286cf404380e64617fa596d-subsplasmarqueelogohillsongpng1@2x.png"
-            />
-            <img
-              className="relative w-[200px] h-[44.4px] object-cover"
-              alt=""
-              src="/63ed33f497d1c7e6ac68903e-transformation-logop500webp1@2x.png"
-            />
-          </div>
-        </div>
+        <Sponsors />
       </div>
-      <div className="self-stretch flex-1 relative bg-white" />
-      <div className="self-stretch bg-royalblue-100 h-auto flex flex-row py-[31px] px-[69px] box-border items-center justify-between text-left text-mini text-white">
-        <div className="self-stretch flex-1 flex flex-col items-center justify-between sm:self-stretch sm:h-auto sm:gap-[0px]">
-          <div className="self-stretch flex flex-row items-start justify-between flex-wrap gap-[20px]">
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-40 h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  HELP
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Support
-              </a>
-              <div className="relative bg-gray-400 w-[232.88px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                  System status
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] text-base">
-              <div className="relative box-border w-40 h-8 text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  PLATFORM
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative text-mini leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Security
-              </a>
-              <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[-1px] left-[0px] leading-[18px] font-semibold text-[inherit] hover:cursor-pointer">
-                  FAQs
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-[167px] h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro lg:items-start lg:justify-start">
-                <div className="absolute top-[0px] left-[0.33px] tracking-[2.16px] leading-[14px] uppercase">
-                  <span className="font-extrabold">ABOUT</span>
-                  <span className="font-extrabold font-heading-x-small-600">
-                    {" "}
-                    US
-                  </span>
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Company
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                Careers
-              </a>
-              <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
-                <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit] hover:cursor-pointer">
-                  Newsroom
-                </a>
-              </div>
-            </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-public-sans sm:w-[167px] sm:flex sm:flex-wrap">
-              <div className="relative box-border w-40 h-8 text-base text-gainsboro border-b-[1px] border-solid border-gainsboro">
-                <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
-                  LEGAL
-                </div>
-              </div>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Terms of service
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Terms of use
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Privacy
-              </a>
-              <a className="[text-decoration:none] relative text-base leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                GDPR
-              </a>
-              <a className="[text-decoration:none] relative leading-[14px] font-medium text-[inherit] hover:cursor-pointer">
-                Do not sell my personal information
-              </a>
-            </div>
-          </div>
-          <div className="relative text-lg leading-[28px] font-medium font-public-sans text-center mt-10 sm:text-sm">
-            ©2023 . All rights reserved.
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };

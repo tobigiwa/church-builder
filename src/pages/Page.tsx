@@ -15,8 +15,8 @@ const Page: FunctionComponent = () => {
 
   return (
     <>
-      <div className="relative w-full flex flex-col items-start justify-start text-left text-base text-primary-black-100 font-label-medium-600">
-        <header className="bg-night-ghost-text w-[989px] flex flex-row py-0 px-5 box-border items-center justify-between text-left text-17xl text-royalblue-100 font-rasa md:flex md:gap-[0px] md:pr-5 md:box-border">
+      <div className="relative w-full flex flex-col items-start justify-start text-left text-base text-primary-black-100 font-open-sans">
+        <header className="bg-night-ghost-text w-[989px] flex flex-row py-0 px-5 box-border items-center justify-between text-left text-17xl text-royalblue-100 font-open-sansmd:flex md:gap-[0px] md:pr-5 md:box-border">
           <div className="w-[110px] h-24 flex flex-row items-center justify-between md:flex-1 md:gap-[0px]">
             <a className="[text-decoration:none] flex-1 flex flex-row py-[39px] px-0 items-center justify-between text-[inherit] md:flex-1 md:self-stretch md:h-auto md:text-[70%]">
               <b className="flex-1 relative uppercase">LOGO</b>
@@ -28,7 +28,7 @@ const Page: FunctionComponent = () => {
               <img className="relative w-11 h-11" alt="" src="/icon.svg" />
             </button>
           </div>
-          <div className="h-4 flex flex-row py-0 pr-[31px] pl-0 box-border items-center justify-start text-mini text-primary-black-100 font-overlock md:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
+          <div className="h-4 flex flex-row py-0 pr-[31px] pl-0 box-border items-center justify-start text-mini text-primary-black-100 font-open-sansmd:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
             <div className="w-[552px] flex flex-row py-0 px-3 box-border items-center justify-center gap-[74px] md:hidden sm:pr-0 sm:box-border">
               <div className="flex flex-row items-start justify-start hover:cursor-pointer hover:[text-decoration:underline]">
                 <b className="relative leading-[16px] capitalize hover:cursor-pointer md:leading-[12px]">
@@ -73,12 +73,12 @@ const Page: FunctionComponent = () => {
           </div>
           <div className="flex flex-row py-0.5 px-0 items-center justify-end gap-[20px] md:hidden md:w-0 md:gap-[0px] md:items-center md:justify-center">
             <button className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100">
-              <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
+              <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-open-sanstext-royalblue-100 text-center items-center justify-center">
                 Login
               </b>
             </button>
             <button className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg flex flex-row items-center justify-center">
-              <b className="relative text-sm leading-[16px] capitalize flex font-overlock text-night-ghost-text text-center items-center justify-center w-[122px] shrink-0">
+              <b className="relative text-sm leading-[16px] capitalize flex font-open-sanstext-night-ghost-text text-center items-center justify-center w-[122px] shrink-0">
                 Book A Demo
               </b>
             </button>
@@ -104,7 +104,7 @@ const Page: FunctionComponent = () => {
           <div className="self-stretch flex-1 flex flex-col items-center justify-between sm:self-stretch sm:h-auto sm:gap-[0px]">
             <div className="self-stretch flex flex-row items-start justify-between flex-wrap gap-[20px]">
               <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-                <div className="relative box-border w-40 h-8 text-base text-gainsboro-100 font-public-sans border-b-[1px] border-solid border-gainsboro-100">
+                <div className="relative box-border w-40 h-8 text-base text-gainsboro-100 font-open-sansborder-b-[1px] border-solid border-gainsboro-100">
                   <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                     HELP
                   </div>
@@ -119,7 +119,7 @@ const Page: FunctionComponent = () => {
                 </div>
               </div>
               <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] text-base">
-                <div className="relative box-border w-40 h-8 text-gainsboro-100 font-public-sans border-b-[1px] border-solid border-gainsboro-100">
+                <div className="relative box-border w-40 h-8 text-gainsboro-100 font-open-sansborder-b-[1px] border-solid border-gainsboro-100">
                   <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                     PLATFORM
                   </div>
@@ -134,10 +134,10 @@ const Page: FunctionComponent = () => {
                 </div>
               </div>
               <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-                <div className="relative box-border w-[167px] h-8 text-base text-gainsboro-100 font-public-sans border-b-[1px] border-solid border-gainsboro-100 lg:items-start lg:justify-start">
+                <div className="relative box-border w-[167px] h-8 text-base text-gainsboro-100 font-open-sansborder-b-[1px] border-solid border-gainsboro-100 lg:items-start lg:justify-start">
                   <div className="absolute top-[0px] left-[0.33px] tracking-[2.16px] leading-[14px] uppercase">
                     <span className="font-extrabold">ABOUT</span>
-                    <span className="font-extrabold font-label-medium-600">
+                    <span className="font-extrabold font-open-sans">
                       {" "}
                       US
                     </span>
@@ -155,7 +155,7 @@ const Page: FunctionComponent = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-public-sans sm:w-[167px] sm:flex sm:flex-wrap">
+              <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-open-sanssm:w-[167px] sm:flex sm:flex-wrap">
                 <div className="relative box-border w-40 h-8 text-base text-gainsboro-100 border-b-[1px] border-solid border-gainsboro-100">
                   <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                     LEGAL
@@ -178,7 +178,7 @@ const Page: FunctionComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="relative text-lg leading-[28px] font-medium font-public-sans text-center mt-10 sm:text-sm">
+            <div className="relative text-lg leading-[28px] font-medium font-open-sanstext-center mt-10 sm:text-sm">
               ©2023 . All rights reserved.
             </div>
           </div>

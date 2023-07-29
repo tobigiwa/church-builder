@@ -7,7 +7,7 @@ import "./global.css";
 import { AuthProvider } from "react-auth-kit";
 import refreshApi from "./components/refreshApi";
 import axios from "axios";
-import { Dfn } from "./global-config";
+import { Dfn } from "./globals";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);

@@ -10,7 +10,7 @@ const LoginAppDashboard: FunctionComponent = () => {
           <div className="relative tracking-[2.4px] leading-[37.2px] uppercase font-extrabold flex items-center justify-center w-[156px] h-[38px] shrink-0">
             LOG IN
           </div>
-          <div className="relative text-16xl leading-[40px] font-black font-public-sans flex items-center w-[253px]">
+          <div className="relative text-16xl leading-[40px] font-black font-open-sansflex items-center w-[253px]">
             <span className="[line-break:anywhere] w-full">
               <p className="m-0">Manage your</p>
               <p className="m-0"> Platform</p>
@@ -71,7 +71,7 @@ const LoginAppDashboard: FunctionComponent = () => {
         <div className="self-stretch flex-1 flex flex-col items-center justify-between sm:self-stretch sm:h-auto sm:gap-[0px]">
           <div className="self-stretch flex flex-row items-start justify-between flex-wrap gap-[20px]">
             <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-40 h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
+              <div className="relative box-border w-40 h-8 text-base text-gainsboro font-open-sansborder-b-[1px] border-solid border-gainsboro">
                 <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                   HELP
                 </div>
@@ -86,7 +86,7 @@ const LoginAppDashboard: FunctionComponent = () => {
               </div>
             </div>
             <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] text-base">
-              <div className="relative box-border w-40 h-8 text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro">
+              <div className="relative box-border w-40 h-8 text-gainsboro font-open-sansborder-b-[1px] border-solid border-gainsboro">
                 <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                   PLATFORM
                 </div>
@@ -101,7 +101,7 @@ const LoginAppDashboard: FunctionComponent = () => {
               </div>
             </div>
             <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
-              <div className="relative box-border w-[167px] h-8 text-base text-gainsboro font-public-sans border-b-[1px] border-solid border-gainsboro lg:items-start lg:justify-start">
+              <div className="relative box-border w-[167px] h-8 text-base text-gainsboro font-open-sansborder-b-[1px] border-solid border-gainsboro lg:items-start lg:justify-start">
                 <div className="absolute top-[0px] left-[0.33px] tracking-[2.16px] leading-[14px] uppercase">
                   <span className="font-extrabold">ABOUT</span>
                   <span className="font-extrabold font-heading-x-small-600">
@@ -122,7 +122,7 @@ const LoginAppDashboard: FunctionComponent = () => {
                 </a>
               </div>
             </div>
-            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-public-sans sm:w-[167px] sm:flex sm:flex-wrap">
+            <div className="w-[248px] flex flex-col items-start justify-start gap-[24px] font-open-sanssm:w-[167px] sm:flex sm:flex-wrap">
               <div className="relative box-border w-40 h-8 text-base text-gainsboro border-b-[1px] border-solid border-gainsboro">
                 <div className="absolute top-[0px] left-[0px] tracking-[2.16px] leading-[14px] uppercase font-extrabold">
                   LEGAL
@@ -145,7 +145,7 @@ const LoginAppDashboard: FunctionComponent = () => {
               </a>
             </div>
           </div>
-          <div className="relative text-lg leading-[28px] font-medium font-public-sans text-center mt-10 sm:text-sm">
+          <div className="relative text-lg leading-[28px] font-medium font-open-sanstext-center mt-10 sm:text-sm">
             ©2023 . All rights reserved.
           </div>
         </div>

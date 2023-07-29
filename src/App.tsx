@@ -14,6 +14,8 @@ import LoginAppDashboard from "./pages/LoginAppDashboard";
 import { useEffect } from "react";
 import { RequireAuth } from "react-auth-kit";
 import NotFoundPage from "./pages/NotFoundPage";
+import ChurchWebsiteBuilder from "./pages/ChurchWebsiteBuilder";
+import ChurchManagement from "./pages/ChurchManagement";
 
 function App() {
   const action = useNavigationType();
@@ -83,6 +85,8 @@ function App() {
           <MainInteraction />
         </RequireAuth>
       } />
+      <Route path="/churchmanagement" element={ <ChurchManagement/>} />
+      <Route path="/websitebuilder" element={ <ChurchWebsiteBuilder />} />
       <Route path="/livestream" element={<LiveStream />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/mainlogin" element={<MainLogin />} />

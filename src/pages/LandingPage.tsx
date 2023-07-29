@@ -3,6 +3,7 @@ import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 import { Navigate, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Sponsors from "../components/Sponsors";
 
 const LandingPage: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -52,7 +53,7 @@ const LandingPage: FunctionComponent = () => {
       <Header />
       <div className="self-stretch flex-1 [background:linear-gradient(177.31deg,_#fff,_#91a8ea_0.01%,_#fff_26.56%)] flex flex-col pt-20 px-0 pb-0 items-center justify-start gap-[112px] mix-blend-normal overflow-hidden text-center text-mid text-royalblue-100">
         <div className="self-stretch flex-1 flex flex-col py-0 px-20 items-center justify-center gap-[40px] md:pl-[50px] md:pr-[50px] md:box-border sm:pl-[60px] sm:pr-[60px] sm:box-border">
-          <b className="self-stretch relative uppercase sm:text-sm font-rasa text-lg">
+          <b className="self-stretch relative uppercase sm:text-sm font-overlock text-lg">
             ALL-IN-ONE PLATFORM FOR YOUR CHURCH
           </b>
           <b className="self-stretch relative text-21xl text-primary-black-100 sm:text-21xl sm:flex-1">
@@ -90,64 +91,7 @@ const LandingPage: FunctionComponent = () => {
             </a>
           </div>
         </div>
-        <div className="self-stretch relative bg-aliceblue h-[107px] overflow-hidden shrink-0 sm:overflow-hidden sm:mt-5">
-          <div className="absolute top-[36px] left-[-185px] w-[5735.13px] h-[50px]">
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[260.8px] w-[172.39px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75398dac142bb765c1a43-seslogopngwebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[513.19px] w-[120px] h-[50px] object-cover"
-              alt=""
-              src="/62c7537b4421cc411aaee9d8-rtswebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[713.19px] w-[175.7px] h-[49.98px] object-cover"
-              alt=""
-              src="/62c75366bfc2c35e0cb61587-covenanttheologicalseminarylogowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[968.89px] w-[103px] h-[50px] object-cover"
-              alt=""
-              src="/62a412d0ae6491d139b742a1-harvestlogowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_25px)] left-[1151.89px] w-[117.6px] h-[49.98px] object-cover"
-              alt=""
-              src="/63ed33f4c6d54853bc37f726-billygraham-logowebp@2x.png"
-            />
-            <img
-              className="absolute top-[calc(50%_-_16.44px)] left-[1349.49px] w-[200px] h-[32.88px] object-cover"
-              alt=""
-              src="/62a3c989c488718ef4da4b3b-angelus-temple-logo-3x201webp@2x.png"
-            />
-            <div className="absolute top-[0px] left-[1629.49px] w-[448.11px] h-[49.98px] overflow-hidden">
-              <img
-                className="absolute top-[calc(50%_-_12.99px)] left-[0px] w-[200px] h-[26px] object-cover"
-                alt=""
-                src="/63ed33f4d786962305aab5ba-freshlife-logop500png@2x.png"
-              />
-              <img
-                className="absolute top-[calc(50%_-_24.99px)] left-[279.46px] w-[168.65px] h-[49.98px] object-cover"
-                alt=""
-                src="/6286cf3f50c6ba22b1dfbf0b-subsplasmarqueelogocristapng@2x.png"
-              />
-            </div>
-            <div className="absolute top-[0px] left-[2157.6px] w-[330px] h-[50px] overflow-hidden">
-              <img
-                className="absolute top-[calc(50%_-_22.21px)] left-[130px] w-[200px] h-[44.4px] object-cover"
-                alt=""
-                src="/63ed33f497d1c7e6ac68903e-transformation-logop500webp@2x.png"
-              />
-              <img
-                className="absolute top-[calc(50%_-_25px)] left-[0px] w-[50px] h-[50px] object-cover"
-                alt=""
-                src="/6286cf404380e64617fa596d-subsplasmarqueelogohillsongpng@2x.png"
-              />
-            </div>
-          </div>
-        </div>
+        <Sponsors />
       </div>
       <div className="self-stretch flex-1 bg-aliceblue flex flex-col items-center justify-between md:flex-1 md:items-center md:justify-center md:pt-20 md:pb-20 md:box-border sm:flex-1 sm:gap-[0px]">
         <div className="self-stretch flex-1 overflow-hidden flex flex-row py-[191px] px-0 items-center justify-center gap-[30px] md:flex-1 md:flex-col md:gap-[10px] md:pt-10 md:pb-10 md:box-border md:m-auto sm:flex-col sm:gap-[20px] sm:items-center sm:justify-center sm:pt-0 sm:pb-0 sm:box-border">
@@ -344,7 +288,7 @@ const LandingPage: FunctionComponent = () => {
           />
         </div>
       </div>
-      <div className="self-stretch flex-1 bg-night-ghost-text flex flex-col py-20 px-0 items-center justify-between text-sm text-primary-black-100 font-public-sans md:items-center md:justify-center md:pt-0 md:pb-0 md:box-border md:m-auto">
+      <div className="self-stretch flex-1 bg-night-ghost-text flex flex-col py-20 px-0 items-center justify-between text-sm text-primary-black-100 font-open-sansmd:items-center md:justify-center md:pt-0 md:pb-0 md:box-border md:m-auto">
         <div className="self-stretch flex-1 overflow-hidden flex flex-row py-0 px-[34px] items-center justify-center gap-[51px] md:flex-1 md:flex-col md:gap-[20px] md:items-center md:justify-between md:pt-[87px] md:pb-[87px] md:box-border">
           <div className="w-[454px] h-[449px] flex flex-col items-end justify-start gap-[17px] sm:w-[400px] sm:gap-[17px] sm:items-center sm:justify-between sm:max-w-[90%]">
             <div className="w-[454px] h-[124px] flex flex-col items-end justify-center md:items-center md:justify-center sm:self-stretch sm:w-auto sm:items-center sm:justify-center">
@@ -355,22 +299,22 @@ const LandingPage: FunctionComponent = () => {
                 </div>
                 <div className="flex flex-row items-center justify-center gap-[8px]">
                   <button className="cursor-pointer [border:none] py-3 px-6 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-public-sans text-dimgray-100 text-left">
+                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-dimgray-100 text-left">
                       $10
                     </div>
                   </button>
                   <button className="cursor-pointer [border:none] py-3 px-5 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-public-sans text-dimgray-100 text-left">
+                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-dimgray-100 text-left">
                       $50
                     </div>
                   </button>
                   <button className="cursor-pointer [border:none] py-3 px-[15px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-public-sans text-night-ghost-text text-left">
+                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-night-ghost-text text-left">
                       $100
                     </div>
                   </button>
                   <button className="cursor-pointer [border:none] py-3 px-[17px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-public-sans text-night-ghost-text text-left">
+                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-night-ghost-text text-left">
                       Other
                     </div>
                   </button>
@@ -432,66 +376,103 @@ const LandingPage: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex-1 bg-royalblue-100 flex flex-col py-[120px] px-4 items-center justify-between text-center text-17xl text-night-ghost-text md:self-stretch md:w-auto md:h-auto md:pt-[120px] md:pb-[120px] md:box-border sm:h-auto sm:gap-[0px] sm:pt-20 sm:pb-20 sm:box-border">
-        <div className="self-stretch flex-1 flex flex-col items-center justify-start gap-[50px] md:flex-1 sm:flex-1 sm:gap-[0px]">
-          <b className="self-stretch relative md:text-11xl md:leading-[35px] md:flex-1 md:max-w-[90%] md:my-0 md:mx-2.5 sm:text-[25px] sm:leading-[30px] sm:flex-1 sm:mt-2.5 sm:mb-5 font-rasa">
-            <p className="m-0">Harness the immense potential of the</p>
-            <p className="m-0"> Ultimate Engagement Platform.</p>
-          </b>
-          <div className="self-stretch flex-1 flex flex-row py-0 px-[61px] items-center justify-center gap-[10px] flex-wrap sm:flex-row sm:gap-[14px] sm:pb-0 sm:box-border sm:mb-[30px]">
-            <button className="cursor-pointer [border:none] py-[49px] px-[99px] bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-row box-border items-center justify-center hover:[scale:1.04] md:pt-0 md:pb-0 md:box-border">
-              <img
-                className="relative w-[41px] h-[68px]"
-                alt=""
-                src="/vector.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-[50px] px-7 bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-col box-border items-center justify-center hover:[scale:1.04] md:pt-0 md:pb-0 md:box-border">
-              <img
-                className="relative w-[135.01px] h-[68px]"
-                alt=""
-                src="/vector1.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-14 px-8 bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-col box-border items-center justify-center hover:[scale:1.04] md:pt-0 md:pb-0 md:box-border">
-              <img
-                className="relative w-[114px] h-[54px]"
-                alt=""
-                src="/vector5.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-[54px] px-5 bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-col box-border items-center justify-center hover:[scale:1.04] md:pt-0 md:pb-0 md:box-border">
-              <img
-                className="relative w-[121px] h-[52px]"
-                alt=""
-                src="/vector6.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-[42px] px-[57px] bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-col box-border items-center justify-center hover:[scale:1.04]">
-              <img
-                className="relative w-[80.84px] h-[68px]"
-                alt=""
-                src="/vector7.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-[52px] px-[91px] bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-row box-border items-center justify-center hover:[scale:1.04] md:pt-0 md:pb-0 md:box-border">
-              <img
-                className="relative w-[53.54px] h-[68px]"
-                alt=""
-                src="/vector8.svg"
-              />
-            </button>
-            <button className="cursor-pointer [border:none] py-[41px] px-[42px] bg-night-ghost-text rounded-xl w-[150px] h-32 overflow-hidden shrink-0 flex flex-col box-border items-center justify-center hover:[scale:1.04]">
-              <img
-                className="relative w-[97.83px] h-[68px]"
-                alt=""
-                src="/vector9.svg"
-              />
-            </button>
+      <div className="self-stretch flex-1 bg-royalblue-100 flex flex-col py-[250px] px-4 items-center justify-between text-center text-17xl text-night-ghost-text md:self-stretch md:w-auto md:h-auto md:pt-[120px] md:pb-[120px] md:box-border sm:h-auto sm:gap-[0px] sm:pt-20 sm:pb-20 sm:box-border">
+          <div className="self-stretch flex-1 flex flex-col items-center justify-start gap-[50px] md:flex-1 sm:flex-1 sm:gap-[0px]">
+            <b className="self-stretch relative md:text-11xl md:leading-[35px] md:flex-1 md:max-w-[90%] md:my-0 md:mx-2.5 sm:text-[25px] sm:leading-[30px] sm:flex-1 sm:mt-2.5 sm:mb-5">
+              <p className="m-0">Harness the immense potential of the</p>
+              <p className="m-0"> Ultimate Engagement Platform.</p>
+            </b>
+            <div className="self-stretch flex-1 flex flex-row items-center justify-center gap-[10px] flex-wrap text-xs text-gray-100 font-label-medium-600 sm:flex-row sm:gap-[14px] sm:pb-0 sm:box-border sm:mb-[30px]">
+              <div className="flex flex-row items-center justify-center gap-[10px] flex-wrap">
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                  <img
+                    className="relative w-[22.52px] h-[25.76px]"
+                    alt=""
+                    src="/childcheckin.svg"
+                  />
+                  <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
+                    Child CheckIn
+                  </div>
+                </button>
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                  <img
+                    className="relative w-[22.52px] h-[25.76px]"
+                    alt=""
+                    src="/give.svg"
+                  />
+                  <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
+                    Give
+                  </div>
+                </button>
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+                    onClick={ useCallback(() => {
+                      navigate("/websitebuilder");
+                    }, [navigate]) }>
+                  <img
+                    className="relative w-[22.52px] h-[25.76px]"
+                    alt=""
+                    src="/give.svg"
+                  />
+                  <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
+                  <div className="relative">
+                    <p className="m-0">Website</p>
+                    <p className="m-0">Builder</p>
+                  </div>
+                  </div>
+                </button>
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <img
+                    className="relative w-[36.26px] h-[33.82px]"
+                    alt=""
+                    src="/livestreaming.svg"
+                  />
+                  <div className="relative">
+                    <p className="m-0">{`Live `}</p>
+                    <p className="m-0">Streaming</p>
+                  </div>
+                </button>
+              </div>
+              <div className="flex flex-row items-center justify-center gap-[10px] flex-wrap">
+                
+              <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+              onClick={ useCallback(() => {
+                navigate("/churchmanagement");
+              }, [navigate]) }>
+                <img
+                    className="relative w-[29.91px] h-[29.91px]"
+                    alt=""
+                    src="/churchmanagement.svg"
+                  />
+                  <div className="relative flex items-center justify-center w-[111px]">
+                    Church Management
+                  </div>
+                </button>
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <img
+                    className="relative w-[36.91px] h-[36.91px]"
+                    alt=""
+                    src="/event.svg"
+                  />
+                  <div className="relative">Event</div>
+                </button>
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <img
+                    className="relative w-[21.11px] h-[30.16px]"
+                    alt=""
+                    src="/mobileappbuilder.svg"
+                  />
+                  <div className="relative flex items-center w-[107px]">
+                    <span className="[line-break:anywhere] w-full">
+                      <p className="m-0">{`Mobile App `}</p>
+                      <p className="m-0">Builder</p>
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="self-stretch flex-1 [background:linear-gradient(180deg,_#91a8ea,_#fff)] flex flex-row py-20 px-2.5 items-center justify-center md:h-auto">
+      <div className="self-stretch flex-1 [background:linear-gradient(180deg,_#91a8ea,_#fff)] flex flex-row py-[200px] px-2.5 items-center justify-center md:h-auto">
         <div className="self-stretch flex-1 flex flex-row py-0 px-[39px] items-center justify-center gap-[47px] md:flex-col">
           <div className="self-stretch flex-1 flex flex-col items-start justify-between md:flex-[unset] md:self-stretch">
             <div className="self-stretch flex-1 flex flex-col items-start justify-between md:gap-[20px]">

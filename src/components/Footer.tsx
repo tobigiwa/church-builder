@@ -4,7 +4,7 @@ import AnchorLink from "./AnchorLink";
 const Footer : FunctionComponent = () => {
 
     return (
-        <footer className="self-stretch bg-royalblue-100 h-auto flex flex-row py-[31px] px-[69px] box-border items-center justify-between text-mini text-night-ghost-text font-label-medium-600">
+        <footer className="self-stretch bg-royalblue-100 h-auto flex flex-row py-[31px] px-[69px] box-border items-center justify-between text-mini text-night-ghost-text font-public-sans ">
           <div className="self-stretch flex-1 flex flex-col items-center justify-between sm:self-stretch sm:h-auto sm:gap-[0px]">
             <div className="self-stretch flex flex-row items-start justify-between flex-wrap gap-[20px]">
               <div className="w-[248px] flex flex-col items-start justify-start gap-[24px]">
@@ -16,7 +16,7 @@ const Footer : FunctionComponent = () => {
                 <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit]">
                   <AnchorLink text="Support" />
                 </a>
-                <div className="relative bg-gray-400 w-[232.88px] h-[18px]">
+                <div className="relative w-[232.88px] h-[18px]">
                   <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit]">
                     <AnchorLink text="System status" />
                   </a>
@@ -31,7 +31,7 @@ const Footer : FunctionComponent = () => {
                 <a className="[text-decoration:none] relative text-mini leading-[14px] font-semibold text-[inherit]">
                 <AnchorLink text="Security" />
                 </a>
-                <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
+                <div className="relative w-[232.89px] h-[18px]">
                   <a className="[text-decoration:none] absolute top-[-1px] left-[0px] leading-[18px] font-semibold text-[inherit]">
                   <AnchorLink text="FAQs" />
                   </a>
@@ -41,7 +41,7 @@ const Footer : FunctionComponent = () => {
                 <div className="relative box-border w-[167px] h-8 text-base text-gainsboro-100 font-public-sans border-b-[1px] border-solid border-gainsboro-100 lg:items-start lg:justify-start">
                   <div className="absolute top-[0px] left-[0.33px] tracking-[2.16px] leading-[14px] uppercase">
                     <span className="font-extrabold">ABOUT</span>
-                    <span className="font-extrabold font-label-medium-600">
+                    <span className="font-extrabold font-public-sans ">
                       {" "}
                       US
                     </span>
@@ -53,7 +53,7 @@ const Footer : FunctionComponent = () => {
                 <a className="[text-decoration:none] relative leading-[14px] font-semibold text-[inherit]">
                 <AnchorLink text="Careers" />
                 </a>
-                <div className="relative bg-gray-400 w-[232.89px] h-[18px]">
+                <div className="relative w-[232.89px] h-[18px]">
                   <a className="[text-decoration:none] absolute top-[1px] left-[0px] leading-[14px] font-semibold text-[inherit]">
                   <AnchorLink text="Newsroom" />
                   </a>
