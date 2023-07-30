@@ -4,59 +4,69 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        whitesmoke: {
+          "100": "#f8f8f8",
+          "200": "#f0f0f2",
+          "300": "#eee"
+        },
         royalblue: {
           "100": "#2352d5",
           "200": "#224cbf",
-          "300": "rgba(35, 82, 213, 0.6)",
+          "300": "rgba(35, 82, 213, 0.6)"
         },
-        white: "#fff",
-        gainsboro: "#e8e8e8",
+        midnightblue: "#12328c",
+        dimgray: {
+          "100": "#666",
+          "200": "#54585a",
+          "300": "#4d4d4d"
+        },
+        gainsboro: {
+          "100": "#e8e8e8",
+          "200": "#d8d8d8"
+        },
+        crimson: "#ed254e",
         gray: {
           "100": "#222",
           "200": "#1e1e1e",
-          "300": "rgba(255, 255, 255, 0.4)",
-          "400": "rgba(0, 0, 0, 0)",
+          "300": "#161722",
+          "400": "#111",
+          "500": "rgba(0, 0, 0, 0)",
+          "trans": "#ffffff1a",
+          "600": "rgba(255, 255, 255, 0.4)"
         },
-        lightgray: {
-          "100": "#d4d4d4",
-          "200": "#d0d0d0",
-          "300": "#cacacb",
-        },
-        dimgray: {
-          "100": "#54585a",
-          "200": "#4d4d4d",
-        },
-        black: "#000",
-        whitesmoke: "#f0f0f2",
-        aliceblue: "#e9eefb",
-        midnightblue: "#12328c",
-        crimson: "#ed254e",
-        slateblue: "#103ab1",
-        mediumslateblue: "#4f64ff",
-        crimson: "#ed254e",
         slateblue: "#103ab1",
         lightgray: {
           "100": "#d4d4d4",
           "200": "#d0d0d0",
-          "300": "#cacacb",
+          "300": "#cacacb"
         },
-        aliceblue: "#e9eefb",
-        mediumslateblue: "#4f64ff",
         darkgray: "#989a9c",
+        aliceblue: "#e9eefb",
+        mediumslateblue: "#4f64ff",
         "gray-800": "#1f1f1f",
         "night-ghost-text": "#fff",
         "primary-black-100": "#000",
         cornflowerblue: "#9bb1f2",
         "gray-500": "#757575",
         lightpink: "#f8a8b8",
-        lavender: "#d0daf6",
+        lavender: "#d0daf6"
       },
       fontFamily: {
         "public-sans": "'Public Sans'",
         "label-medium-600": "Inter",
-        overlock: "Overlock",
-        rasa: "Rasa",
-        "roboto-condensed": "'Roboto Condensed'",
+        "overlock": "Overlock",
+        "rasa": "Rasa",
+        "roboto-condensed": "'Roboto Condensed'"
+      },
+      borderRadius: {
+        "xl": "20px",
+        "2xs": "11px",
+        "81xl": "100px",
+        "mid": "17px",
+        "3xs": "10px",
+        "xs-6": "11.6px",
+        "8xs-6": "4.6px",
+        "7xs-7": "5.7px"
       },
       borderRadius: {
         "81xl": "100px",

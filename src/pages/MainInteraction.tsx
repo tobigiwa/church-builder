@@ -1,8 +1,4 @@
-import {
-  FunctionComponent,
-  useCallback,
-  useState,
-} from "react";
+import { FunctionComponent, useCallback, useState } from "react";
 import PageManager from "../components/PageManager";
 import SideBarDropDown from "../components/SideBarDropDown";
 import { subscribe } from "../event";
@@ -63,7 +59,7 @@ const MainInteraction: FunctionComponent = () => {
       <div className="self-stretch flex-1 bg-whitesmoke-200 overflow-hidden flex flex-row items-start justify-start">
         <div className="self-stretch bg-royalblue-100 w-[230px] overflow-hidden shrink-0 flex flex-row pt-[130px] px-0 pb-0 box-border items-start justify-start">
           <div className="overflow-hidden flex flex-col items-start justify-start">
-            <button className="cursor-pointer [border:none] py-4 pr-4 pl-3.5 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center [outline:none] focus:bg-slateblue">
+            <button className="cursor-pointer [border:none] py-4 pr-4 pl-3.5 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center [outline:none] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
                 <img
                   className="relative w-6 h-6"
@@ -75,7 +71,8 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </div>
             </button>
-            <SideBarDropDown activePage={activePage}
+            <SideBarDropDown
+              activePage={activePage}
               icon="/remixiconsfilluserteamfill.svg"
               dropdown={{
                 id: "group",
@@ -84,10 +81,14 @@ const MainInteraction: FunctionComponent = () => {
                   setActivePage("group");
                 }, [activePage]),
               }}
-              children={[{ id: "list", name: "List" }, { id: "add", name: "Add" }, { "id": "finder", name: "Finder" }]}
+              children={[
+                { id: "list", name: "List" },
+                { id: "add", name: "Add" },
+                { id: "finder", name: "Finder" },
+              ]}
             />
             <button
-              className="cursor-pointer [border:none] py-4 pr-[13px] pl-[31px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue"
+              className="cursor-pointer [border:none] py-4 pr-[13px] pl-[31px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
               onClick={useCallback(() => {
                 setActivePage("masscontact");
               }, [activePage])}
@@ -103,8 +104,9 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </div>
             </button>
-            <SideBarDropDown activePage={activePage}
-              className="cursor-pointer [border:none] py-4 pr-4 pl-12 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue"
+            <SideBarDropDown
+              activePage={activePage}
+              className="cursor-pointer [border:none] py-4 pr-4 pl-12 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
               icon="/remixiconsfillcommunicationdiscussfill1.svg"
               dropdown={{
                 id: "interaction",
@@ -127,8 +129,9 @@ const MainInteraction: FunctionComponent = () => {
                 { id: "log", name: "Log" },
               ]}
             />
-            <SideBarDropDown activePage={activePage}
-              className="cursor-pointer [border:none] py-4 pr-4 pl-[55px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue"
+            <SideBarDropDown
+              activePage={activePage}
+              className="cursor-pointer [border:none] py-4 pr-4 pl-[55px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
               icon="/remixiconsfilldesignlayoutmasonryfill1.svg"
               dropdown={{ id: "attendance", name: "Attendance" }}
               children={[
@@ -142,7 +145,7 @@ const MainInteraction: FunctionComponent = () => {
                 },
               ]}
             />
-            <button className="cursor-pointer [border:none] py-4 pr-[35px] pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue">
+            <button className="cursor-pointer [border:none] py-4 pr-[35px] pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
@@ -154,7 +157,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </div>
             </button>
-            <button className="cursor-pointer [border:none] py-4 pr-4 pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue">
+            <button className="cursor-pointer [border:none] py-4 pr-4 pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
                 <img className="relative w-6 h-6" alt="" src="/group.svg" />
                 <div className="relative text-base tracking-[-0.02em] leading-[19.19px] font-semibold font-label-medium-600 text-night-ghost-text text-left">
@@ -162,7 +165,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </div>
             </button>
-            <button className="cursor-pointer [border:none] py-4 pr-4 pl-[9px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue">
+            <button className="cursor-pointer [border:none] py-4 pr-4 pl-[9px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
@@ -174,8 +177,8 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </div>
             </button>
-            <div className="rounded-lg w-[230px] overflow-hidden flex flex-col py-0 pr-4 pl-[13px] box-border items-center justify-center gap-[10px] mt-[-1px] focus:bg-slateblue">
-              <button className="cursor-pointer [border:none] py-4 pr-4 pl-1 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center focus:bg-slateblue">
+            <div className="rounded-lg w-[230px] overflow-hidden flex flex-col py-0 pr-4 pl-[13px] box-border items-center justify-center gap-[10px] mt-[-1px]">
+              <button className="cursor-pointer [border:none] py-4 pr-4 pl-1 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center focus:bg-slateblue hover:bg-slateblue">
                 <div className="flex flex-row items-center justify-start gap-[12px]">
                   <img
                     className="relative w-6 h-6 overflow-hidden shrink-0"
@@ -187,7 +190,7 @@ const MainInteraction: FunctionComponent = () => {
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer [border:none] py-4 pr-4 pl-1 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-row box-border items-center justify-center gap-[10px] focus:bg-slateblue">
+              <button className="cursor-pointer [border:none] py-4 pr-4 pl-1 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-row box-border items-center justify-center gap-[10px] focus:bg-slateblue hover:bg-slateblue">
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
@@ -198,7 +201,7 @@ const MainInteraction: FunctionComponent = () => {
                 </div>
               </button>
             </div>
-            <button className="cursor-pointer [border:none] p-4 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue">
+            <button className="cursor-pointer [border:none] p-4 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
@@ -211,7 +214,7 @@ const MainInteraction: FunctionComponent = () => {
               </div>
             </button>
             <button
-              className="cursor-pointer [border:none] py-4 pr-[39px] pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue"
+              className="cursor-pointer [border:none] py-4 pr-[39px] pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
               onClick={useCallback(() => {
                 setActivePage("forms");
               }, [activePage])}

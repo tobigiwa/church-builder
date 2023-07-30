@@ -420,7 +420,10 @@ const LandingPage: FunctionComponent = () => {
                   </div>
                   </div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+                        onClick={ useCallback(() => {
+                          navigate("/livestream");
+                        }, [navigate]) }>
                 <img
                     className="relative w-[36.26px] h-[33.82px]"
                     alt=""

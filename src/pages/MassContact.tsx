@@ -16,7 +16,7 @@ const MassContact: FunctionComponent = () => {
 
   return (
     <>
-      <div className="relative w-full h-[1238px] flex flex-col py-0 pr-[30px] pl-0 box-border items-start justify-start text-left text-29xl text-primary-black-100 font-label-medium-600">
+      {/* <div className="relative w-full h-[1238px] flex flex-col py-0 pr-[30px] pl-0 box-border items-start justify-start text-left text-29xl text-primary-black-100 font-label-medium-600">
         <div className="self-stretch flex-1 flex flex-col py-0 pr-0 pl-[30px] items-start justify-start gap-[31px]">
           <div className="self-stretch bg-night-ghost-text box-border h-[280px] overflow-hidden shrink-0 flex flex-col py-[5px] px-7 items-start justify-center gap-[34px] border-b-[1px] border-solid border-silver">
             <div className="relative font-semibold flex items-center w-[314px] h-12 shrink-0">
@@ -76,18 +76,20 @@ const MassContact: FunctionComponent = () => {
               </div>
             </div>
             <div className="self-stretch rounded-lg bg-night-ghost-text h-[315px] flex flex-col py-[73px] px-0 box-border items-center justify-center gap-[21px] text-center text-5xl text-primary-black-100">
-              <img
-                className="relative w-[131px] h-[131px]"
-                alt=""
-                src="/message.svg"
-              />
+            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
+                <img
+                  className="absolute top-[0px] left-[0px] w-[131px] h-[131px]"
+                  alt=""
+                  src="/message.svg"
+                />
+              </button>
               <div className="relative leading-[28px] font-semibold">
                 No message yet, create new message
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {isMassContactNewMessagePopupOpen && (
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"

@@ -4,7 +4,7 @@ import AttendenceCheckIn from "./maindashboard/AttendenceCheckIn";
 import Forms from "./maindashboard/Forms";
 import Group from "./maindashboard/Group";
 import Interaction from "./maindashboard/InteractionMenu/Interaction";
-import MassContact from "./maindashboard/masscontact";
+import MassContact from "./maindashboard/Masscontact";
 import MyOutstanding from "./maindashboard/InteractionMenu/MyOutstanding";
 import { PageLayout, LocalNavigator } from "../types/InteractionTypes";
 
