@@ -18,13 +18,13 @@ const ChurchManagement: FunctionComponent = () => {
                 <p className="m-0">and Engage your Community</p>
               </div>
               <div className="flex flex-row items-center justify-center gap-[16px] text-center text-xs text-night-ghost-text">
-                <button className="cursor-pointer rounded-lg bg-royalblue-100 w-[168px] flex flex-row py-[18px] box-border items-start justify-start
+                <button  className=" rounded-lg bg-royalblue-100 w-[168px] flex flex-row py-[18px] box-border items-start justify-start
                       cursor-pointer [border:none] py-2.5 px-0 bg-night-ghost-text rounded-lg">
                   <div className="relative font-overlock text-night-ghost-text m-auto">
                     Get started
                   </div>
                 </button>
-                <button className="bg-transparent cursor-pointer rounded-lg box-border w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row pt-[20px] px-0 pb-[20px] items-center justify-center text-royalblue-100 border-[2px] border-solid border-royalblue-100">
+                <button  className="bg-transparent  rounded-lg box-border w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row pt-[20px] px-0 pb-[20px] items-center justify-center text-royalblue-100 border-[2px] border-solid border-royalblue-100">
                   <div className="self-stretch flex-1 relative font-overlock flex items-center justify-center">
                     Learn more
                   </div>

@@ -60,12 +60,12 @@ const Header: FunctionComponent = () => {
         <div className="h-4 flex flex-row py-0 pr-[31px] pl-0 box-border items-center justify-start text-mini text-primary-black-100 font-overlock md:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
           <div className="w-[552px] flex flex-row py-0 px-3 box-border items-center justify-center gap-[74px] md:hidden sm:pr-0 sm:box-border">
             <div className="flex flex-row items-start justify-start hover:cursor-pointer hover:[text-decoration:underline]">
-              <b className="relative leading-[16px] capitalize hover:cursor-pointer md:leading-[12px]">
+              <b className="relative capitalize hover:cursor-pointer md:">
                 Pricing
               </b>
             </div>
             <div className="w-[70px] flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
-              <b className="relative leading-[16px] capitalize md:leading-[12px]">
+              <b className="relative capitalize md:">
                 products
               </b>
               <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
@@ -77,7 +77,7 @@ const Header: FunctionComponent = () => {
               </div>
             </div>
             <div className="w-20 flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
-              <b className="relative leading-[16px] capitalize md:leading-[12px]">
+              <b className="relative capitalize md:">
                 use cases
               </b>
               <div className="overflow-hidden flex flex-col py-1 px-0 items-center justify-center hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
@@ -89,7 +89,7 @@ const Header: FunctionComponent = () => {
               </div>
             </div>
             <div className="w-20 flex flex-row items-center justify-between hover:cursor-pointer hover:[text-decoration:underline]">
-              <b className="relative leading-[16px] capitalize">Resources</b>
+              <b className="relative capitalize">Resources</b>
               <div className="w-[8.94px] h-3.5 overflow-hidden shrink-0 flex flex-col py-1 px-0 box-border items-center justify-between hover:animate-[1s_ease_0s_1_normal_forwards_flip-horizontal-bottom] hover:opacity-[1]">
                 <img
                   className="relative w-[8.94px] h-[5.03px]"
@@ -106,7 +106,7 @@ const Header: FunctionComponent = () => {
               className="cursor-pointer py-2.5 px-0 bg-[transparent] rounded-lg box-border w-[110px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100 group-hover:bg-royalblue-100"
               onClick={isAuthenticated() ? onSignOutClick : onLoginButtonClick}
             >
-              <b className="self-stretch flex-1 relative text-sm leading-[14px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center group-hover:text-white">
+              <b className="self-stretch flex-1 relative text-sm capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center group-hover:text-white">
                 {isAuthenticated() ? "Log out" : "Login"}
               </b>
             </button>
@@ -114,7 +114,7 @@ const Header: FunctionComponent = () => {
           {/* bg-royalblue-100 */}
           <div className="group">
             <button className="cursor-pointer py-2.5 px-0 bg-[transparent] box-border rounded-lg flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100 group-hover:bg-royalblue-100">
-              <b className="relative text-sm leading-[16px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center w-[122px] shrink-0 group-hover:text-white">
+              <b className="relative text-sm capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center w-[122px] shrink-0 group-hover:text-white">
                 Book A Demo
               </b>
             </button>

@@ -24,17 +24,17 @@ const ChooseStationPopup: FunctionComponent<ChooseStationPopupType> = memo(
           </div>
           <div className="self-stretch flex flex-col items-center justify-center gap-[16px] text-primary-black-100">
             <div className="self-stretch rounded-3xs bg-gainsboro-100 flex flex-row py-[20px] px-0 box-border items-center justify-between">
-              <b className="flex-1 relative tracking-[-0.05em] ">
+              <b className="flex-1 relative ">
                 God’s Power
               </b>
             </div>
             <div className="self-stretch rounded-3xs bg-gainsboro-100 flex flex-row py-[20px] px-0 box-border items-center justify-between">
-              <b className="flex-1 relative tracking-[-0.05em] ">
+              <b className="flex-1 relative ">
                 Faith House
               </b>
             </div>
             <div className="self-stretch rounded-3xs bg-gainsboro-100 flex flex-row py-[20px] px-0 box-border items-center justify-between">
-              <b className="flex-1 relative tracking-[-0.05em]">
+              <b className="flex-1 relative ">
                 Victory Paradise
               </b>
             </div>

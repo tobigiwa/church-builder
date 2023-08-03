@@ -44,7 +44,7 @@ const MassContact: FunctionComponent = () => {
             <div className="self-stretch rounded-lg bg-night-ghost-text flex flex-row py-[15px] px-4 items-center justify-between">
               <div className="flex flex-row items-start justify-start gap-[33px]">
                 <div className="rounded-lg bg-gainsboro-100 w-40 flex flex-row py-[17px] px-4 box-border items-center justify-between">
-                  <div className="relative leading-[18px] font-medium">
+                  <div className="relative font-medium">
                     Start date
                   </div>
                   <img
@@ -54,7 +54,7 @@ const MassContact: FunctionComponent = () => {
                   />
                 </div>
                 <div className="rounded-lg bg-gainsboro-100 w-40 flex flex-row py-[17px] px-4 box-border items-center justify-between">
-                  <div className="relative leading-[18px] font-medium">
+                  <div className="relative font-medium">
                     End date
                   </div>
                   <img
@@ -65,7 +65,7 @@ const MassContact: FunctionComponent = () => {
                 </div>
               </div>
               <div className="rounded-lg bg-gainsboro-100 w-[190px] flex flex-row py-[17px] px-4 box-border items-center justify-between">
-                <div className="relative leading-[18px] font-medium">
+                <div className="relative font-medium">
                   Sender name
                 </div>
                 <img
@@ -76,14 +76,14 @@ const MassContact: FunctionComponent = () => {
               </div>
             </div>
             <div className="self-stretch rounded-lg bg-night-ghost-text h-[315px] flex flex-col py-[73px] px-0 box-border items-center justify-center gap-[21px] text-center text-5xl text-primary-black-100">
-            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
+            <button  className=" [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
                 <img
                   className="absolute top-[0px] left-[0px] w-[131px] h-[131px]"
                   alt=""
                   src="/message.svg"
                 />
               </button>
-              <div className="relative leading-[28px] font-semibold">
+              <div className="relative font-semibold">
                 No message yet, create new message
               </div>
             </div>

@@ -23,22 +23,22 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="relative w-full flex flex-col items-end justify-start text-center text-base  ">
+    <div className="relative w-full flex flex-col items-end justify-start text-center text-base ">
       <Header />
       <div className="text-night-ghost-text self-stretch flex-1 [background:linear-gradient(28.44deg,_#0d43df,_#fff)] overflow-hidden flex flex-col items-center justify-between text-left text-mid md:pt-0 md:box-border">
         <div className="self-stretch flex-1 flex flex-row py-[100px] px-[60px] box-border items-center justify-center max-w-[1200px] m-auto md:flex-col md:gap-[0px] md:pl-[60px] md:pr-[60px] md:box-border md:m-auto">
           <div className="flex-1 flex flex-col pt-0 px-0 pb-[30px] items-start justify-start gap-[37px] md:h-auto md:gap-[10px] md:items-center md:justify-center md:flex-[unset] md:self-stretch sm:flex-1 sm:gap-[0px] sm:pb-[30px] sm:box-border">
-            <div className="relative tracking-[1.8px] leading-[27.9px] uppercase font-extrabold">
+            <div className="relative uppercase font-extrabold">
               Church Website Builder
             </div>
             <div className="self-stretch flex flex-row items-start justify-start text-[32px] md:flex-1 md:items-start md:justify-between md:gap-[0px]">
-              <div className="flex-1 relative leading-[41px] font-black">
+              <div className="flex-1 relative font-black">
                 <p className="m-0">{`We ensure that your digital `}</p>
                 <p className="m-0">{`platform is visually stunning, `}</p>
                 <p className="m-0">accessible, and user-friendly.</p>
               </div>
             </div>
-            <div className="self-stretch relative text-5xl leading-[30.5px]">
+            <div className="self-stretch relative text-5xl ">
               <p className="m-0">
                 Together, let's build a foundation that will
               </p>
@@ -49,12 +49,12 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 className="cursor-pointer [border:none] py-2.5 px-0 bg-night-ghost-text rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
                 onClick={onGetStartedButtonClick}
               >
-                <b className="relative leading-[18px] capitalize font-rasa text-gray-100 text-center">
+                <b className="relative capitalize font-rasa text-gray-100 text-center">
                   Get started
                 </b>
               </button>
               <a className="[text-decoration:none] w-[187px] h-[52px] flex flex-row items-center justify-center gap-[3px] text-[inherit] md:flex-1 md:text-[70%]">
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text relative rounded-81xl shadow-[1px_1px_4px_1px_rgba(0,_0,_0,_0.1)] w-[49px] h-[49px] overflow-hidden shrink-0">
+                <button  className=" [border:none] p-0 bg-night-ghost-text relative rounded-81xl shadow-[1px_1px_4px_1px_rgba(0,_0,_0,_0.1)] w-[49px] h-[49px] overflow-hidden shrink-0">
                   <img
                     className="absolute top-[16.9px] left-[17.33px] w-3.5 h-3.5 overflow-hidden"
                     alt=""
@@ -88,7 +88,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
         <div className="self-stretch flex-1 flex flex-col py-[80px] px-0 items-center justify-start gap-[56px]">
           <div className="self-stretch flex flex-row py-0 px-[62px] items-center justify-center">
             <div className="flex flex-col py-0 px-1 items-center justify-center gap-[40px]">
-              <div className="self-stretch relative tracking-[1.8px] uppercase font-extrabold flex items-center justify-center h-4 shrink-0">
+              <div className="self-stretch relative uppercase font-extrabold flex items-center justify-center h-4 shrink-0">
                 World-class church websites builder
               </div>
               <div className="self-stretch relative text-21xl font-extrabold flex items-center h-10 shrink-0">
@@ -112,10 +112,10 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     alt=""
                     src="/remixiconsfillmediaimage2fill1.svg"
                   />
-                  <div className="absolute top-[220px] left-[101px] leading-[37.2px] font-extrabold">{`Drag & Drop`}</div>
+                  <div className="absolute top-[220px] left-[101px] font-extrabold">{`Drag & Drop`}</div>
                 </div>
               </div>
-              <div className="self-stretch relative text-5xl leading-[37.2px] text-primary-black-100">
+              <div className="self-stretch relative text-5xl text-primary-black-100">
                 <p className="m-0">{`Drag & drop church website`}</p>
                 <p className="m-0">builder</p>
               </div>
@@ -137,10 +137,10 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                       <div className="relative rounded-7xs-7 bg-gray-800 w-[66.26px] h-[19.95px]" />
                     </div>
                   </div>
-                  <b className="absolute top-[13.54px] left-[444.59px] tracking-[-0.02em] leading-[8.55px]">
+                  <b className="absolute top-[13.54px] left-[444.59px] ">
                     CONTACT US
                   </b>
-                  <b className="absolute top-[14.25px] left-[68.75px] text-[8.55px] tracking-[-0.02em] leading-[8.55px]">
+                  <b className="absolute top-[14.25px] left-[68.75px] text-[8.55px] ">
                     LIVING STONE CHURCH
                   </b>
                   <div className="absolute h-[3.84%] w-[3.27%] top-[4.59%] left-[102.31%] uppercase inline-block opacity-[0.9]">
@@ -155,22 +155,22 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <div className="absolute h-[1.92%] w-[5%] top-[4.66%] left-[69.33%] uppercase text-right inline-block opacity-[0.9]">
                     Home
                   </div>
-                  <b className="absolute top-[128.96px] left-[32.44px] text-[17.1px] tracking-[-0.01em] leading-[22.8px] uppercase text-gray-500">
+                  <b className="absolute top-[128.96px] left-[32.44px] text-[17.1px] uppercase text-gray-500">
                     <p className="m-0">{`THE benefits of joining `}</p>
                     <p className="m-0">our church</p>
                   </b>
-                  <div className="absolute top-[190.94px] left-[33.5px] text-[8.55px] tracking-[-0.01em] leading-[10.87px] lowercase text-dimgray-100">
+                  <div className="absolute top-[190.94px] left-[33.5px] text-[8.55px] lowercase text-dimgray-100">
                     <p className="m-0">
                       find fulfillment and joy by joining us on
                     </p>
                     <p className="m-0">Sunday service and weekly service.</p>
                   </div>
                   <div className="absolute top-[229.06px] left-[33.86px] rounded-[3.56px] [background:linear-gradient(262.61deg,_#7341f2,_#5a45fd)] w-[67.69px] h-[20.66px]">
-                    <b className="absolute top-[calc(50%_-_4.28px)] left-[calc(50%_-_15.32px)] tracking-[-0.02em] leading-[8.55px]">
+                    <b className="absolute top-[calc(50%_-_4.28px)] left-[calc(50%_-_15.32px)] ">
                       Join us today!
                     </b>
                   </div>
-                  <div className="absolute top-[116.13px] left-[33.86px] tracking-[-0.01em] leading-[22.8px] uppercase font-medium text-mediumslateblue">
+                  <div className="absolute top-[116.13px] left-[33.86px] uppercase font-medium text-mediumslateblue">
                     The bELIEVING CHURCH
                   </div>
                   <div className="absolute top-[299.6px] left-[37.42px] flex flex-row items-end justify-start gap-[8.55px]">
@@ -202,7 +202,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     alt=""
                     src="/frame-75.svg"
                   />
-                  <b className="absolute top-[12.92px] left-[9.97px] text-[8.86px] tracking-[-0.02em] leading-[8.86px]">
+                  <b className="absolute top-[12.92px] left-[9.97px] text-[8.86px] ">
                     LIVING STONE CHURCH
                   </b>
                   <img
@@ -210,21 +210,21 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     alt=""
                     src="/httpsunsplashcomphotos3mwdi5-6hrc1@2x.png"
                   />
-                  <b className="absolute top-[58.69px] left-[9.97px] text-[11.81px] tracking-[-0.01em] leading-[13.66px] uppercase text-gray-500">
+                  <b className="absolute top-[58.69px] left-[9.97px] text-[11.81px] uppercase text-gray-500">
                     <p className="m-0">THE benefits of</p>
                     <p className="m-0">joining our church</p>
                   </b>
-                  <div className="absolute top-[41.71px] left-[9.97px] tracking-[-0.01em] leading-[23.62px] uppercase font-medium text-mediumslateblue">
+                  <div className="absolute top-[41.71px] left-[9.97px] uppercase font-medium text-mediumslateblue">
                     The bELIEVING CHURCH
                   </div>
-                  <div className="absolute top-[90.06px] left-[9.97px] text-[5.17px] tracking-[-0.01em] leading-[7.2px] lowercase text-dimgray-100">
+                  <div className="absolute top-[90.06px] left-[9.97px] text-[5.17px] lowercase text-dimgray-100">
                     <p className="m-0">
                       find fulfillment and joy by joining us on
                     </p>
                     <p className="m-0">Sunday service and weekly service.</p>
                   </div>
                   <div className="absolute top-[109.63px] left-[9.97px] rounded-[3.69px] [background:linear-gradient(262.61deg,_#7341f2,_#5a45fd)] w-[47.98px] h-[14.03px]">
-                    <b className="absolute top-[calc(50%_-_4.43px)] left-[calc(50%_-_15.87px)] tracking-[-0.02em] leading-[8.86px]">
+                    <b className="absolute top-[calc(50%_-_4.43px)] left-[calc(50%_-_15.87px)] ">
                       Join us today!
                     </b>
                   </div>
@@ -252,7 +252,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch relative text-5xl leading-[29.2px] text-primary-black-100 text-center">
+              <div className="self-stretch relative text-5xl text-primary-black-100 text-center">
                 <p className="m-0">Modern, mobile-friendly website</p>
                 <p className="m-0">designs</p>
               </div>
@@ -261,19 +261,19 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
               <div className="relative bg-cornflowerblue w-[300px] h-[421.82px] overflow-hidden shrink-0">
                 <div className="absolute top-[36px] left-[22px] bg-primary-black-100 shadow-[-12px_13px_13px_rgba(0,_0,_0,_0.1)] overflow-hidden flex flex-col items-start justify-start">
                   <div className="relative w-[416.34px] h-[28.91px] overflow-hidden shrink-0">
-                    <div className="absolute top-[calc(50%_-_8.58px)] right-[23.47px] rounded-[4.63px] bg-royalblue-100 w-[41.06px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] box-border items-center justify-center">
-                      <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                    <div className="absolute top-[calc(50%_-_8.58px)] right-[23.47px] rounded-[4.63px] bg-royalblue-100 w-[41.06px] overflow-hidden flex flex-row py-[4px] px-[5px] box-border items-center justify-center">
+                      <div className="relative font-semibold">
                         Button
                       </div>
                     </div>
                     <div className="absolute top-[calc(50%_-_8.58px)] left-[calc(50%_-_56.4px)] flex flex-row items-start justify-start gap-[1.16px]">
-                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] items-center justify-center gap-[2.31px]">
+                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
                           src="/container2.svg"
                         />
-                        <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                        <div className="relative font-semibold">
                           Link
                         </div>
                         <img
@@ -282,13 +282,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                           src="/container3.svg"
                         />
                       </div>
-                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] items-center justify-center gap-[2.31px]">
+                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
                           src="/container4.svg"
                         />
-                        <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                        <div className="relative font-semibold">
                           Link
                         </div>
                         <img
@@ -297,13 +297,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                           src="/container5.svg"
                         />
                       </div>
-                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] items-center justify-center gap-[2.31px]">
+                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
                           src="/container6.svg"
                         />
-                        <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                        <div className="relative font-semibold">
                           Link
                         </div>
                         <img
@@ -312,13 +312,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                           src="/container7.svg"
                         />
                       </div>
-                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] items-center justify-center gap-[2.31px]">
+                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
                           src="/container8.svg"
                         />
-                        <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                        <div className="relative font-semibold">
                           Link
                         </div>
                         <img
@@ -327,13 +327,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                           src="/container9.svg"
                         />
                       </div>
-                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4.625996112823486px] px-[5.782495021820068px] items-center justify-center gap-[2.31px]">
+                      <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
                           src="/container10.svg"
                         />
-                        <div className="relative tracking-[-0.02em] leading-[6.94px] font-semibold">
+                        <div className="relative font-semibold">
                           Link
                         </div>
                         <img
@@ -350,12 +350,12 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                       <div className="relative rounded-[4.63px] bg-gray-800 w-[53.78px] h-[16.19px]" />
                     </div>
                   </div>
-                  <div className="w-[416.34px] flex flex-col py-[27.7559757232666px] px-[90.20691680908203px] box-border items-center justify-start gap-[23.13px] text-center text-[27.76px]">
+                  <div className="w-[416.34px] flex flex-col py-[27px] px-[90px] box-border items-center justify-start gap-[23.13px] text-center text-[27.76px]">
                     <div className="self-stretch flex flex-col items-center justify-start gap-[11.56px]">
-                      <div className="self-stretch relative tracking-[-0.04em] leading-[32.38px] font-semibold">
+                      <div className="self-stretch relative font-semibold">
                         Build your landings in minutes
                       </div>
-                      <div className="relative text-[5.2px] tracking-[-0.02em] leading-[8.1px] font-medium text-gray-500 inline-block w-[156.13px]">
+                      <div className="relative text-[5.2px] font-medium text-gray-500 inline-block w-[156.13px]">
                         The night is dark and full of terrors. What is dead may
                         never die. And now his watch is ended. All men must die.
                       </div>
@@ -373,13 +373,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                             />
                             <div className="absolute top-[0px] left-[0px] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[221.67px] h-[124.69px] overflow-hidden">
                               <div className="absolute top-[110.72px] left-[calc(50%_-_74.7px)] bg-night-ghost-text w-[149.51px] h-[0.92px] overflow-hidden" />
-                              <div className="absolute top-[110.72px] left-[calc(50%_-_74.7px)] bg-crimson w-[33.71px] h-[0.92px] overflow-hidden" />
-                              <div className="absolute top-[15.47px] left-[18.01px] leading-[3.98px] font-medium">
+                              <div className="absolute top-[110.72px] left-[calc(50%_-_74.7px)] bg-crimson-100 w-[33.71px] h-[0.92px] overflow-hidden" />
+                              <div className="absolute top-[15.47px] left-[18.01px] font-medium">
                                 Pastor Fred
                               </div>
                               <div className="absolute top-[9.7px] left-[196.62px] flex flex-row items-center justify-start gap-[1.5px]">
-                                <div className="relative rounded-[50%] bg-crimson w-[1.85px] h-[1.85px]" />
-                                <div className="relative leading-[3.98px] font-extrabold">
+                                <div className="relative rounded-[50%] bg-crimson-100 w-[1.85px] h-[1.85px]" />
+                                <div className="relative font-extrabold">
                                   Live
                                 </div>
                               </div>
@@ -390,7 +390,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                                 alt=""
                                 src="/remixiconslinesystemarrowleftsline1.svg"
                               />
-                              <div className="relative leading-[3.98px] font-semibold">
+                              <div className="relative font-semibold">
                                 Faithful God
                               </div>
                             </div>
@@ -417,13 +417,13 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                       alt=""
                       src="/remixiconsfilldesigntboxfill.svg"
                     />
-                    <div className="relative leading-[13.5px] font-semibold">
+                    <div className="relative font-semibold">
                       Aa
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="self-stretch relative text-5xl leading-[29.2px] text-primary-black-100 text-center">
+              <div className="self-stretch relative text-5xl text-primary-black-100 text-center">
                 Customisable Design
               </div>
             </div>
@@ -434,10 +434,10 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
         <div className="self-stretch flex-1 overflow-hidden flex flex-row items-center justify-center gap-[30px] flex-wrap">
           <div className="self-stretch flex flex-col pt-[100px] px-0 pb-[40px] items-start justify-start">
             <div className="overflow-hidden flex flex-col items-center justify-center gap-[19px]">
-              <div className="relative tracking-[1.8px] leading-[27.9px] uppercase font-extrabold">
+              <div className="relative uppercase font-extrabold">
                 Top website features for churches
               </div>
-              <div className="relative text-21xl leading-[50px] font-extrabold text-left">
+              <div className="relative text-21xl font-extrabold text-left">
                 <p className="m-0">{`Do more with your `}</p>
                 <p className="m-0">church website</p>
               </div>
@@ -477,10 +477,10 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
       </div>
       <div className="self-stretch flex-1 bg-royalblue-100 overflow-hidden flex flex-col py-[150px] px-0 items-center justify-start text-21xl text-night-ghost-text">
         <div className="relative w-[525.56px] h-[156.38px]">
-          <div className="absolute top-[0px] left-[36px] leading-[50px] font-black">
+          <div className="absolute top-[0px] left-[36px] font-black">
             Tools for your ministry
           </div>
-          <div className="absolute top-[65px] left-[33.89px] text-3xl leading-[37.2px] flex items-center w-[433px]">
+          <div className="absolute top-[65px] left-[33.89px] text-3xl flex items-center w-[433px]">
             <span className="[line-break:anywhere] w-full">
               <p className="m-0">Everything you need to know, grow, and</p>
               <p className="m-0">engage your church in-person and online.</p>
@@ -490,7 +490,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
       </div>
       <div className="self-stretch flex-1 bg-night-ghost-text flex flex-col py-[50px] px-0 items-center justify-start gap-[100px] text-primary-black-100">
         <div className="flex flex-col items-center justify-center gap-[10px]">
-          <div className="self-stretch relative tracking-[1.8px] leading-[27.9px] uppercase font-extrabold">
+          <div className="self-stretch relative uppercase font-extrabold">
             World-class church websites BUILDER
           </div>
           <div className="self-stretch relative text-21xl font-extrabold">
@@ -500,10 +500,10 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
         </div>
         <div className="self-stretch flex-1 flex flex-col py-5 px-10 items-start justify-center gap-[20px] text-left text-17xl ">
           <div className="self-stretch flex flex-col py-1 px-0 items-start justify-start gap-[10px]">
-            <b className="self-stretch relative leading-[38px] flex items-center h-9 shrink-0">
+            <b className="self-stretch relative flex items-center h-9 shrink-0">
               Why us?
             </b>
-            <div className="self-stretch relative text-base leading-[18px]  text-dimgray-300 flex items-center h-5 shrink-0">
+            <div className="self-stretch relative text-base text-dimgray-300 flex items-center h-5 shrink-0">
               No complex interface, no stress, no code required.
             </div>
           </div>
@@ -511,30 +511,30 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
             <div className="flex flex-col items-start justify-start gap-[20px]">
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[71.47px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[71.47px] h-5">
                     Autosave
                   </b>
-                  <div className="absolute top-[51.18px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[145.36px] h-[15px]">
+                  <div className="absolute top-[51.18px] left-[20px] text-xs text-dimgray-300 flex items-center w-[145.36px] h-[15px]">
                     Changes are auto-saved
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[81.22px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[81.22px] h-5">
                     Dark mode
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[125.4px] h-[15px]">
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[125.4px] h-[15px]">
                     Light or dark anytime
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[92.37px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[92.37px] h-5">
                     SEO friendly
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[118.93px] h-[15px]">
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[118.93px] h-[15px]">
                     Great search results
                   </div>
                 </div>
@@ -543,60 +543,60 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
             <div className="flex flex-col items-start justify-start gap-[20px]">
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[105.75px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[105.75px] h-5">
                     Domain
                   </b>
-                  <div className="absolute top-[51.18px] left-[20px] text-[12.5px] leading-[20px] text-dimgray-300 flex items-center w-[113.86px] h-[15px]">
+                  <div className="absolute top-[51.18px] left-[20px] text-[12.5px] text-dimgray-300 flex items-center w-[113.86px] h-[15px]">
                     or yourdomain.com
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px]">
+                  <b className="absolute top-[19px] left-[20px] ">
                     HTTPS
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[104.37px] h-[15px]">
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[104.37px] h-[15px]">
                     Secured with SSL
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[92.29px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[92.29px] h-5">
                     AWS hosted
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[81.9px] h-[15px]">{`Fast & Secure`}</div>
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[81.9px] h-[15px]">{`Fast & Secure`}</div>
                 </div>
               </div>
             </div>
             <div className="flex flex-col items-start justify-start gap-[20px]">
               <div className="rounded-3xs overflow-hidden flex flex-col items-start justify-start">
                 <div className="relative rounded-3xs bg-whitesmoke-200 w-[300px] h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[99.87px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[99.87px] h-5">
                     Multiple sites
                   </b>
-                  <div className="absolute top-[51.18px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[101.11px] h-[15px]">
+                  <div className="absolute top-[51.18px] left-[20px] text-xs text-dimgray-300 flex items-center w-[101.11px] h-[15px]">
                     One account
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[127.72px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[127.72px] h-5">
                     No code required
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[113.48px] h-[15px]">
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[113.48px] h-[15px]">
                     Super simple setup
                   </div>
                 </div>
               </div>
               <div className="rounded-3xs w-[300px] overflow-hidden flex flex-col items-start justify-start">
                 <div className="self-stretch relative rounded-3xs bg-whitesmoke-200 h-[89.19px]">
-                  <b className="absolute top-[19px] left-[20px] tracking-[-0.4px] leading-[19.2px] flex items-center w-[109.65px] h-5">
+                  <b className="absolute top-[19px] left-[20px] flex items-center w-[109.65px] h-5">
                     Easy Analytics
                   </b>
-                  <div className="absolute top-[51.19px] left-[20px] text-xs leading-[20px] text-dimgray-300 flex items-center w-[142.11px] h-[15px]">
+                  <div className="absolute top-[51.19px] left-[20px] text-xs text-dimgray-300 flex items-center w-[142.11px] h-[15px]">
                     Track visitors and views
                   </div>
                 </div>
@@ -608,14 +608,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
       <div className="self-stretch flex-1 bg-night-ghost-text flex flex-row items-center justify-center text-[38px] ">
         <div className="flex-1 flex flex-col py-[50px] px-5 items-center justify-center gap-[20px]">
           <div className="self-stretch flex flex-row items-center justify-center max-w-[680px]">
-            <b className="flex-1 relative tracking-[-1.56px] leading-[37.5px]">
+            <b className="flex-1 relative ">
               FAQs
             </b>
           </div>
           <div className="self-stretch overflow-hidden flex flex-row items-center justify-between max-w-[680px] text-left text-base">
             <div className="self-stretch flex-1 flex flex-col pt-0 px-0 pb-2.5 items-center justify-center gap-[10px]">
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   What is us?
                 </div>
                 <img
@@ -625,7 +625,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Can I use my own domain ?
                 </div>
                 <img
@@ -635,7 +635,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Can I use my own domain ?
                 </div>
                 <img
@@ -645,7 +645,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   How much does it cost?
                 </div>
                 <img
@@ -655,7 +655,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Can I create an e-commerce website ?
                 </div>
                 <img
@@ -665,7 +665,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Do I still need website hosting?
                 </div>
                 <img
@@ -675,7 +675,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Do you offer customer support?
                 </div>
                 <img
@@ -685,7 +685,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
-                <div className="relative leading-[25.6px] font-medium">
+                <div className="relative font-medium">
                   Can I cancel my subscription at any time?
                 </div>
                 <img

@@ -60,7 +60,7 @@ const SideBarDropDown: FunctionComponent<SideBarProps> = ({
                         ${activePage === child.id ? "bg-royalblue-200" : ""}`}
                 onClick={child.onClick}
               >
-                <div className="flex-1 relative text-base tracking-[-0.02em] leading-[19.19px] font-semibold font-label-medium-600 text-night-ghost-text text-left">
+                <div className="flex-1 relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   {child.name}
                 </div>
               </button>

@@ -8,14 +8,14 @@ const NotFoundPage: FunctionComponent = () => {
       <Header />
       <div className="self-stretch [background:linear-gradient(180deg,_#91a8ea,_#fff)] h-[574.38px] flex flex-col pt-[126px] pb-[268px] pr-[228px] pl-[148px] box-border items-start justify-start md:pt-20 md:pb-[100px] md:pr-20 md:pl-[90px] md:box-border">
         <div className="self-stretch flex-1 flex flex-col items-start justify-center gap-[11px]">
-          <div className="relative tracking-[1.8px] leading-[27.9px] uppercase font-extrabold flex items-center w-[39.01px] h-[18px] shrink-0">
+          <div className="relative uppercase font-extrabold flex items-center w-[39.01px] h-[18px] shrink-0">
             404
           </div>
-          <div className="relative text-21xl leading-[40px] font-black flex items-center w-[677.37px] h-[65px] shrink-0 md:self-stretch md:w-auto sm:text-16xl">
+          <div className="relative text-21xl font-black flex items-center w-[677.37px] h-[65px] shrink-0 md:self-stretch md:w-auto sm:text-16xl">
             Oops! Page not found.
           </div>
-          <div className="self-stretch flex flex-row pt-0 pb-[0.37999725341796875px] pr-[11px] pl-0 items-start justify-start text-3xl md:self-stretch md:w-auto">
-            <div className="flex-1 relative leading-[37.2px] md:flex-1">
+          <div className="self-stretch flex flex-row pt-0 pb-[0px] pr-[11px] pl-0 items-start justify-start text-3xl md:self-stretch md:w-auto">
+            <div className="flex-1 relative md:flex-1">
               <p className="m-0">This page doesn’t exist or was removed!</p>
               <p className="m-0">Try going back to home.</p>
             </div>
