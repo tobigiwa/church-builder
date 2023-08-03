@@ -37,11 +37,11 @@ const InteractionHeader: FunctionComponent<LocalNavigator> = ({
   activePage
 }) => {
   return (
-    <div className="self-stretch bg-night-ghost-text h-[226px] overflow-hidden shrink-0 flex flex-col py-11 px-7 box-border items-start justify-start">
-      <div className="w-[430px] flex flex-row p-2.5 box-border items-center justify-start">
+    <div className="self-stretch bg-night-ghost-text h-[226px] flex flex-col py-11 px-7 box-border items-start justify-start overflow-hidden">
+      <div className="self-stretch flex-1 flex flex-row p-2.5 box-border items-center justify-start overflow-scroll no-scrollbar">
         <div className="relative font-semibold">Interaction</div>
       </div>
-      <div className="self-stretch flex flex-row items-start justify-start">
+      <div className="self-stretch flex flex-row items-start justify-start py-[10px] px-[8px] overflow-scroll no-scrollbar">
         <div className="flex-1 flex flex-row items-center justify-start gap-[8px]">
           <InteractionControl
             id="myoutstanding"

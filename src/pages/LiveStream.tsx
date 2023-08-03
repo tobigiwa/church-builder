@@ -20,10 +20,10 @@ const LiveStream: FunctionComponent = () => {
           <div className="self-stretch flex flex-row items-center justify-between md:flex-1">
             <div className="flex-1 h-[222px] flex flex-col items-center justify-center gap-[10px] md:gap-[20px]">
               <div className="self-stretch flex-1 flex flex-col items-center justify-center">
-                <div className="relative tracking-[1.8px] leading-[27.9px] uppercase font-extrabold flex items-center justify-center w-[351px] sm:text-base">
+                <div className="relative uppercase font-extrabold flex items-center justify-center w-[351px] sm:text-base">
                   live streaming for churches
                 </div>
-                <div className="self-stretch relative text-21xl leading-[40px] font-black sm:text-11xl sm:leading-[30px]">
+                <div className="self-stretch relative text-21xl font-black sm:text-11xl sm:">
                   <p className="m-0">Stay connected with</p>
                   <p className="m-0">church live streaming</p>
                 </div>
@@ -34,7 +34,7 @@ const LiveStream: FunctionComponent = () => {
                     className="cursor-pointer [border:none] py-3.5 px-0 bg-royalblue-100 rounded-lg w-[150px] flex flex-row box-border items-center justify-center"
                     onClick={onGetStartedButtonClick}
                   >
-                    <div className="relative text-xs tracking-[2.16px] leading-[18px] uppercase font-extrabold font-heading-x-small-600 text-white text-center">
+                    <div className="relative text-xs uppercase font-extrabold font-heading-x-small-600 text-white text-center">
                       Get started
                     </div>
                   </button>
@@ -45,7 +45,7 @@ const LiveStream: FunctionComponent = () => {
                       src="/icon8.svg"
                     />
                     <div className="flex-1 flex flex-row py-0 pr-0 pl-0.5 items-center justify-between">
-                      <div className="flex-1 relative leading-[30px] flex items-center h-[52px] hover:cursor-pointer hover:[text-decoration:underline]">
+                      <div className="flex-1 relative flex items-center h-[52px] hover:cursor-pointer hover:[text-decoration:underline]">
                         How it works
                       </div>
                     </div>

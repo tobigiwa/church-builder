@@ -8,7 +8,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
   memo(({ onClose }) => {
     return (
       <div className="relative flex flex-col items-start justify-start max-w-full max-h-full overflow-auto text-center text-19xl text-royalblue-100 font-public-sans">
-        <div className="self-stretch flex-1 rounded-xl bg-night-ghost-text overflow-hidden flex flex-col pt-[20px] pb-[39px] px-0 items-center justify-center gap-[36px]">
+        <div className="self-stretch flex-1 rounded-xl bg-night-ghost-text overflow-hidden flex flex-col pt-[20px] pb-[39px] px-0 items-center justify-center gap-[15px]">
           <div className="self-stretch flex flex-row py-0 pr-[27px] pl-0 items-start justify-end">
             <button
               className="cursor-pointer [border:none] p-2.5 bg-royalblue-400 rounded-81xl flex flex-row items-start justify-start"
@@ -33,7 +33,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
                   <b className="relative">Email</b>
                 </div>
               </button>
-              <button className="cursor-pointer pl-[50px] text-[17px] self-stretch rounded-3xs bg-gainsboro-100 h-[60px] flex flex-row py-[4px] px-0 box-border items-center">
+              <button  className=" pl-[50px] text-[17px] self-stretch rounded-3xs bg-gainsboro-100 h-[60px] flex flex-row py-[4px] px-0 box-border items-center">
                 <div className="flex flex-row items-center justify-start gap-[16px]">
                   <img
                     className="relative w-11 h-11 overflow-hidden shrink-0"
@@ -41,17 +41,17 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
                     src="/contact.svg"
                   />
                   <b className="relative">
-                    <span className="tracking-[-0.05em]">{`Text `}</span>me
-                    <span className="tracking-[-0.05em]">ssage</span>
+                    <span className="">{`Text `}</span>me
+                    <span className="">ssage</span>
                   </b>
                 </div>
               </button>
-              <button className="cursor-pointer pl-[50px] text-[17px] self-stretch rounded-3xs bg-gainsboro-100 h-[60px] flex flex-row py-[4px] px-0 box-border items-center text-center">
+              <button  className=" pl-[50px] text-[17px] self-stretch rounded-3xs bg-gainsboro-100 h-[60px] flex flex-row py-[4px] px-0 box-border items-center text-center">
                 <div className="flex flex-row items-center justify-start gap-[16px]">
                   <img className="relative w-11 h-11" alt="" src="/voice.svg" />
                   <b className="relative">
-                    <span className="tracking-[-0.05em]">Voi</span>c
-                    <span className="tracking-[-0.05em]">e message</span>
+                    <span className="">Voi</span>c
+                    <span className="">e message</span>
                   </b>
                 </div>
               </button>

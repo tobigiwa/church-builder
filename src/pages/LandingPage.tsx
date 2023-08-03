@@ -71,12 +71,12 @@ const LandingPage: FunctionComponent = () => {
               className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
               onClick={onGetStartedButtonClick}
             >
-              <b className="relative text-mini leading-[18px] capitalize font-overlock text-night-ghost-text text-center">
+              <b className="relative text-mini capitalize font-overlock text-night-ghost-text text-center">
                 Get started
               </b>
             </button>
             <a className="[text-decoration:none] w-[187px] h-[52px] flex flex-row items-center justify-center gap-[3px] text-[inherit] md:flex-1 md:text-[70%]">
-              <button className="cursor-pointer [border:none] p-0 bg-royalblue-100 relative rounded-81xl shadow-[1px_1px_4px_1px_rgba(0,_0,_0,_0.1)] w-[49px] h-[49px] overflow-hidden shrink-0">
+              <button  className=" [border:none] p-0 bg-royalblue-100 relative rounded-81xl shadow-[1px_1px_4px_1px_rgba(0,_0,_0,_0.1)] w-[49px] h-[49px] overflow-hidden shrink-0">
                 <img
                   className="absolute top-[16.9px] left-[17.33px] w-3.5 h-3.5 overflow-hidden"
                   alt=""
@@ -152,7 +152,7 @@ const LandingPage: FunctionComponent = () => {
               className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
               onClick={onGetStartedButton1Click}
             >
-              <b className="relative text-base leading-[18px] capitalize font-overlock text-night-ghost-text text-center">
+              <b className="relative text-base capitalize font-overlock text-night-ghost-text text-center">
                 Get started
               </b>
             </button>
@@ -193,7 +193,7 @@ const LandingPage: FunctionComponent = () => {
                   className="cursor-pointer [border:none] py-2.5 px-0 bg-night-ghost-text rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
                   onClick={onGetStartedButtonClick}
                 >
-                  <b className="self-stretch flex-1 relative text-mini leading-[18px] capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
+                  <b className="self-stretch flex-1 relative text-mini capitalize flex font-overlock text-royalblue-100 text-center items-center justify-center">
                     Get started
                   </b>
                 </button>
@@ -238,7 +238,7 @@ const LandingPage: FunctionComponent = () => {
                 className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
                 onClick={onGetStartedButtonClick}
               >
-                <b className="relative text-base leading-[18px] capitalize font-overlock text-night-ghost-text text-center">
+                <b className="relative text-base capitalize font-overlock text-night-ghost-text text-center">
                   Get started
                 </b>
               </button>
@@ -276,7 +276,7 @@ const LandingPage: FunctionComponent = () => {
               className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
               onClick={onGetStartedButtonClick}
             >
-              <b className="relative text-base leading-[18px] capitalize font-overlock text-night-ghost-text text-center">
+              <b className="relative text-base capitalize font-overlock text-night-ghost-text text-center">
                 Get started
               </b>
             </button>
@@ -293,28 +293,28 @@ const LandingPage: FunctionComponent = () => {
           <div className="w-[454px] h-[449px] flex flex-col items-end justify-start gap-[17px] sm:w-[400px] sm:gap-[17px] sm:items-center sm:justify-between sm:max-w-[90%]">
             <div className="w-[454px] h-[124px] flex flex-col items-end justify-center md:items-center md:justify-center sm:self-stretch sm:w-auto sm:items-center sm:justify-center">
               <div className="rounded-xl bg-night-ghost-text shadow-[10px_9px_23px_rgba(0,_0,_0,_0.1)] h-[124px] overflow-hidden shrink-0 flex flex-col py-3.5 px-[17px] box-border items-start justify-center gap-[8px]">
-                <b className="relative leading-[26.5px]">Join us in giving</b>
-                <div className="relative text-3xs leading-[26.5px] text-darkgray">
+                <b className="relative ">Join us in giving</b>
+                <div className="relative text-3xs text-darkgray">
                   Set up a one-time or repeating gift
                 </div>
                 <div className="flex flex-row items-center justify-center gap-[8px]">
-                  <button className="cursor-pointer [border:none] py-3 px-6 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-dimgray-100 text-left">
+                  <button  className=" [border:none] py-3 px-6 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
+                    <div className="relative text-sm font-medium font-open-sanstext-dimgray-100 text-left">
                       $10
                     </div>
                   </button>
-                  <button className="cursor-pointer [border:none] py-3 px-5 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-dimgray-100 text-left">
+                  <button  className=" [border:none] py-3 px-5 bg-lightgray-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
+                    <div className="relative text-sm font-medium font-open-sanstext-dimgray-100 text-left">
                       $50
                     </div>
                   </button>
-                  <button className="cursor-pointer [border:none] py-3 px-[15px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-night-ghost-text text-left">
+                  <button  className=" [border:none] py-3 px-[15px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
+                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
                       $100
                     </div>
                   </button>
-                  <button className="cursor-pointer [border:none] py-3 px-[17px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm leading-[26.5px] font-medium font-open-sanstext-night-ghost-text text-left">
+                  <button  className=" [border:none] py-3 px-[17px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
+                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
                       Other
                     </div>
                   </button>
@@ -368,7 +368,7 @@ const LandingPage: FunctionComponent = () => {
                 className="cursor-pointer [border:none] py-2.5 px-0 bg-royalblue-100 rounded-lg w-[110px] flex flex-row box-border items-center justify-center"
                 onClick={onGetStartedButtonClick}
               >
-                <b className="relative text-base leading-[18px] capitalize font-overlock text-night-ghost-text text-center">
+                <b className="relative text-base capitalize font-overlock text-night-ghost-text text-center">
                   Get started
                 </b>
               </button>
@@ -378,13 +378,13 @@ const LandingPage: FunctionComponent = () => {
       </div>
       <div className="self-stretch flex-1 bg-royalblue-100 flex flex-col py-[250px] px-4 items-center justify-between text-center text-17xl text-night-ghost-text md:self-stretch md:w-auto md:h-auto md:pt-[120px] md:pb-[120px] md:box-border sm:h-auto sm:gap-[0px] sm:pt-20 sm:pb-20 sm:box-border">
           <div className="self-stretch flex-1 flex flex-col items-center justify-start gap-[50px] md:flex-1 sm:flex-1 sm:gap-[0px]">
-            <b className="self-stretch relative md:text-11xl md:leading-[35px] md:flex-1 md:max-w-[90%] md:my-0 md:mx-2.5 sm:text-[25px] sm:leading-[30px] sm:flex-1 sm:mt-2.5 sm:mb-5">
+            <b className="self-stretch relative md:text-11xl md: md:flex-1 md:max-w-[90%] md:my-0 md:mx-2.5 sm:text-[25px] sm: sm:flex-1 sm:mt-2.5 sm:mb-5">
               <p className="m-0">Harness the immense potential of the</p>
               <p className="m-0"> Ultimate Engagement Platform.</p>
             </b>
             <div className="self-stretch flex-1 flex flex-row items-center justify-center gap-[10px] flex-wrap text-xs text-gray-100 font-label-medium-600 sm:flex-row sm:gap-[14px] sm:pb-0 sm:box-border sm:mb-[30px]">
               <div className="flex flex-row items-center justify-center gap-[10px] flex-wrap">
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
                   <img
                     className="relative w-[22.52px] h-[25.76px]"
                     alt=""
@@ -394,7 +394,7 @@ const LandingPage: FunctionComponent = () => {
                     Child CheckIn
                   </div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
                   <img
                     className="relative w-[22.52px] h-[25.76px]"
                     alt=""
@@ -404,7 +404,7 @@ const LandingPage: FunctionComponent = () => {
                     Give
                   </div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
                     onClick={ useCallback(() => {
                       navigate("/websitebuilder");
                     }, [navigate]) }>
@@ -420,7 +420,10 @@ const LandingPage: FunctionComponent = () => {
                   </div>
                   </div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+                        onClick={ useCallback(() => {
+                          navigate("/livestream");
+                        }, [navigate]) }>
                 <img
                     className="relative w-[36.26px] h-[33.82px]"
                     alt=""
@@ -434,7 +437,7 @@ const LandingPage: FunctionComponent = () => {
               </div>
               <div className="flex flex-row items-center justify-center gap-[10px] flex-wrap">
                 
-              <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
+              <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]"
               onClick={ useCallback(() => {
                 navigate("/churchmanagement");
               }, [navigate]) }>
@@ -447,7 +450,7 @@ const LandingPage: FunctionComponent = () => {
                     Church Management
                   </div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
                 <img
                     className="relative w-[36.91px] h-[36.91px]"
                     alt=""
@@ -455,7 +458,7 @@ const LandingPage: FunctionComponent = () => {
                   />
                   <div className="relative">Event</div>
                 </button>
-                <button className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
+                <button  className=" [border:none] p-0 bg-night-ghost-text rounded w-[111px] h-24 flex flex-col items-center justify-center gap-[10px] hover:opacity-[1]">
                 <img
                     className="relative w-[21.11px] h-[30.16px]"
                     alt=""

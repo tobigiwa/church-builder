@@ -73,12 +73,14 @@ const MassContact: FunctionComponent = () => {
               </div>
             </div>
             <div className="self-stretch rounded-lg bg-night-ghost-text h-[315px] flex flex-col py-[73px] px-0 box-border items-center justify-center gap-[21px] text-center text-5xl text-primary-black-100">
-              <img
-                className="relative w-[131px] h-[131px]"
-                alt=""
-                src="/message.svg"
-              />
-              <div className="relative leading-[28px] font-semibold">
+            <button  className=" [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
+                <img
+                  className="absolute top-[0px] left-[0px] w-[131px] h-[131px]"
+                  alt=""
+                  src="/message.svg"
+                />
+              </button>
+              <div className="relative font-semibold">
                 No message yet, create new message
               </div>
             </div>

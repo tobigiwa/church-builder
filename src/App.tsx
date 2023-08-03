@@ -16,6 +16,12 @@ import { RequireAuth } from "react-auth-kit";
 import NotFoundPage from "./pages/NotFoundPage";
 import ChurchWebsiteBuilder from "./pages/ChurchWebsiteBuilder";
 import ChurchManagement from "./pages/ChurchManagement";
+import ChooseStation from "./pages/ChooseStation";
+import BuilderDashboard from "./pages/BuilderDashboard";
+import WebsiteBuilderDashboard from "./pages/WebsiteBuilderDashboard";
+import DashboardDesignSelection from "./pages/DashboardDesignSelection";
+import CreateBuilderProject from "./components/CreateBuilderProject";
+import AppBuilderDashboard from "./components/builder/AppBuilderDashboard";
 
 function App() {
   const action = useNavigationType();
@@ -80,16 +86,27 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/maininteraction" element={
-        <RequireAuth loginPath={'/mainlogin'}>
-          <MainInteraction />
-        </RequireAuth>
-      } />
-      <Route path="/churchmanagement" element={ <ChurchManagement/>} />
-      <Route path="/websitebuilder" element={ <ChurchWebsiteBuilder />} />
+      <Route
+        path="/maininteraction"
+        element={
+          <RequireAuth loginPath={"/mainlogin"}>
+            <MainInteraction />
+          </RequireAuth>
+        }
+      />
+      <Route path="/churchmanagement" element={<ChurchManagement />} />
+      <Route path="/websitebuilder" element={<ChurchWebsiteBuilder />} />
       <Route path="/livestream" element={<LiveStream />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/mainlogin" element={<MainLogin />} />
+      <Route path="/choosestation" element={<ChooseStation />} />
+      <Route path="/builderdashboard" element={<BuilderDashboard />} />
+      <Route
+        path="/sitebuilderdashboard"
+        element={<WebsiteBuilderDashboard />}
+      />
+      <Route path="/appbuilderdashboard" element={<AppBuilderDashboard />} />
+      <Route path="/designselection" element={<DashboardDesignSelection />} />
       <Route
         path="/loginappgivingdashboard"
         element={<LoginAppGivingDashboard />}
