@@ -309,12 +309,12 @@ const LandingPage: FunctionComponent = () => {
                     </div>
                   </button>
                   <button  className=" [border:none] py-3 px-[15px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
+                    <div className="relative text-sm font-medium font-open-sans text-night-ghost-text text-left">
                       $100
                     </div>
                   </button>
                   <button  className=" [border:none] py-3 px-[17px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
+                    <div className="relative text-sm font-medium font-open-sans text-night-ghost-text text-left">
                       Other
                     </div>
                   </button>

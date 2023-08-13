@@ -84,8 +84,11 @@ const Forms: FunctionComponent = memo(() => {
                               $
                             </div>
                             <input
-                              className="absolute top-[calc(50%_-_20.81px)] left-[calc(50%_-_14.04px)] text-[67.49px] font-semibold bg-transparent max-w-[50px] uppercase"
+                              className="absolute top-[calc(50%_-_20.81px)] left-[calc(50%_-_14.04px)] text-[67.49px] font-semibold bg-transparent max-w-[110px] uppercase [caret-color:transparent]"
                               type="text"
+                              defaultValue={0}
+                              minLength={2}
+                              maxLength={3}
                               placeholder="0"
                             />
                           </div>
@@ -125,24 +128,28 @@ const Forms: FunctionComponent = memo(() => {
             </div>
             <div className="self-stretch flex flex-col items-start justify-center gap-[10px] text-left text-sm text-dimgray-300">
               <div className="relative font-semibold">Name your form</div>
-              <div className="self-stretch flex flex-row items-center justify-between">
+              <div className="self-stretch flex flex-row items-center sjustify-between gap-[8px] overflow-scroll no-scrollbar">
                 <div className="flex flex-row items-center justify-center gap-[16px]">
                   <input
                     className="[border:none] font-medium font-public-sans text-base bg-gainsboro-100 rounded-lg w-[249px] h-[58px] flex flex-row py-0 pr-0 pl-2.5 box-border items-center justify-center"
                     type="text"
                     placeholder="Enter name"
                   />
-                  <button className=" rounded-lg bg-royalblue-100 w-[168px] h-[58px] overflow-hidden shrink-0 flex flex-row py-[18px] px-0 box-border items-center justify-center">
-                    <div className="[border:none] p-0 bg-[transparent] flex-1 relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center inline-block">
+                  <div className="group">
+                  <button className="bg-[transparent] rounded-lg group-hover:bg-royalblue-100 group-focus-within:bg-royalblue-100 w-[168px] h-[58px] overflow-hidden shrink-0 flex flex-row px-0 box-border items-center justify-center border-[1px] border-solid">
+                    <div className="[border:none] p-0 bg-[transparent] flex-1 relative text-base group-hover:text-night-ghost-text group-focus-within:text-night-ghost-text text-dimgray-300 font-medium font-label-medium-600 text-center inline-block">
                       Start building form
                     </div>
                   </button>
-                </div>
-                <button className=" py-[18px] px-0 bg-night-ghost-text rounded-lg box-border w-[168px] h-[58px] overflow-hidden shrink-0 flex flex-row items-center justify-center border-[1px] border-solid border-lightgray-300">
-                  <div className="flex-1 relative text-base font-semibold font-label-medium-600 text-dimgray-300 text-center flex items-center justify-center h-3.5">
-                    Start form Scrath
                   </div>
-                </button>
+                  <div className="group">
+                  <button className="bg-[transparent] rounded-lg group-hover:bg-royalblue-100 group-focus-within:bg-royalblue-100 w-[168px] h-[58px] overflow-hidden shrink-0 flex flex-row px-0 box-border items-center justify-center border-[1px] border-solid">
+                    <div className="[border:none] p-0 bg-[transparent] flex-1 relative text-base group-hover:text-night-ghost-text group-focus-within:text-night-ghost-text text-dimgray-300 font-medium font-label-medium-600 text-center inline-block">
+                      Start from scratch
+                    </div>
+                  </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

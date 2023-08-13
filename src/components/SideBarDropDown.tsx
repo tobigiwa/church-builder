@@ -1,7 +1,7 @@
 import { FunctionComponent, useCallback, useState } from "react";
 
 type Action = {
-  id: string,
+  id: string;
   name: string;
   onClick?: (pageID: any) => void;
 };
@@ -21,18 +21,26 @@ const SideBarDropDown: FunctionComponent<SideBarProps> = ({
   dropdown,
   children,
 }) => {
-  const [hidden, setHidden] = useState(false);
+  const [hidden, setHidden] = useState(true);
   return (
     <div>
       <button
         className={
-          className ??
-          "cursor-pointer [border:none] py-4 pr-0 pl-1.5 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue"
+          className
+            ? `${className ?? ""} ${
+                activePage === dropdown?.id ? "bg-royalblue-200" : ""
+              }`
+            : `cursor-pointer [border:none] py-4 pr-0 pl-1.5 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue ${
+                activePage === dropdown?.id ? "bg-royalblue-200" : ""
+              }`
         }
-        onClick={ useCallback((e: any) => {
-          setHidden(!hidden);
-          return dropdown?.onClick?.(e);
-        }, [hidden])}
+        onClick={useCallback(
+          (e: any) => {
+            setHidden(!hidden);
+            return dropdown?.onClick?.(e);
+          },
+          [hidden]
+        )}
       >
         <div className="flex flex-row items-end justify-start gap-[12px]">
           <img
@@ -44,14 +52,18 @@ const SideBarDropDown: FunctionComponent<SideBarProps> = ({
             {dropdown?.name}
           </div>
           <img
-            className={`relative w-6 h-6 overflow-hidden shrink-0 toggleButton ${hidden ? "rotate-180" : ""}`}
+            className={`relative w-6 h-6 overflow-hidden shrink-0 toggleButton ${
+              hidden ? "rotate-180" : ""
+            }`}
             alt=""
             src="/remixiconslinesystemarrowdownsline21.svg"
           />
         </div>
       </button>
-      <div className={`self-stretch bg-gray-trans overflow-hidden shrink-0 flex flex-col items-start justify-between mt-[-1px]
-        ${ hidden ? "hidden" : ""}`}>
+      <div
+        className={`self-stretch bg-gray-trans overflow-hidden shrink-0 flex flex-col items-start justify-between mt-[-1px]
+        ${hidden ? "hidden" : ""}`}
+      >
         {children?.map((child) => {
           return (
             <div key={child.name} className="self-stretch">

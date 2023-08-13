@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const CheckInStatus: FunctionComponent = () => {
   return (
-    <div className="relative w-full flex flex-col items-center justify-center text-right text-base text-dimgray-300 font-public-sans">
+    <div className="relative w-full flex flex-col items-center justify-center text-right text-base text-dimgray-300 font-public-sans gap-[18px] hidden">
       <div className="self-stretch flex flex-col items-start justify-start">
         <div className="self-stretch flex flex-col items-center justify-start gap-[24px]">
           <div className="relative font-medium">Wednesday June 14th,2023</div>
@@ -13,7 +13,7 @@ const CheckInStatus: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconslinesystemsearchline1.svg"
+                  src="/search.svg"
                 />
               </div>
               <div className="rounded-lg bg-gainsboro-100 w-[200px] flex flex-row py-[17px] px-4 box-border items-center justify-between">
@@ -21,27 +21,31 @@ const CheckInStatus: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconslinesystemsearchline1.svg"
+                  src="/search.svg"
                 />
               </div>
             </div>
-            <div className="flex flex-row items-center justify-start gap-[15px] text-center text-gray-200 font-label-medium-600">
-              <div className="rounded-lg bg-night-ghost-text box-border w-[168px] h-[60px] flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-royalblue-100">
-                <div className="relative font-semibold">All stations</div>
+            <div className="flex flex-row items-center justify-start gap-[15px]">
+              <button className="cursor-pointer p-0 bg-night-ghost-text rounded-lg box-border w-[168px] h-[60px] flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-royalblue-100">
+                <div className="relative text-base font-semibold font-label-medium-600 text-gray-200 text-center">
+                  All stations
+                </div>
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
                   src="/remixiconslinesystemarrowdownsline2.svg"
                 />
-              </div>
-              <div className="rounded-lg bg-royalblue-100 box-border w-[168px] h-[52px] flex flex-row items-center justify-center gap-[8px] text-night-ghost-text border-[1px] border-solid border-royalblue-100">
+              </button>
+              <button className="cursor-pointer p-0 bg-royalblue-100 rounded-lg box-border w-[168px] h-[52px] flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-royalblue-100">
                 <img
                   className="relative w-4 h-4"
                   alt=""
-                  src="/upload-blue.svg"
+                  src="/download.svg"
                 />
-                <div className="relative font-semibold">Download PDF</div>
-              </div>
+                <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
+                  Download PDF
+                </div>
+              </button>
             </div>
           </div>
         </div>
@@ -53,10 +57,9 @@ const CheckInStatus: FunctionComponent = () => {
         <div className="self-stretch flex flex-col items-start justify-start gap-[3px] text-base text-gray-200">
           <div className="self-stretch rounded-t-xl rounded-b-none bg-night-ghost-text h-20 flex flex-row py-0 px-6 box-border items-center justify-between">
             <div className="flex flex-row items-center justify-start gap-[54px]">
-              <img
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                alt=""
-                src="/component-241.svg"
+              <input
+                className="cursor-pointer relative w-6 h-6 overflow-hidden shrink-0"
+                type="checkbox"
               />
               <div className="relative font-extrabold">Name</div>
             </div>
@@ -68,10 +71,9 @@ const CheckInStatus: FunctionComponent = () => {
           </div>
           <div className="self-stretch bg-night-ghost-text h-20 flex flex-row py-0 px-[19px] box-border items-center justify-between">
             <div className="flex flex-row items-center justify-start gap-[54px]">
-              <img
-                className="relative w-6 h-6 overflow-hidden shrink-0"
-                alt=""
-                src="/component-241.svg"
+              <input
+                className="cursor-pointer relative w-6 h-6 overflow-hidden shrink-0"
+                type="checkbox"
               />
               <div className="relative font-extrabold">Derik Rice</div>
             </div>

@@ -8,7 +8,7 @@ import LandingPage from "./pages/LandingPage";
 import MainInteraction from "./pages/MainInteraction";
 import LiveStream from "./pages/LiveStream";
 import PasswordReset from "./pages/PasswordReset";
-import MainLogin from "./pages/MainLogin";
+import Login from "./pages/Login";
 import LoginAppGivingDashboard from "./pages/LoginAppGivingDashboard";
 import LoginAppDashboard from "./pages/LoginAppDashboard";
 import { useEffect } from "react";
@@ -22,6 +22,10 @@ import WebsiteBuilderDashboard from "./pages/WebsiteBuilderDashboard";
 import DashboardDesignSelection from "./pages/DashboardDesignSelection";
 import CreateBuilderProject from "./components/CreateBuilderProject";
 import AppBuilderDashboard from "./components/builder/AppBuilderDashboard";
+import Family from "./pages/Family";
+import Register from "./pages/Register";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const action = useNavigationType();
@@ -55,7 +59,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/mainlogin":
+      case "/login":
         title = "";
         metaDescription = "";
         break;
@@ -84,12 +88,13 @@ function App() {
   }, [pathname]);
 
   return (
+    <>
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route
         path="/maininteraction"
         element={
-          <RequireAuth loginPath={"/mainlogin"}>
+          <RequireAuth loginPath={"/login"}>
             <MainInteraction />
           </RequireAuth>
         }
@@ -98,7 +103,8 @@ function App() {
       <Route path="/websitebuilder" element={<ChurchWebsiteBuilder />} />
       <Route path="/livestream" element={<LiveStream />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
-      <Route path="/mainlogin" element={<MainLogin />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/choosestation" element={<ChooseStation />} />
       <Route path="/builderdashboard" element={<BuilderDashboard />} />
       <Route
@@ -111,9 +117,12 @@ function App() {
         path="/loginappgivingdashboard"
         element={<LoginAppGivingDashboard />}
       />
+      <Route path="/family" element={<Family />} />
       <Route path="/loginappdashboard" element={<LoginAppDashboard />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
+    <ToastContainer className="text-base font-inter font-medium" />
+    </>
   );
 }
 export default App;

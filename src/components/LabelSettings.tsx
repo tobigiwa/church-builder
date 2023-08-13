@@ -1,4 +1,5 @@
 import { FunctionComponent, memo } from "react";
+import CustomLabel from "./basic/CustomLabel";
 
 type LabelSettingsType = {
   onClose?: () => void;
@@ -23,49 +24,13 @@ const LabelSettings: FunctionComponent<LabelSettingsType> = memo(
           <div className="flex flex-col items-start justify-start">
             <div className="flex flex-col items-start justify-start gap-[8px]">
               <b className="relative">Individual Labels</b>
-              <div className="rounded-lg bg-gainsboro-100 w-[200px] h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-center text-5xl">
-                <button  className=" [border:none] p-0 bg-[transparent] self-stretch flex flex-row items-center justify-center">
-                  <img
-                    className="relative w-11 h-11 overflow-hidden shrink-0"
-                    alt=""
-                    src="/remixiconsfillsystemsubtractfill2.svg"
-                  />
-                </button>
-                <div className="self-stretch flex-1 bg-darkgray-200 overflow-hidden flex flex-row items-center justify-center">
-                  <b className="relative">0</b>
-                </div>
-                <button  className=" [border:none] p-0 bg-[transparent] self-stretch flex flex-row items-center justify-center">
-                  <img
-                    className="relative w-11 h-11 overflow-hidden shrink-0"
-                    alt=""
-                    src="/remixiconsfillsystemaddfill1.svg"
-                  />
-                </button>
-              </div>
+              <CustomLabel />
             </div>
           </div>
           <div className="flex flex-col items-start justify-start">
             <div className="flex flex-col items-start justify-start gap-[8px]">
               <b className="relative">Guardian Labels</b>
-              <div className="rounded-lg bg-gainsboro-100 w-[200px] h-[60px] overflow-hidden shrink-0 flex flex-row items-center justify-between text-5xl">
-                <button  className=" [border:none] p-0 bg-[transparent] self-stretch w-11 flex flex-row items-center justify-between">
-                  <img
-                    className="relative w-11 h-11 overflow-hidden shrink-0"
-                    alt=""
-                    src="/remixiconsfillsystemsubtractfill2.svg"
-                  />
-                </button>
-                <div className="self-stretch flex-1 bg-darkgray-200 overflow-hidden flex flex-row items-center justify-center">
-                  <b className="relative">0</b>
-                </div>
-                <button  className=" [border:none] p-0 bg-[transparent] self-stretch w-11 flex flex-row items-center justify-between">
-                  <img
-                    className="relative w-11 h-11 overflow-hidden shrink-0"
-                    alt=""
-                    src="/remixiconsfillsystemaddfill1.svg"
-                  />
-                </button>
-              </div>
+              <CustomLabel />
             </div>
           </div>
         </div>

@@ -25,8 +25,9 @@ const DashboardDesignSelection: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-[30px] items-center justify-center gap-[40px]">
+          <div className="group">
           <button
-            className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded-xl w-[300px] h-[300px] overflow-hidden shrink-0 flex flex-col items-center justify-center"
+            className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded-xl w-[250px] h-[220px] overflow-hidden shrink-0 flex flex-col items-center justify-center group-hover:border-[3px] group-hover:border-solid group-hover:border-royalblue-100"
             onClick={onMobileAppBuilderButtonClick}
           >
             <div className="flex flex-col items-center justify-center gap-[11px]">
@@ -35,27 +36,30 @@ const DashboardDesignSelection: FunctionComponent = () => {
                 alt=""
                 src="/remixiconsfilldevicesmartphonefill1.svg"
               />
-              <div className="relative text-[25px] capitalize font-medium font-public-sans text-primary-black-100 text-center">
+              <div className="relative text-[20px] capitalize font-medium font-label-medium-600 text-primary-black-100">
                 <p className="m-0">{`Mobile App `}</p>
                 <p className="m-0">Builder</p>
               </div>
             </div>
           </button>
+          </div>
+          <div className="group">
           <button
-            className="cursor-pointer p-0 bg-night-ghost-text rounded-xl shadow-[0px_19px_83px_rgba(35,_82,_213,_0.1)] box-border w-[300px] h-[300px] overflow-hidden shrink-0 flex flex-col items-center justify-center border-[7px] border-solid border-royalblue-100"
+            className="cursor-pointer [border:none] p-0 bg-night-ghost-text rounded-xl w-[250px] h-[220px] overflow-hidden shrink-0 flex flex-col items-center justify-center group-hover:border-[3px] group-hover:border-solid group-hover:border-royalblue-100"
             onClick={onWebsiteBuilderButtonClick}
           >
-            <div className="flex flex-col items-center justify-center gap-[12.65px]">
+            <div className="flex flex-col items-center justify-center gap-[11px]">
               <img
-                className="relative w-[89.95px] h-[89.95px]"
+                className="relative w-[89px] h-[89px]"
                 alt=""
                 src="/remixiconsfilldevicemacbookfill1.svg"
               />
-              <div className="relative text-[24px] capitalize font-medium font-public-sans text-primary-black-100 text-left">
-                Website Builder
+              <div className="relative text-[20px] capitalize font-medium font-label-medium-600 text-primary-black-100">
+                <p className="m-0">Website Builder</p>
               </div>
             </div>
           </button>
+          </div>
         </div>
       </div>
     </div>

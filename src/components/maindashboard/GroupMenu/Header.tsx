@@ -47,12 +47,12 @@ const GroupControl: FunctionComponent<GroupProp> = ({
 const GroupHeader: FunctionComponent<LocalNavigator> = ({ activePage }) => {
   return (
     <div className="self-stretch flex-1 bg-night-ghost-text overflow-hidden flex flex-col py-[38px] px-7 items-start justify-start">
-      <div className="self-stretch flex flex-col items-start justify-start">
+      <div className="self-stretch flex flex-col items-start justify-start overflow-hidden">
         <div className="w-[430px] flex flex-row p-2.5 box-border items-center justify-start">
           <div className="relative font-semibold text-21xl">Groups</div>
         </div>
-        <div className="self-stretch flex flex-row items-center justify-between overflow-hidden">
-          <div className="flex flex-row items-center justify-center gap-[8px] p-[10px] overflow-scroll no-scrollbar">
+        <div className="self-stretch flex flex-row items-center justify-between overflow-hidden gap-[10px]">
+          <div className="flex flex-row items-center justify-start gap-[8px] overflow-scroll no-scrollbar">
             <GroupControl id="list" value="List" activePage={activePage} />
             <GroupControl id="add" value="Add" activePage={activePage} />
             <GroupControl id="finder" value="Finder" activePage={activePage} />

@@ -7,10 +7,11 @@ type FileUploadProps = {
 
 const FileUpload: FunctionComponent<FileUploadProps> = ({ visibility }) => {
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     if (!e.target.files) return;
 
     const selection = URL.createObjectURL(e.target.files[0]);
-    publish("fileupload", { file: selection });
+    publish("fileupload", { file: selection }); 
   };
 
   return (

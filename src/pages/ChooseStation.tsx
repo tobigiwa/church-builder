@@ -1,20 +1,28 @@
 import { FunctionComponent, useState, useCallback, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AddFamilyMain from "../components/AddFamilyMain";
 import AddFamilyTemplate from "../components/AddFamilyTemplate";
 import PortalPopup from "../components/PortalPopup";
 import { AddFamilyDetail } from "../types/AddFamilyTemplateTypes";
 import { CustomObject } from "../types/GenericTypes";
 import AddVisitor from "../components/AddVisitor";
-import CustomInputField from "../components/CustomInputField";
+import CustomInputField from "../components/basic/CustomInputField";
 
 const ChooseStation: FunctionComponent = () => {
-  const [isPopupOpen, setPopupOpen] = useState<CustomObject>({});
-  const [templateExtras, setExtras] = useState<AddFamilyDetail>({});
-  const [family, updateFamily] = useState<CustomObject>({});
+  const { state } = useLocation();
+  const [isPopupOpen, setPopupOpen] = useState<CustomObject>({
+    familyTemplate: state?.familyTemplate,
+    familyVisitor: state?.familyVisitor,
+  });
+  const [templateExtras, setExtras] = useState<AddFamilyDetail>(
+    state?.member ?? {}
+  );
+  const [family, updateFamily] = useState<CustomObject>(
+    state?.allMembers ?? {}
+  );
+
   const navigate = useNavigate();
   const onBackButtonClick = useCallback(() => navigate("/maininteraction"), []);
-
   const addFamilyMember = useCallback(
     (member: CustomObject) => {
       const selection = member.extension === "child" ? "children" : "visitors";
@@ -49,6 +57,7 @@ const ChooseStation: FunctionComponent = () => {
 
   const processTemplateContinuation = useCallback(
     (member: AddFamilyDetail) => {
+      console.log("allMembers: ", family);
       if (member.extension === "child" || member.extension === "visitor") {
         replaceOrInsertMember(family, member);
       } else addFamilyMember(member);
@@ -59,6 +68,7 @@ const ChooseStation: FunctionComponent = () => {
   );
   const processVisitorContinuation = useCallback(
     (member: AddFamilyDetail) => {
+      console.log("allMembers: ", family);
       if (member.extension === "child" || member.extension === "visitor") {
         replaceOrInsertMember(family, member);
       } else addFamilyMember(member);

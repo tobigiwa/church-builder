@@ -1,4 +1,4 @@
-import { subscribe } from "../event";
+import { subscribe, unsubscribe } from "../event";
 import {
   FunctionComponent,
   memo,
@@ -10,15 +10,15 @@ import {
   AddFamilyType,
 } from "../types/AddFamilyTemplateTypes";
 import FileUpload from "./basic/FileUpload";
-import CustomInputField from "./CustomInputField";
-import { extrapolate, generateUUID, updateAvatar, validateMail, validatePhone } from "../globals";
+import CustomInputField from "./basic/CustomInputField";
+import { extrapolate, updateAvatar, validateMail, validatePhone } from "../globals";
 import IconatedToggleButton from "./IconatedToggleButton";
 
 const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
   ({ onClose, onCancel, onContinue, extras }) => {
     const [moreInfoNeeded, setMoreInfoNeeded] = useState(false);
-    const [fileUploaded, setFileUploaded] = useState(false);
     const [value, setValue] = useState<AddFamilyDetail>({});
+    const [fileUploaded, setFileUploaded] = useState(false);
     subscribe("fileupload", (event) => {
       setValue({ ...value, avatar: event.detail.file });
       setFileUploaded(true);
@@ -30,6 +30,10 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
         setValue({ ...value, avatar: extras.avatar });
         setFileUploaded(true);
         updateAvatar(extras.avatar, "image-container");
+      }
+
+      return () => {
+        unsubscribe("fileupload", (event) => console.log("[AddFamilyTemplate] Unsubscribed from", event.name));
       }
     }, [extras]);
 
@@ -74,7 +78,7 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
               });
             }}
           >
-            <div className="self-stretch flex flex-col items-start justify-start gap-[38px]">
+            <div className="self-stretch flex flex-col items-start justify-start gap-[38px] pr-[50px]">
               <CustomInputField
                 heading="Full Name"
                 type="text"

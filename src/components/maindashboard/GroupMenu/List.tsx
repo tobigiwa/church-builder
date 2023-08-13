@@ -4,7 +4,7 @@ import GroupHeader from "./Header";
 
 const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
   return (
-    <div className="relative bg-whitesmoke-200 w-full flex flex-col pt-0 px-0 pb-20 box-border items-center justify-start gap-[121px] text-left text-5xl text-primary-black-100 font-label-medium-600">
+    <div className="relative bg-whitesmoke-200 w-full flex flex-col pt-0 px-0 pb-20 box-border items-center justify-start gap-[121px] text-left text-5xl text-primary-black-100 font-label-medium-600 overflow-hidden">
       <GroupHeader activePage={activePage} />
       <div className="self-stretch flex flex-col items-center justify-center gap-[53px] text-center font-public-sans">
         <div className="flex flex-col items-center justify-center gap-[35px]">
@@ -59,6 +59,44 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
               <div className="relative text-base font-extrabold font-public-sans text-night-ghost-text text-center">
                 Create group
               </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="self-stretch flex flex-row py-0 px-8 items-center justify-center text-left text-base text-dimgray-300">
+        <div className="flex-1 rounded-t-lg rounded-b-none bg-night-ghost-text flex flex-col py-[21px] pr-[15px] pl-[42px] items-start justify-start gap-[10px]">
+          <div className="self-stretch flex flex-row items-center justify-between z-[1]">
+            <div className="rounded-lg bg-gainsboro-100 w-[234px] h-[58px] flex flex-row py-0 px-5 box-border items-center justify-between">
+              <input className="relative font-medium w-full h-full bg-[transparent] text-base" placeholder="Search for projects"/>
+              <img
+                className="relative w-6 h-6 overflow-hidden shrink-0"
+                alt=""
+                src="/remixiconslinesystemsearchline1.svg"
+              />
+            </div>
+            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6 overflow-hidden shrink-0">
+              <img
+                className="absolute h-3/4 w-[16.67%] top-[12.5%] right-[41.67%] bottom-[12.5%] left-[41.67%] max-w-full overflow-hidden max-h-full"
+                alt=""
+                src="/option.svg"
+              />
+            </button>
+          </div>
+          <div className="self-stretch bg-day-fill-text h-[76px] overflow-hidden shrink-0 flex flex-row py-0 px-[7px] box-border items-center justify-between z-[0] text-gray-200">
+            <input
+              className="cursor-pointer relative w-6 h-6 overflow-hidden shrink-0"
+              type="checkbox"
+            />
+            <div className="relative font-extrabold">Name</div>
+            <div className="relative font-extrabold">Leaders(s)</div>
+            <div className="relative font-extrabold">Counts</div>
+            <div className="relative font-extrabold">Edit</div>
+            <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6 overflow-hidden shrink-0">
+              <img
+                className="absolute h-[83.33%] w-[83.33%] top-[8.33%] right-[8.33%] bottom-[8.33%] left-[8.33%] max-w-full overflow-hidden max-h-full"
+                alt=""
+                src="/check.svg"
+              />
             </button>
           </div>
         </div>

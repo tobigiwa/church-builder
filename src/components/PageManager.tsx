@@ -11,9 +11,11 @@ import Outstanding from "./maindashboard/InteractionMenu/Outstanding";
 import Completed from "./maindashboard/InteractionMenu/Completed";
 import Assign from "./maindashboard/InteractionMenu/Assign";
 import Log from "./maindashboard/InteractionMenu/Log";
-import List from "./maindashboard/groupMenu/List";
-import Add from "./maindashboard/groupMenu/Add";
-import Finder from "./maindashboard/groupMenu/Finder";
+import List from "./maindashboard/GroupMenu/List";
+import Add from "./maindashboard/GroupMenu/Add";
+import Finder from "./maindashboard/GroupMenu/Finder";
+import GroupContact from "./maindashboard/CheckInMenu/GroupContact";
+import Status from "./maindashboard/CheckInMenu/Status";
 
 const pageMap: PageLayout = {
   interaction: Interaction,
@@ -28,7 +30,9 @@ const pageMap: PageLayout = {
   forms: Forms,
   list: List,
   add: Add,
-  finder: Finder
+  finder: Finder,
+  groupcontact: GroupContact,
+  status: Status
 };
 
 const PageManager: FunctionComponent<LocalNavigator> = ({ activePage }) => {
