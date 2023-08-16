@@ -15,7 +15,7 @@ module.exports = () => {
     return {
         mode: Modes.PRODUCTION,
         entry: path.join(__dirname, 'src', 'index.tsx'),
-        cache: false,
+        cache: true,
         resolve: {
             extensions: ['.tsx', '.ts', '.js', '.jsx'],
             alias: {
@@ -70,7 +70,10 @@ module.exports = () => {
                 favicon: path.join(__dirname, 'public', 'assets', 'images', 'favicon.ico'),
             }),
             new CopyWebpackPlugin({
-                patterns: [{ from: 'public/assets', to: 'assets' }],
+                patterns: [
+                    { from: 'public/assets', to: 'assets' },
+                    { from: 'public/_redirects', to: './' },
+                ],
             }),
             new CompressionPlugin({
                 filename: '[path][base].gz',

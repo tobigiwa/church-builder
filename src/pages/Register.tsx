@@ -189,10 +189,7 @@ const Register: FunctionComponent = () => {
                                 onMouseLeave={(e) => setPasswordVisible(false)}
                                 onClick={(e) => e.preventDefault()}
                             >
-                                <img
-                                    alt="view password"
-                                    src="assets/images/group1.svg"
-                                />
+                                <img alt="view password" src="assets/images/group1.svg" />
                             </button>
                         </div>
                         <button
