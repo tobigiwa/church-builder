@@ -80,7 +80,7 @@ const LandingPage: FunctionComponent = () => {
                 <img
                   className="absolute top-[16.9px] left-[17.33px] w-3.5 h-3.5 overflow-hidden"
                   alt=""
-                  src="/icon1.svg"
+                  src="assets/images/icon1.svg"
                 />
               </button>
               <div className="flex-1 flex flex-row py-0 pr-0 pl-0.5 items-center justify-between">
@@ -102,34 +102,34 @@ const LandingPage: FunctionComponent = () => {
             <img
               className="relative rounded-xl w-[188px] h-[194px] overflow-hidden shrink-0 object-cover z-[0]"
               alt=""
-              src="/centerimage@2x.png"
+              src="assets/images/centerimage@2x.png"
             />
             <img
               className="absolute my-0 mx-[!important] top-[0.5px] left-[0px] rounded-xl w-[120px] h-[120px] overflow-hidden shrink-0 object-cover z-[1]"
               alt=""
-              src="/floatingimage@2x.png"
+              src="assets/images/floatingimage@2x.png"
             />
             <img
               className="absolute my-0 mx-[!important] top-[0.5px] left-[247px] rounded-[11.02px] w-[95px] h-[95px] overflow-hidden shrink-0 object-cover z-[2]"
               alt=""
-              src="/floatingimage1@2x.png"
+              src="assets/images/floatingimage1@2x.png"
             />
             <img
               className="absolute my-0 mx-[!important] top-[156.58px] left-[7.27px] rounded-[11.02px] w-[104.24px] h-[104.24px] overflow-hidden shrink-0 object-cover z-[3]"
               alt=""
-              src="/floatingimage2@2x.png"
+              src="assets/images/floatingimage2@2x.png"
             />
             <img
               className="absolute my-0 mx-[!important] top-[170.5px] left-[188px] rounded-xl w-[164px] h-[164px] overflow-hidden shrink-0 object-cover z-[4]"
               alt=""
-              src="/floatingimage3@2x.png"
+              src="assets/images/floatingimage3@2x.png"
             />
           </div>
           <div className="w-[522px] h-[285px] flex flex-col items-start justify-between md:self-stretch md:w-auto md:h-auto md:gap-[24px] md:max-w-[90%] md:m-auto sm:flex-1 sm:gap-[24px] sm:p-5 sm:m-auto">
             <img
               className="relative w-[84px] h-[84px] overflow-hidden shrink-0"
               alt=""
-              src="/icon2.svg"
+              src="assets/images/icon2.svg"
             />
             <div className="self-stretch flex flex-row items-center justify-start md:flex-1 md:h-auto text-21xl font-rasa">
               <b className="flex-1 relative md:self-stretch md:h-auto">
@@ -165,7 +165,7 @@ const LandingPage: FunctionComponent = () => {
             <img
               className="relative w-[390px] h-[654px] md:m-auto"
               alt=""
-              src="/vector3.svg"
+              src="assets/images/vector3.svg"
             />
           </div>
           <div className="w-[691px] h-[400px] flex flex-col items-center justify-between lg:flex-1 lg:h-auto lg:flex-col md:self-stretch md:w-auto md:h-[550px] md:gap-[0px] md:items-center md:justify-between md:pt-[30px] md:pb-20 md:box-border sm:self-stretch sm:w-auto sm:flex-1 sm:gap-[0px] sm:pt-5 sm:px-5 sm:pb-20 sm:box-border">
@@ -173,7 +173,7 @@ const LandingPage: FunctionComponent = () => {
               <img
                 className="relative w-[73px] h-[73px] overflow-hidden shrink-0"
                 alt=""
-                src="/icon3.svg"
+                src="assets/images/icon3.svg"
               />
               <b className="self-stretch relative text-21xl font-rasa">Mobile App Builder</b>
               <div className="self-stretch flex flex-row items-center justify-between max-w-[1200px] text-lg">
@@ -209,7 +209,7 @@ const LandingPage: FunctionComponent = () => {
               <img
                 className="relative w-[59px] h-[59px] overflow-hidden shrink-0"
                 alt=""
-                src="/icon4.svg"
+                src="assets/images/icon4.svg"
               />
               <div className="self-stretch flex flex-row py-0 pr-[125px] pl-0 items-center justify-between text-21xl font-rasa">
                 <b className="flex-1 relative sm:text-21xl sm:self-stretch sm:h-auto">
@@ -247,14 +247,14 @@ const LandingPage: FunctionComponent = () => {
           <img
             className="relative w-[366px] h-[392px] object-cover ml-[-240px] md:m-auto sm:flex sm:self-stretch sm:w-auto sm:flex-1 sm:max-w-[80%] sm:m-auto sm:p-0"
             alt=""
-            src="/imac-24-inch@1x.png"
+            src="assets/images/imac-24-inch@1x.png"
           />
         </div>
       </div>
       <div className="self-stretch flex-1 bg-night-ghost-text overflow-hidden flex flex-col py-20 px-0 items-center justify-between md:h-auto md:pl-5 md:pr-0 md:box-border">
         <div className="w-[775px] h-[319px] flex flex-row items-center justify-between md:self-stretch md:w-auto md:flex-1 md:flex-col md:gap-[40px] md:pt-10 md:box-border sm:flex-col sm:items-center sm:justify-center">
           <div className="self-stretch w-[420px] flex flex-col items-start justify-between md:self-stretch md:w-auto md:flex-1 md:gap-[20px] md:m-auto md:justify-center">
-            <img className="relative w-16 h-16" alt="" src="/icon5.svg" />
+            <img className="relative w-16 h-16" alt="" src="assets/images/icon5.svg" />
             <div className="self-stretch flex flex-row items-center justify-between md:flex-1 md:max-w-[90%] text-21xl font-rasa">
               <b className="flex-1 relative md:self-stretch md:h-auto sm:text-[45px] sm:self-stretch sm:h-auto">
                 Church Management
@@ -284,7 +284,7 @@ const LandingPage: FunctionComponent = () => {
           <img
             className="relative w-[381.29px] h-[275.05px]"
             alt=""
-            src="/frame-482.svg"
+            src="assets/images/frame-482.svg"
           />
         </div>
       </div>
@@ -309,12 +309,12 @@ const LandingPage: FunctionComponent = () => {
                     </div>
                   </button>
                   <button  className=" [border:none] py-3 px-[15px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
+                    <div className="relative text-sm font-medium font-open-sans text-night-ghost-text text-left">
                       $100
                     </div>
                   </button>
                   <button  className=" [border:none] py-3 px-[17px] bg-royalblue-100 rounded-lg h-[34px] flex flex-row box-border items-center justify-center">
-                    <div className="relative text-sm font-medium font-open-sanstext-night-ghost-text text-left">
+                    <div className="relative text-sm font-medium font-open-sans text-night-ghost-text text-left">
                       Other
                     </div>
                   </button>
@@ -327,7 +327,7 @@ const LandingPage: FunctionComponent = () => {
                   <img
                     className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full sm:w-[70%]"
                     alt=""
-                    src="/vector4.svg"
+                    src="assets/images/vector4.svg"
                   />
                 </div>
               </div>
@@ -341,7 +341,7 @@ const LandingPage: FunctionComponent = () => {
               <img
                 className="relative w-[68px] h-[68px] overflow-hidden shrink-0"
                 alt=""
-                src="/icon6.svg"
+                src="assets/images/icon6.svg"
               />
               <div className="self-stretch flex flex-row items-center justify-center text-lg">
                 <div className="flex-1 relative">
@@ -388,7 +388,7 @@ const LandingPage: FunctionComponent = () => {
                   <img
                     className="relative w-[22.52px] h-[25.76px]"
                     alt=""
-                    src="/childcheckin.svg"
+                    src="assets/images/childcheckin.svg"
                   />
                   <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
                     Child CheckIn
@@ -398,7 +398,7 @@ const LandingPage: FunctionComponent = () => {
                   <img
                     className="relative w-[22.52px] h-[25.76px]"
                     alt=""
-                    src="/give.svg"
+                    src="assets/images/give.svg"
                   />
                   <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
                     Give
@@ -411,7 +411,7 @@ const LandingPage: FunctionComponent = () => {
                   <img
                     className="relative w-[22.52px] h-[25.76px]"
                     alt=""
-                    src="/give.svg"
+                    src="assets/images/give.svg"
                   />
                   <div className="self-stretch relative text-xs font-label-medium-600 text-gray-100 text-center">
                   <div className="relative">
@@ -427,7 +427,7 @@ const LandingPage: FunctionComponent = () => {
                 <img
                     className="relative w-[36.26px] h-[33.82px]"
                     alt=""
-                    src="/livestreaming.svg"
+                    src="assets/images/livestreaming.svg"
                   />
                   <div className="relative">
                     <p className="m-0">{`Live `}</p>
@@ -444,7 +444,7 @@ const LandingPage: FunctionComponent = () => {
                 <img
                     className="relative w-[29.91px] h-[29.91px]"
                     alt=""
-                    src="/churchmanagement.svg"
+                    src="assets/images/churchmanagement.svg"
                   />
                   <div className="relative flex items-center justify-center w-[111px]">
                     Church Management
@@ -454,7 +454,7 @@ const LandingPage: FunctionComponent = () => {
                 <img
                     className="relative w-[36.91px] h-[36.91px]"
                     alt=""
-                    src="/event.svg"
+                    src="assets/images/event.svg"
                   />
                   <div className="relative">Event</div>
                 </button>
@@ -462,7 +462,7 @@ const LandingPage: FunctionComponent = () => {
                 <img
                     className="relative w-[21.11px] h-[30.16px]"
                     alt=""
-                    src="/mobileappbuilder.svg"
+                    src="assets/images/mobileappbuilder.svg"
                   />
                   <div className="relative flex items-center w-[107px]">
                     <span className="[line-break:anywhere] w-full">
@@ -512,17 +512,17 @@ const LandingPage: FunctionComponent = () => {
               <img
                 className="absolute top-[calc(50%_-_101px)] left-[calc(50%_+_32.68px)] rounded-[20.03px] w-[189.77px] h-[202px] overflow-hidden object-cover opacity-[0.5] hover:[scale:1.04]"
                 alt=""
-                src="/image@2x.png"
+                src="assets/images/image@2x.png"
               />
               <img
                 className="absolute top-[calc(50%_-_131px)] left-[calc(50%_-_57.45px)] rounded-[26.07px] w-[246.14px] h-[262px] overflow-hidden object-cover opacity-[0.8] hover:[scale:1.04]"
                 alt=""
-                src="/image1@2x.png"
+                src="assets/images/image1@2x.png"
               />
               <img
                 className="absolute top-[calc(50%_-_161px)] left-[calc(50%_-_222.45px)] rounded-[54.47px] w-[321px] h-[322px] overflow-hidden object-cover hover:[scale:1.04]"
                 alt=""
-                src="/image2@2x.png"
+                src="assets/images/image2@2x.png"
               />
             </div>
           </div>

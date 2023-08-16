@@ -1,9 +1,9 @@
-import { subscribe } from "../event";
+import { subscribe, unsubscribe } from "../event";
 import { FunctionComponent, memo, useEffect, useState } from "react";
 import FileUpload from "./basic/FileUpload";
 import IconatedToggleButton from "./IconatedToggleButton";
 import { AddFamilyType } from "../types/AddFamilyTemplateTypes";
-import CustomInputField from "./CustomInputField";
+import CustomInputField from "./basic/CustomInputField";
 import { CustomObject } from "../types/GenericTypes";
 import { extrapolate, updateAvatar } from "../globals";
 
@@ -13,19 +13,23 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
   ({ onClose, onCancel, onContinue, extras }) => {
     const [moreInfoNeeded, setMoreInfoNeeded] = useState(false);
     const [fileUploaded, setFileUploaded] = useState(false);
-    const [value, setValue] = useState<CustomObject>();
+    const [value, setValue] = useState<CustomObject>({});
+
+    subscribe("fileupload", (event: any) => {
+      setFileUploaded(event.detail.file);
+      // console.log("ImageUploaded; Current state: ", value);
+      setValue({ ...value, avatar: event.detail.file });
+    });
+
     useEffect(() => {
-      subscribe("fileupload", (event: any) => {
-        setFileUploaded(event.detail.file);
-        setValue({ ...value, avatar: event.detail.file });
-      });
-    }, [fileUploaded]);
-    
-    useEffect(() => {
-      if(extras?.avatar && value?.avatar !== extras.avatar){
+      if (extras?.avatar && value?.avatar !== extras.avatar) {
         setValue({ ...value, avatar: extras.avatar });
         setFileUploaded(true);
         updateAvatar(extras.avatar, "image-container");
+      }
+
+      return () => {
+        unsubscribe("fileupload", (event) => console.log("[AddVisitor] Unsubscribed from", event.name));
       }
     }, [fileUploaded, value]);
 
@@ -40,7 +44,7 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             <img
               className="relative w-[12.73px] h-[12.73px]"
               alt=""
-              src="/cancel.svg"
+              src="assets/images/cancel.svg"
             />
           </button>
         </div>
@@ -52,24 +56,33 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
               delete value?.note;
               delete value?.avatar;
             }
+            // console.log(
+            //   "Requires more info: ",
+            //   moreInfoNeeded,
+            //   "value: ",
+            //   value
+            // );
             onContinue?.({
               ...extrapolate(extras, value),
               extension: "visitor",
             });
           }}
         >
+          <div className="self-stretch flex flex-col pr-[50px]">
           <CustomInputField
             heading="Full Name"
             type="text"
             errorMessage="Invalid name format"
             placeholder="Enter first name and last name"
-            initialValue={extras?.fullname}
+            initialValue={extras?.fullname ?? ""}
             inputFormatAcceptable={(input) => {
               if (!/^[a-z-]+\s[a-z-]+$/i.test(input)) return false;
+              // console.log(input);
               setValue({ ...value, fullname: input });
               return true;
             }}
           />
+          </div>
           <IconatedToggleButton
             text="Add more info"
             customizeContainer="cursor-pointer p-0 bg-royalblue-100 rounded-lg box-border w-[182px] min-h-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-royalblue-100"
@@ -87,7 +100,7 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
                 <textarea
                   className="[border:none] bg-gainsboro-100 font-medium font-public-sans text-base self-stretch flex-1 rounded-lg overflow-hidden flex flex-row pt-5 pb-0 pr-0 pl-5 items-start justify-start focus:border-[2px] focus:border-solid focus:border-royalblue-100"
                   placeholder="My sun shine"
-                  onChange={(e) => setValue({...value, note: e.target.value})}
+                  onChange={(e) => setValue({ ...value, note: e.target.value })}
                   value={extras?.note}
                 />
               </div>
@@ -102,12 +115,12 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             >
               <button
                 id="image-container"
-                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-[url(/src/assets/avatar.png)] bg-cover bg-no-repeat bg-[top] ${
+                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-[url(assets/images/avatar.png)] bg-cover bg-no-repeat bg-[top] ${
                   fileUploaded ? "" : "hidden"
                 }`}
               />
               <button
-                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(/public/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
+                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(assets/images/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
                 onClick={(e) => {
                   e.preventDefault();
                   setFileUploaded(false);
@@ -116,21 +129,21 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             </div>
             <FileUpload visibility={!fileUploaded} />
           </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[33px]">
-          <button
-            className="cursor-pointer py-[18px] pr-[29px] pl-[30px] bg-night-ghost-text flex-1 rounded-lg flex flex-row items-center justify-center border-[1px] border-solid border-royalblue-100"
-            onClick={onCancel}
-          >
-            <div className="relative text-base font-semibold font-label-medium-600 text-gray-100 text-center">
-              Back
-            </div>
-          </button>
-          <input
-            className="cursor-pointer [border:none] py-[18px] pr-[29px] pl-[30px] bg-royalblue-100 flex-1 rounded-lg text-base font-semibold font-label-medium-600 text-night-ghost-text text-center"
-            type="submit"
-            value="Continue"
-          />
-        </div>
+          <div className="self-stretch flex flex-row items-start justify-start gap-[33px]">
+            <button
+              className="cursor-pointer py-[18px] pr-[29px] pl-[30px] bg-night-ghost-text flex-1 rounded-lg flex flex-row items-center justify-center border-[1px] border-solid border-royalblue-100"
+              onClick={onCancel}
+            >
+              <div className="relative text-base font-semibold font-label-medium-600 text-gray-100 text-center">
+                Back
+              </div>
+            </button>
+            <input
+              className="cursor-pointer [border:none] py-[18px] pr-[29px] pl-[30px] bg-royalblue-100 flex-1 rounded-lg text-base font-semibold font-label-medium-600 text-night-ghost-text text-center"
+              type="submit"
+              value="Continue"
+            />
+          </div>
         </form>
       </div>
     );

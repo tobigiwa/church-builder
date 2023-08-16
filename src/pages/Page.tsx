@@ -25,7 +25,7 @@ const Page: FunctionComponent = () => {
               className="cursor-pointer [border:none] p-0 bg-[transparent] w-[30px] h-[30px] hidden flex-row items-center justify-between md:flex"
               onClick={openHamburgerMenu}
             >
-              <img className="relative w-11 h-11" alt="" src="/icon.svg" />
+              <img className="relative w-11 h-11" alt="" src="assets/images/icon.svg" />
             </button>
           </div>
           <div className="h-4 flex flex-row py-0 pr-[31px] pl-0 box-border items-center justify-start text-mini text-primary-black-100 font-open-sansmd:w-0 md:h-0 md:flex-row md:gap-[0px] md:pr-0 md:box-border">
@@ -43,7 +43,7 @@ const Page: FunctionComponent = () => {
                   <img
                     className="relative w-[8.94px] h-[5.03px]"
                     alt=""
-                    src="/vector18.svg"
+                    src="assets/images/vector18.svg"
                   />
                 </div>
               </div>
@@ -55,7 +55,7 @@ const Page: FunctionComponent = () => {
                   <img
                     className="relative w-[8.94px] h-[5.03px]"
                     alt=""
-                    src="/vector18.svg"
+                    src="assets/images/vector18.svg"
                   />
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Page: FunctionComponent = () => {
                   <img
                     className="relative w-[8.94px] h-[5.03px]"
                     alt=""
-                    src="/vector18.svg"
+                    src="assets/images/vector18.svg"
                   />
                 </div>
               </div>

@@ -23,7 +23,7 @@ const DashboardSelection: FunctionComponent = () => {
                   <img
                     className="relative w-[88px] h-[88px]"
                     alt=""
-                    src="/remixiconsfilldevicesmartphonefill11.svg"
+                    src="assets/images/remixiconsfilldevicesmartphonefill11.svg"
                   />
                   <div className="relative uppercase font-semibold">
                     <p className="m-0">{`Mobile App `}</p>
@@ -37,7 +37,7 @@ const DashboardSelection: FunctionComponent = () => {
                 <img
                   className="relative w-[89.95px] h-[89.95px]"
                   alt=""
-                  src="/remixiconsfilldevicemacbookfill11.svg"
+                  src="assets/images/remixiconsfilldevicemacbookfill11.svg"
                 />
                 <div className="self-stretch relative uppercase font-semibold">
                   Website Builder

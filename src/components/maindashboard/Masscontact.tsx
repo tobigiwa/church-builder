@@ -1,4 +1,5 @@
 import { FunctionComponent, useState, useCallback } from "react";
+import CustomDatePicker from "../basic/CustomDatePicker";
 import MassContactNewMessagePopup from "../MassContactNewMessagePopup";
 import PortalPopup from "../PortalPopup";
 
@@ -31,7 +32,7 @@ const MassContact: FunctionComponent = () => {
                   <img
                     className="relative w-4 h-4"
                     alt=""
-                    src="/remixiconsfilldesignedit2fill1.svg"
+                    src="assets/images/remixiconsfilldesignedit2fill1.svg"
                   />
                 </div>
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
@@ -43,41 +44,31 @@ const MassContact: FunctionComponent = () => {
           <div className="self-stretch flex flex-col py-0 pr-[71px] pl-0 items-start justify-start gap-[10px] text-base text-dimgray-300 font-public-sans">
             <div className="self-stretch rounded-lg bg-night-ghost-text flex flex-row py-[15px] px-4 items-center justify-between">
               <div className="flex flex-row items-start justify-start gap-[33px]">
-                <div className="rounded-lg bg-gainsboro-100 w-[160px] flex flex-row h-[58px] px-4 box-border items-center justify-between">
-                <input className="w-full relative font-medium bg-[transparent] outline-0"
-                      placeholder="Start date" />
-                <img
-                  className="relative w-6 h-6 overflow-hidden shrink-0"
-                  alt=""
-                  src="/calendar.svg"
-                />
-              </div>
-                <div className="rounded-lg bg-gainsboro-100 w-[160px] flex flex-row h-[58px] px-4 box-border items-center justify-between">
-                <input className="w-full relative font-medium bg-[transparent] outline-0"
-                      placeholder="End date" />
-                <img
-                  className="relative w-6 h-6 overflow-hidden shrink-0"
-                  alt=""
-                  src="/calendar.svg"
-                />
-              </div>
+                <div className="rounded-lg bg-gainsboro-100 w-[160px] flex flex-row h-[58px] box-border items-center justify-between px-[8px]">
+                  <CustomDatePicker />
+                </div>
+                <div className="rounded-lg bg-gainsboro-100 w-[160px] flex flex-row h-[58px] box-border items-center justify-between px-[8px]">
+                  <CustomDatePicker />
+                </div>
               </div>
               <div className="rounded-lg bg-gainsboro-100 w-[190px] flex flex-row h-[58px] px-4 box-border items-center justify-between">
-                <input className="w-full relative font-medium bg-[transparent] outline-0"
-                      placeholder="Sender name" />
+                <input
+                  className="w-full relative font-medium bg-[transparent] outline-0"
+                  placeholder="Sender name"
+                />
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/search.svg"
+                  src="assets/images/search.svg"
                 />
               </div>
             </div>
             <div className="self-stretch rounded-lg bg-night-ghost-text h-[315px] flex flex-col py-[73px] px-0 box-border items-center justify-center gap-[21px] text-center text-5xl text-primary-black-100">
-            <button  className=" [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
+              <button className=" [border:none] p-0 bg-[transparent] relative w-[131px] h-[131px]">
                 <img
                   className="absolute top-[0px] left-[0px] w-[131px] h-[131px]"
                   alt=""
-                  src="/message.svg"
+                  src="assets/images/message.svg"
                 />
               </button>
               <div className="relative font-semibold">

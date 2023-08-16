@@ -1,8 +1,9 @@
+import { toast } from "react-toastify";
 import { CustomObject } from "./types/GenericTypes";
 
 export const Dfn = {
   BASE_URL: "https://church-nhej.onrender.com/",
-  DEFAULT_PAGE: "interaction",
+  DEFAULT_PAGE: "masscontact",
 };
 
 export const validateMail = (mail: string) => {
@@ -58,3 +59,37 @@ export function extrapolate(initial?: CustomObject, final?: CustomObject) {
   const combo = { ...initial, ...final};
   return combo!.id ? combo : { ...combo, id: generateUUID()};
 }
+
+const toastProps: CustomObject = {
+  position: "top-right",
+  autoClose: 2000,
+  hideProgressBar: false,
+  // closeOnClick: true,
+  pauseOnHover: false,
+  draggable: true,
+  progress: undefined,
+  theme: "light",
+};
+
+export const ToastSuccess  = (message: string, onClose?: () => void) => toast.success(message, {
+  ...toastProps,
+  onClose: onClose
+});
+
+export const ToastFail = (message: string, onClose?: () => void) => toast.error(message, {
+  ...toastProps,
+  onClose: onClose
+})
+
+export const useScript = (scripts: Array<string> | string) => {
+  const allScripts = Array.isArray(scripts) ? scripts : [scripts];
+  allScripts.forEach(script => {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = script;
+    scriptTag.async = true;
+    document.body.appendChild(scriptTag);
+    return () => {
+      document.body.removeChild(scriptTag);
+    };
+  });
+};

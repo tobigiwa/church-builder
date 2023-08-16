@@ -42,7 +42,7 @@ const LiveStream: FunctionComponent = () => {
                     <img
                       className="relative rounded-81xl w-[59px] h-[59px] overflow-hidden shrink-0"
                       alt=""
-                      src="/icon8.svg"
+                      src="assets/images/icon8.svg"
                     />
                     <div className="flex-1 flex flex-row py-0 pr-0 pl-0.5 items-center justify-between">
                       <div className="flex-1 relative flex items-center h-[52px] hover:cursor-pointer hover:[text-decoration:underline]">
@@ -57,7 +57,7 @@ const LiveStream: FunctionComponent = () => {
           <img
             className="relative w-[856px] h-[455px] md:hidden md:self-stretch md:w-auto md:flex-1"
             alt=""
-            src="/vector15.svg"
+            src="assets/images/vector15.svg"
           />
         </div>
         <Sponsors />

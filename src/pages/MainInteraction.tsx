@@ -42,18 +42,18 @@ const MainInteraction: FunctionComponent = () => {
               <img
                 className="absolute h-[78.59%] w-[78.59%] top-[10.94%] right-[9.61%] bottom-[10.47%] left-[11.8%] max-w-full overflow-hidden max-h-full object-cover"
                 alt=""
-                src="/rectangle@2x.png"
+                src="assets/images/rectangle@2x.png"
               />
               <img
                 className="absolute top-[0px] left-[0px] rounded-[235.06px] w-[38px] h-[38px] object-cover"
                 alt=""
-                src="/frame-130@2x.png"
+                src="assets/images/frame-130@2x.png"
               />
             </div>
             <img
               className="relative w-6 h-6 overflow-hidden shrink-0"
               alt=""
-              src="/remixiconslinesystemarrowdownsline2.svg"
+              src="assets/images/remixiconslinesystemarrowdownsline2.svg"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6"
                   alt=""
-                  src="/tile-white.svg"
+                  src="assets/images/tile-white.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Individuals
@@ -75,7 +75,7 @@ const MainInteraction: FunctionComponent = () => {
             </button>
             <SideBarDropDown
               activePage={activePage}
-              icon="/remixiconsfilluserteamfill.svg"
+              icon="assets/images/remixiconsfilluserteamfill.svg"
               dropdown={{
                 id: "group",
                 name: "Groups",
@@ -117,7 +117,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6"
                   alt=""
-                  src="/remixiconsfillbusinessmailfill.svg"
+                  src="assets/images/remixiconsfillbusinessmailfill.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Mass contact
@@ -127,7 +127,7 @@ const MainInteraction: FunctionComponent = () => {
             <SideBarDropDown
               activePage={activePage}
               className="cursor-pointer [border:none] py-4 pr-4 pl-12 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
-              icon="/remixiconsfillcommunicationdiscussfill1.svg"
+              icon="assets/images/remixiconsfillcommunicationdiscussfill1.svg"
               dropdown={{
                 id: "interaction",
                 name: "Interaction",
@@ -176,7 +176,7 @@ const MainInteraction: FunctionComponent = () => {
             <SideBarDropDown
               activePage={activePage}
               className="cursor-pointer [border:none] py-4 pr-4 pl-[55px] bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue"
-              icon="/remixiconsfilldesignlayoutmasonryfill1.svg"
+              icon="assets/images/remixiconsfilldesignlayoutmasonryfill1.svg"
               dropdown={{ id: "attendance", name: "Attendance" }}
               children={[
                 { id: "input", name: "Input" },
@@ -194,7 +194,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconsfillbusinesslinechartfill.svg"
+                  src="assets/images/remixiconsfillbusinesslinechartfill.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Report
@@ -203,7 +203,7 @@ const MainInteraction: FunctionComponent = () => {
             </button>
             <button className=" [border:none] py-4 pr-4 pl-0 bg-[transparent] rounded-lg w-[230px] overflow-hidden flex flex-col box-border items-center justify-center mt-[-1px] focus:bg-slateblue hover:bg-slateblue">
               <div className="flex flex-row items-center justify-start gap-[12px]">
-                <img className="relative w-6 h-6" alt="" src="/group.svg" />
+                <img className="relative w-6 h-6" alt="" src="assets/images/group.svg" />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Calendar
                 </div>
@@ -214,7 +214,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconsfillbusinesscalendarcheckfill.svg"
+                  src="assets/images/remixiconsfillbusinesscalendarcheckfill.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Schedules
@@ -227,7 +227,7 @@ const MainInteraction: FunctionComponent = () => {
                   <img
                     className="relative w-6 h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/remixiconsfillfinancehandheartfill1.svg"
+                    src="assets/images/remixiconsfillfinancehandheartfill1.svg"
                   />
                   <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                     My Giving
@@ -238,7 +238,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconsfillbusinessstackfill.svg"
+                  src="assets/images/remixiconsfillbusinessstackfill.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Workflows
@@ -255,7 +255,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconsfilldesignlayoutmasonryfill2.svg"
+                  src="assets/images/remixiconsfilldesignlayoutmasonryfill2.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Dashboard
@@ -272,7 +272,7 @@ const MainInteraction: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconsfilldocumentdraftfill.svg"
+                  src="assets/images/remixiconsfilldocumentdraftfill.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-left">
                   Forms

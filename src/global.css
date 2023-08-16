@@ -4,6 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://unpkg.com/grapick@0.1.13/dist/grapick.min.css");
+@import url("https://unpkg.com/grapesjs-rte-extensions@1.0.9/dist/grapesjs-rte-extensions.min.css");
+@import url("https://unpkg.com/grapesjs-rulers@1.0.8/dist/grapesjs-rulers.min.css");
+@import url("https://unpkg.com/notyf@3.10.0/notyf.min.css");
+@import url("https://unpkg.com/grapesjs-plugin-toolbox@1.0.15/dist/grapesjs-plugin-toolbox.min.css");
+@import url("https://uicdn.toast.com/tui-color-picker/v2.2.7/tui-color-picker.min.css");
+@import url("stylesheets/grapes.min.css");
+@import url("stylesheets/grapesjs-paneless-ui.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,15 +80,63 @@ body {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  color: rgba(0, 0, 0, 0);
-  opacity: 1;
-  display: block;
-  background: url(/public/calendar.svg) no-repeat;
-  width: 20px;
-  height: 20px;
-  border-width: thin;
+  color: transparent;
+  background: none;
+  z-index: 1;
 }
 
 button {
   cursor:pointer;
+}
+
+
+/* Builder styles */
+#loader {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  margin-left: 50%;
+  margin-top: 25%;
+  perspective: 120px;
+}
+
+.plane {
+  width: 2em;
+  height: 2em;
+  background-color: #0858b3;
+  transform: rotate(30);
+  animation: flip 1s infinite;
+}
+
+.rul_ruler {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.change-theme-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.change-theme-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2pt #c5c5c575;
+}
+
+@keyframes flip {
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(180deg) rotateX(180deg);
+  }
 }

@@ -1,4 +1,4 @@
-import { subscribe } from "../event";
+import { subscribe, unsubscribe } from "../event";
 import {
   FunctionComponent,
   memo,
@@ -10,15 +10,15 @@ import {
   AddFamilyType,
 } from "../types/AddFamilyTemplateTypes";
 import FileUpload from "./basic/FileUpload";
-import CustomInputField from "./CustomInputField";
-import { extrapolate, generateUUID, updateAvatar, validateMail, validatePhone } from "../globals";
+import CustomInputField from "./basic/CustomInputField";
+import { extrapolate, updateAvatar, validateMail, validatePhone } from "../globals";
 import IconatedToggleButton from "./IconatedToggleButton";
 
 const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
   ({ onClose, onCancel, onContinue, extras }) => {
     const [moreInfoNeeded, setMoreInfoNeeded] = useState(false);
-    const [fileUploaded, setFileUploaded] = useState(false);
     const [value, setValue] = useState<AddFamilyDetail>({});
+    const [fileUploaded, setFileUploaded] = useState(false);
     subscribe("fileupload", (event) => {
       setValue({ ...value, avatar: event.detail.file });
       setFileUploaded(true);
@@ -30,6 +30,10 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
         setValue({ ...value, avatar: extras.avatar });
         setFileUploaded(true);
         updateAvatar(extras.avatar, "image-container");
+      }
+
+      return () => {
+        unsubscribe("fileupload", (event) => console.log("[AddFamilyTemplate] Unsubscribed from", event.name));
       }
     }, [extras]);
 
@@ -54,7 +58,7 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
               <img
                 className="relative w-[12.73px] h-[12.73px]"
                 alt=""
-                src="/cancel.svg"
+                src="assets/images/cancel.svg"
               />
             </button>
           </div>
@@ -67,14 +71,14 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
                 delete value?.birthday;
                 delete value?.avatar;
               }
-              console.log(extrapolate(value, extras));
+              // console.log(extrapolate(value, extras));
               onContinue?.({
                 ...extrapolate(extras, value),
                 extension: extras?.extension ?? "owner",
               });
             }}
           >
-            <div className="self-stretch flex flex-col items-start justify-start gap-[38px]">
+            <div className="self-stretch flex flex-col items-start justify-start gap-[38px] pr-[50px]">
               <CustomInputField
                 heading="Full Name"
                 type="text"
@@ -158,11 +162,11 @@ const AddFamilyTemplate: FunctionComponent<AddFamilyType> = memo(
               >
                 <button
                   id="image-container"
-                  className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0  bg-cover bg-no-repeat bg-[top] bg-[url(/src/assets/avatar.png)]`}
+                  className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0  bg-cover bg-no-repeat bg-[top] bg-[url(assets/images/avatar.png)]`}
                   onClick={(e) => e.preventDefault()}
                 />
                 <button
-                  className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(/public/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
+                  className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(assets/images/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
                   onClick={(e) => {
                     e.preventDefault();
                     setFileUploaded(false);

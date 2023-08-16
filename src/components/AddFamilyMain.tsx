@@ -1,4 +1,5 @@
 import { FunctionComponent, memo, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { generateUUID } from "../globals";
 import {
   AddFamilyDetail,
@@ -14,6 +15,7 @@ interface AddFamilyMainType extends AddFamilyType {
 const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
   ({ onClose, onContinue, allMembers, onEdit }) => {
     const [isFamilyAdded, setFamilyAdded] = useState<boolean>(false);
+    const navigate = useNavigate();
     const memberOrder: CustomObject<Number> = {
       owner: 1,
       spouse: 2,
@@ -49,13 +51,13 @@ const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
             <img
               className="relative w-[12.73px] h-[12.73px]"
               alt=""
-              src="/cancel.svg"
+              src="assets/images/cancel.svg"
             />
           </button>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[64px] text-primary-black-100">
           {Object.entries(flatMembers).map(([_, member]) => {
-            const image = member?.avatar ?? require("../assets/avatar.png");
+            const image = member?.avatar ?? require("assets/images/avatar.png");
             return (
               <div
                 key={generateUUID()}
@@ -73,7 +75,7 @@ const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
                   <img
                     className="relative w-4 h-4"
                     alt=""
-                    src="/edit-blue.svg"
+                    src="assets/images/edit-blue.svg"
                   />
                 </button>
               </div>
@@ -123,6 +125,12 @@ const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
                 className="cursor-pointer [border:none] py-[18px] pr-[29px] pl-[30px] bg-royalblue-100 flex-1 rounded-lg flex flex-row items-center justify-center"
                 onClick={() => {
                   if (isFamilyAdded) {
+                    console.log("Details sent by AddFamilyMain", flatMembers, allMembers);
+                    navigate("/family", {
+                      state: {
+                        members: flatMembers,
+                      },
+                    });
                     onClose?.({});
                     return;
                   }

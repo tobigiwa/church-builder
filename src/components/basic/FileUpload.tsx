@@ -7,10 +7,11 @@ type FileUploadProps = {
 
 const FileUpload: FunctionComponent<FileUploadProps> = ({ visibility }) => {
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     if (!e.target.files) return;
 
     const selection = URL.createObjectURL(e.target.files[0]);
-    publish("fileupload", { file: selection });
+    publish("fileupload", { file: selection }); 
   };
 
   return (
@@ -27,7 +28,7 @@ const FileUpload: FunctionComponent<FileUploadProps> = ({ visibility }) => {
           <img
             className="relative w-11 h-11 overflow-hidden shrink-0"
             alt=""
-            src="/upload-blue.svg"
+            src="assets/images/upload-blue.svg"
           />
           <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
             <span className="font-semibold">Click to upload</span> or drag and

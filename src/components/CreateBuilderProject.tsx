@@ -1,4 +1,5 @@
 import { FunctionComponent, memo } from "react";
+import CustomInputField from "./basic/CustomInputField";
 
 type CreateBuilderProjectType = {
   onClose?: () => void;
@@ -7,7 +8,7 @@ type CreateBuilderProjectType = {
 const CreateBuilderProject: FunctionComponent<CreateBuilderProjectType> = memo(
   ({ onClose }) => {
     return (
-      <div className="relative rounded-xl bg-night-ghost-text w-[698px] overflow-hidden flex flex-col py-11 px-[37px] box-border items-center justify-start gap-[64px] max-w-full max-h-full text-left text-5xl text-primary-black-100 font-label-medium-600">
+      <div className="relative rounded-xl bg-night-ghost-text w-[698px] overflow-hidden flex flex-col py-11 px-[37px] box-border items-center justify-start gap-[30px] max-w-full max-h-full text-left text-5xl text-primary-black-100 font-label-medium-600">
         <div className="self-stretch flex flex-col items-start justify-start gap-[22px]">
           <div className="relative capitalize font-extrabold">
             Create a new project
@@ -15,14 +16,10 @@ const CreateBuilderProject: FunctionComponent<CreateBuilderProjectType> = memo(
           <div className="self-stretch relative bg-gray-700 h-px overflow-hidden shrink-0" />
         </div>
         <div className="self-stretch flex flex-col items-start justify-start gap-[10px] text-sm font-public-sans">
-          <div className="self-stretch relative capitalize font-semibold">
-            project name
-          </div>
-          <input
-            className="font-medium font-public-sans text-base bg-gainsboro-100 self-stretch rounded-lg box-border h-[58px] flex flex-row py-0 pr-0 pl-[30px] items-center justify-start border-[1px] border-solid border-royalblue-100"
-            type="text"
-            placeholder="Enter name here"
-          />
+          <CustomInputField heading="Project Name" placeholder="Enter name here" inputFormatAcceptable={(input) => input.length !== 0} errorMessage="Project name cannot be empty" />
+        </div>
+        <div className="self-stretch flex flex-col items-start justify-start gap-[10px] text-sm font-public-sans">
+          <CustomInputField heading="Project Title" placeholder="Enter title to be displayed" inputFormatAcceptable={(input) => input.length !== 0} errorMessage="Project title cannot be empty" />
         </div>
         <div className="self-stretch flex flex-row items-center justify-center gap-[16px]">
           <button  className=" p-0 bg-[transparent] flex-1 rounded-lg box-border h-[54px] flex flex-row items-center justify-center border-[2px] border-solid border-royalblue-100"
