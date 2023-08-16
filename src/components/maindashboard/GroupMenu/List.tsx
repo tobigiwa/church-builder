@@ -10,7 +10,7 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
         <div className="flex flex-col items-center justify-center gap-[35px]">
           <img
             className="relative w-[130px] h-[130px] overflow-hidden shrink-0"
-            src="/remixiconsfillbusinessbubblechartfill.svg"
+            src="assets/images/remixiconsfillbusinessbubblechartfill.svg"
           />
           <div className="relative">
             <p className="m-0">
@@ -26,7 +26,7 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
             <img
               className="relative w-[248.71px] h-[270.68px] object-cover"
               alt=""
-              src="/young-women-standing@2x.png"
+              src="assets/images/young-women-standing@2x.png"
             />
             <b className="relative">Small Group</b>
             <button className=" [border:none] pt-[20px] pb-[20px] pr-[33px] pl-[32px] bg-royalblue-100 rounded-lg w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row box-border items-center justify-center">
@@ -39,7 +39,7 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
             <img
               className="relative w-[199px] h-[274.15px] object-cover"
               alt=""
-              src="/young-women-standing-and-smiling@2x.png"
+              src="assets/images/young-women-standing-and-smiling@2x.png"
             />
             <b className="relative">Membership Group</b>
             <button className=" [border:none] pt-[20px] pb-[20px] pr-[33px] pl-[32px] bg-royalblue-100 rounded-lg w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row box-border items-center justify-center">
@@ -52,7 +52,7 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
             <img
               className="relative w-[296px] h-[193.1px] object-cover"
               alt=""
-              src="/olleagues-discussing-team-project@2x.png"
+              src="assets/images/olleagues-discussing-team-project@2x.png"
             />
             <b className="relative">Ministry Group</b>
             <button className=" [border:none] pt-[20px] pb-[20px] pr-[33px] pl-[32px] bg-royalblue-100 rounded-lg w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row box-border items-center justify-center">
@@ -71,14 +71,14 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
               <img
                 className="relative w-6 h-6 overflow-hidden shrink-0"
                 alt=""
-                src="/remixiconslinesystemsearchline1.svg"
+                src="assets/images/remixiconslinesystemsearchline1.svg"
               />
             </div>
             <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-6 overflow-hidden shrink-0">
               <img
                 className="absolute h-3/4 w-[16.67%] top-[12.5%] right-[41.67%] bottom-[12.5%] left-[41.67%] max-w-full overflow-hidden max-h-full"
                 alt=""
-                src="/option.svg"
+                src="assets/images/option.svg"
               />
             </button>
           </div>
@@ -95,7 +95,7 @@ const List: FunctionComponent<LocalNavigator> = ({ activePage }) => {
               <img
                 className="absolute h-[83.33%] w-[83.33%] top-[8.33%] right-[8.33%] bottom-[8.33%] left-[8.33%] max-w-full overflow-hidden max-h-full"
                 alt=""
-                src="/check.svg"
+                src="assets/images/check.svg"
               />
             </button>
           </div>

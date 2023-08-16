@@ -13,7 +13,7 @@ const ChooseStationPopup: FunctionComponent<ChooseStationPopupType> = memo(
             className="cursor-pointer [border:none] p-2.5 bg-royalblue-500 rounded-81xl flex flex-row items-start justify-start"
             onClick={onClose}
           >
-            <img className="relative w-6 h-6" alt="" src="/cancel.svg" />
+            <img className="relative w-6 h-6" alt="" src="assets/images/cancel.svg" />
           </button>
         </div>
         <div className="self-stretch flex flex-col py-0 px-[10px] box-border items-center justify-center gap-[10px]">

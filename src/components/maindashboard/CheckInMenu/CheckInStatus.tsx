@@ -13,7 +13,7 @@ const CheckInStatus: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/search.svg"
+                  src="assets/images/search.svg"
                 />
               </div>
               <div className="rounded-lg bg-gainsboro-100 w-[200px] flex flex-row py-[17px] px-4 box-border items-center justify-between">
@@ -21,7 +21,7 @@ const CheckInStatus: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/search.svg"
+                  src="assets/images/search.svg"
                 />
               </div>
             </div>
@@ -33,14 +33,14 @@ const CheckInStatus: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/remixiconslinesystemarrowdownsline2.svg"
+                  src="assets/images/remixiconslinesystemarrowdownsline2.svg"
                 />
               </button>
               <button className="cursor-pointer p-0 bg-royalblue-100 rounded-lg box-border w-[168px] h-[52px] flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-royalblue-100">
                 <img
                   className="relative w-4 h-4"
                   alt=""
-                  src="/download.svg"
+                  src="assets/images/download.svg"
                 />
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
                   Download PDF

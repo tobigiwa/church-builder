@@ -41,7 +41,7 @@ const AttendenceCheckIn: FunctionComponent = () => {
               <img
                 className="absolute top-[calc(50%_-_12px)] right-[24px] w-6 h-6 overflow-hidden"
                 alt=""
-                src="/arrow-right.svg"
+                src="assets/images/arrow-right.svg"
               />
             </div>
             <div className="self-stretch relative rounded-lg bg-gainsboro-100 h-16">
@@ -51,7 +51,7 @@ const AttendenceCheckIn: FunctionComponent = () => {
               <img
                 className="absolute top-[calc(50%_-_12px)] right-[24px] w-6 h-6 overflow-hidden"
                 alt=""
-                src="/arrow-right.svg"
+                src="assets/images/arrow-right.svg"
               />
             </div>
             <div className="self-stretch relative rounded-lg bg-gainsboro-100 h-16">
@@ -61,7 +61,7 @@ const AttendenceCheckIn: FunctionComponent = () => {
               <img
                 className="absolute top-[calc(50%_-_12px)] right-[24px] w-6 h-6 overflow-hidden"
                 alt=""
-                src="/arrow-right.svg"
+                src="assets/images/arrow-right.svg"
               />
             </div>
             <button
@@ -80,7 +80,7 @@ const AttendenceCheckIn: FunctionComponent = () => {
               <img
                 className="relative w-[80.01px] h-[80.01px]"
                 alt=""
-                src="/edit.svg"
+                src="assets/images/edit.svg"
               />
             </div>
             <div className="relative font-semibold">

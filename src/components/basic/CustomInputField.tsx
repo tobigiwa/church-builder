@@ -68,7 +68,7 @@ const CustomInputField: FunctionComponent<CustomInputFieldProps> = ({
           <img
             className="relative w-6 h-6 overflow-hidden shrink-0 pr-[4px]"
             alt=""
-            src="/error.svg"
+            src="assets/images/error.svg"
           />
           <div className="relative font-medium">{errorMessage}</div>
         </div>

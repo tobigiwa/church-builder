@@ -14,7 +14,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
               className="cursor-pointer [border:none] p-2.5 bg-royalblue-400 rounded-81xl flex flex-row items-start justify-start"
               onClick={onClose}
             >
-              <img className="relative w-6 h-6" alt="" src="/close.svg" />
+              <img className="relative w-6 h-6" alt="" src="assets/images/close.svg" />
             </button>
           </div>
           <div className="self-stretch flex flex-col py-0 px-[74px] items-center justify-center gap-[39px]">
@@ -28,7 +28,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
                   <img
                     className="relative w-11 h-11"
                     alt=""
-                    src="/new-message.svg"
+                    src="assets/images/new-message.svg"
                   />
                   <b className="relative">Email</b>
                 </div>
@@ -38,7 +38,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
                   <img
                     className="relative w-11 h-11 overflow-hidden shrink-0"
                     alt=""
-                    src="/contact.svg"
+                    src="assets/images/contact.svg"
                   />
                   <b className="relative">
                     <span className="">{`Text `}</span>me
@@ -48,7 +48,7 @@ const MassContactNewMessagePopup: FunctionComponent<MassContactNewMessagePopupTy
               </button>
               <button  className=" pl-[50px] text-[17px] self-stretch rounded-3xs bg-gainsboro-100 h-[60px] flex flex-row py-[4px] px-0 box-border items-center text-center">
                 <div className="flex flex-row items-center justify-start gap-[16px]">
-                  <img className="relative w-11 h-11" alt="" src="/voice.svg" />
+                  <img className="relative w-11 h-11" alt="" src="assets/images/voice.svg" />
                   <b className="relative">
                     <span className="">Voi</span>c
                     <span className="">e message</span>

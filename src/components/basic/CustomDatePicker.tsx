@@ -14,7 +14,7 @@ const CustomDatePicker: FunctionComponent<DatePickerProp> = memo(
           placeholder={placeholder ?? ""}
         />
         <div className="absolute w-full top-[0px] right-[0px] w-6 h-6 overflow-hidden shrink-0 -z-1 flex justify-end">
-          <img alt="" src="/calendar.svg" />
+          <img alt="" src="assets/images/calendar.svg" />
         </div>
       </div>
     );

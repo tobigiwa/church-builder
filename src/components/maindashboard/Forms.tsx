@@ -101,7 +101,7 @@ const Forms: FunctionComponent = memo(() => {
                           <img
                             className="relative w-6 h-6 overflow-hidden shrink-0"
                             alt=""
-                            src="/remixiconslinesystemarrowdownsline2.svg"
+                            src="assets/images/remixiconslinesystemarrowdownsline2.svg"
                           />
                         </div>
                       </div>
@@ -116,7 +116,7 @@ const Forms: FunctionComponent = memo(() => {
                             <img
                               className="relative w-6 h-6"
                               alt=""
-                              src="/remixiconslinesystemarrowdownsline2.svg"
+                              src="assets/images/remixiconslinesystemarrowdownsline2.svg"
                             />
                           </button>
                         </div>

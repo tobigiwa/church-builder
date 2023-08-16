@@ -13,13 +13,13 @@ const PasswordReset: FunctionComponent = () => {
     const email = event.target.value;
     try {
 
-      console.log(email);
+      // console.log(email);
       const response = await axios.post("/auth/users/reset_password/", {
         email: email
       });
       
       //TODO: password reset
-      console.log(response);
+      // console.log(response);
     }
     catch (err) {
 

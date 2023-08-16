@@ -11,7 +11,7 @@ const ToggleIcon: FunctionComponent<ToggleIconProps> = ({ onClick, src, classNam
     const [isToggled, setToggled] = useState(false);
     const onToggleIconClick = useCallback((event: any, onClick?: (event: any) => void) => {
         setToggled(!isToggled);
-        console.log(isToggled);
+        // console.log(isToggled);
         onClick?.(event);
     }, [isToggled]);
 

@@ -16,7 +16,7 @@ const LabelSettings: FunctionComponent<LabelSettingsType> = memo(
             onClick={onClose}
           >
             <div className="absolute top-[0px] left-[0px] rounded-981xl bg-royalblue-500 flex flex-row p-2.5 items-start justify-start">
-              <img className="relative w-6 h-6" alt="" src="/cancel.svg" />
+              <img className="relative w-6 h-6" alt="" src="assets/images/cancel.svg" />
             </div>
           </button>
         </div>

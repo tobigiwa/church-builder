@@ -28,7 +28,7 @@ const FileUpload: FunctionComponent<FileUploadProps> = ({ visibility }) => {
           <img
             className="relative w-11 h-11 overflow-hidden shrink-0"
             alt=""
-            src="/upload-blue.svg"
+            src="assets/images/upload-blue.svg"
           />
           <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
             <span className="font-semibold">Click to upload</span> or drag and

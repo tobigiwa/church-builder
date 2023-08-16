@@ -56,7 +56,7 @@ const SideBarDropDown: FunctionComponent<SideBarProps> = ({
               hidden ? "rotate-180" : ""
             }`}
             alt=""
-            src="/remixiconslinesystemarrowdownsline21.svg"
+            src="assets/images/remixiconslinesystemarrowdownsline21.svg"
           />
         </div>
       </button>

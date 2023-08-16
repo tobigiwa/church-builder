@@ -15,8 +15,8 @@ const GroupControl: FunctionComponent<GroupProp> = ({
   value,
   activePage,
 }) => {
-  if(id === activePage)
-    console.log("id ", id, "activePage", activePage);
+  // if(id === activePage)
+    // console.log("id ", id, "activePage", activePage);
 
   return (
     <div className="group">
@@ -25,7 +25,7 @@ const GroupControl: FunctionComponent<GroupProp> = ({
           id === activePage ? "bg-royalblue-100" : ""
         }`}
         onClick={(e) => {
-          console.log(activePage, id);
+          // console.log(activePage, id);
           e.preventDefault();
           publish(EVENT_NAME, { activePage: id });
         }}
@@ -59,7 +59,7 @@ const GroupHeader: FunctionComponent<LocalNavigator> = ({ activePage }) => {
           </div>
           <div className="group">
             <button className=" py-[18px] group-hover:bg-royalblue-100 group-focus-within:bg-royalblue-100 rounded-lg box-border w-[168px] h-[54px] flex flex-row items-center justify-center gap-[8px] border-[1px] border-solid border-royalblue-100 bg-transparent">
-              <div className="relative w-6 h-6 overflow-hidden shrink-0 bg-[url(/public/remixiconsfillsystemfilter3fill1.svg)] group-hover:bg-[url(/public/filter-white.svg)] group-focus-within:bg-[url(/public/filter-white.svg)]" />
+              <div className="relative w-6 h-6 overflow-hidden shrink-0 bg-[url(assets/images/remixiconsfillsystemfilter3fill1.svg)] group-hover:bg-[url(assets/images/filter-white.svg)] group-focus-within:bg-[url(assets/images/filter-white.svg)]" />
               <div className="relative text-base font-extrabold font-public-sans text-gray-100 text-center group-hover:text-night-ghost-text group-focus-within:text-night-ghost-text">
                 Filter
               </div>

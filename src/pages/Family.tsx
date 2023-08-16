@@ -18,7 +18,7 @@ const Family: FunctionComponent = () => {
 
   useEffect(() => {
     if (state && state.members) setMembers(state.members);
-    console.log(state);
+    // console.log(state);
   });
 
   const closeManageBarcodePopup = useCallback(() => {
@@ -72,7 +72,7 @@ erflow-hidden flex flex-col py-[84px] pr-32 pl-0 box-border items-start justify-
             <img
               className="relative w-6 h-6 overflow-hidden shrink-0"
               alt=""
-              src="/arrow-left.svg"
+              src="assets/images/arrow-left.svg"
             />
             <div className="relative text-5xl font-semibold font-label-medium-600 text-primary-black-100 text-left">
               Back
@@ -98,8 +98,8 @@ erflow-hidden flex flex-col py-[84px] pr-32 pl-0 box-border items-start justify-
                   <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[24px] text-right text-base font-public-sans">
                     {members.map((member) => {
                       const avatar =
-                        member?.avatar ?? require("../assets/avatar.png");
-                      console.log(avatar);
+                        member?.avatar ?? require("assets/images/avatar.png");
+                      // console.log(avatar);
                       return (
                         <div
                           key={generateUUID()}
@@ -114,7 +114,7 @@ erflow-hidden flex flex-col py-[84px] pr-32 pl-0 box-border items-start justify-
                               {member?.fullname ?? ""}
                             </div>
                             <button
-                              className="[border:none] p-0 bg-[transparent] flex flex-row items-center justify-center w-4 h-4 bg-[url(/public/edit-blue.svg)]"
+                              className="[border:none] p-0 bg-[transparent] flex flex-row items-center justify-center w-4 h-4 bg-[url(assets/images/edit-blue.svg)]"
                               onClick={() => {
                                 navigate("/choosestation", {
                                   state: {
@@ -131,7 +131,7 @@ erflow-hidden flex flex-col py-[84px] pr-32 pl-0 box-border items-start justify-
                           </div>
                           <div className=" [border:none] p-0 bg-[transparent] flex flex-col items-end justify-start gap-[23px]">
                             <button
-                              className="[border:none] relative w-6 h-6 bg-[url(/public/modify-gray.svg)]"
+                              className="[border:none] relative w-6 h-6 bg-[url(assets/images/modify-gray.svg)]"
                               onClick={() => {
                                 setBarcodePackage(member);
                                 setManageBarcodePopupOpen(true);
@@ -172,7 +172,7 @@ erflow-hidden flex flex-col py-[84px] pr-32 pl-0 box-border items-start justify-
         <PortalPopup>
           <ManageBarcode
             onContinue={(owner, code) => {
-              console.log("owner", owner, "code: ", code);
+              // console.log("owner", owner, "code: ", code);
             }}
             payload={barcodePackage}
             onClose={closeManageBarcodePopup}

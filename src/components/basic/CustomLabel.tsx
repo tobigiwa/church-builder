@@ -13,7 +13,7 @@ const CustomLabel: FunctionComponent = () => {
         <img
           className="relative w-11 h-11 overflow-hidden shrink-0"
           alt=""
-          src="/minus-black.svg"
+          src="assets/images/minus-black.svg"
         />
       </button>
       <div className="self-stretch flex-1 bg-darkgray-200 overflow-hidden flex flex-row items-center justify-center">
@@ -26,7 +26,7 @@ const CustomLabel: FunctionComponent = () => {
         <img
           className="relative w-11 h-11 overflow-hidden shrink-0"
           alt=""
-          src="/plus-black.svg"
+          src="assets/images/plus-black.svg"
         />
       </button>
     </div>

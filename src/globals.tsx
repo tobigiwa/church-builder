@@ -80,3 +80,16 @@ export const ToastFail = (message: string, onClose?: () => void) => toast.error(
   ...toastProps,
   onClose: onClose
 })
+
+export const useScript = (scripts: Array<string> | string) => {
+  const allScripts = Array.isArray(scripts) ? scripts : [scripts];
+  allScripts.forEach(script => {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = script;
+    scriptTag.async = true;
+    document.body.appendChild(scriptTag);
+    return () => {
+      document.body.removeChild(scriptTag);
+    };
+  });
+};

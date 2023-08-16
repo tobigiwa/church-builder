@@ -39,7 +39,7 @@ const ChurchManagement: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <img className="relative w-[436.73px]" alt="" src="/frame-482.svg" />
+          <img className="relative w-[436.73px]" alt="" src="assets/images/frame-482.svg" />
         </div>
       </div>
       <Footer />

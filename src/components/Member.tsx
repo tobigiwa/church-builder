@@ -21,13 +21,13 @@ const Member: FunctionComponent<MemberProps> = ({ properties, onEdit }) => {
 
   return (
     <div className="flex flex-row items-center justify-start gap-[14px] text-base text-primary-black-100">
-      <button key={properties} className="cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-cover bg-no-repeat bg-[top] bg-[url(/public/frame2701@3x.png)]" />
+      <button key={properties} className="cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-cover bg-no-repeat bg-[top] bg-[url(assets/images/avatar.png)]" />
       <div className="relative font-medium">Susan Frank</div>
       <button
         className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center"
         onClick={() => onEdit?.(properties)}
       >
-        <img className="relative w-4 h-4" alt="" src="/edit-blue.svg" />
+        <img className="relative w-4 h-4" alt="" src="assets/images/edit-blue.svg" />
       </button>
     </div>
   );

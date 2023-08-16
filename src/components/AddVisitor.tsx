@@ -17,7 +17,7 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
 
     subscribe("fileupload", (event: any) => {
       setFileUploaded(event.detail.file);
-      console.log("ImageUploaded; Current state: ", value);
+      // console.log("ImageUploaded; Current state: ", value);
       setValue({ ...value, avatar: event.detail.file });
     });
 
@@ -44,7 +44,7 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             <img
               className="relative w-[12.73px] h-[12.73px]"
               alt=""
-              src="/cancel.svg"
+              src="assets/images/cancel.svg"
             />
           </button>
         </div>
@@ -56,12 +56,12 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
               delete value?.note;
               delete value?.avatar;
             }
-            console.log(
-              "Requires more info: ",
-              moreInfoNeeded,
-              "value: ",
-              value
-            );
+            // console.log(
+            //   "Requires more info: ",
+            //   moreInfoNeeded,
+            //   "value: ",
+            //   value
+            // );
             onContinue?.({
               ...extrapolate(extras, value),
               extension: "visitor",
@@ -77,7 +77,7 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             initialValue={extras?.fullname ?? ""}
             inputFormatAcceptable={(input) => {
               if (!/^[a-z-]+\s[a-z-]+$/i.test(input)) return false;
-              console.log(input);
+              // console.log(input);
               setValue({ ...value, fullname: input });
               return true;
             }}
@@ -115,12 +115,12 @@ const AddVisitor: FunctionComponent<AddVisitorType> = memo(
             >
               <button
                 id="image-container"
-                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-[url(/src/assets/avatar.png)] bg-cover bg-no-repeat bg-[top] ${
+                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative rounded-81xl w-[99px] h-[99px] overflow-hidden shrink-0 bg-[url(assets/images/avatar.png)] bg-cover bg-no-repeat bg-[top] ${
                   fileUploaded ? "" : "hidden"
                 }`}
               />
               <button
-                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(/public/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
+                className={`cursor-pointer [border:none] p-0 bg-[transparent] relative w-4 h-4 shrink-0 bg-[url(assets/images/edit-blue.svg)] bg-cover bg-no-repeat bg-[top]`}
                 onClick={(e) => {
                   e.preventDefault();
                   setFileUploaded(false);

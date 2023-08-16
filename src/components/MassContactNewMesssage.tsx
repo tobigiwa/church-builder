@@ -9,7 +9,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
             <img
               className="relative w-[7.78px] h-[12.73px]"
               alt=""
-              src="/cancel.svg"
+              src="assets/images/cancel.svg"
             />
             <div className="relative text-5xl font-semibold font-label-medium-600 text-primary-black-100 text-left">
               Back
@@ -26,7 +26,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
               <img
                 className="relative w-6 h-6 overflow-hidden shrink-0"
                 alt=""
-                src="/remixiconsfillbusinesscalendarcheckfill1.svg"
+                src="assets/images/remixiconsfillbusinesscalendarcheckfill1.svg"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
               <img
                 className="relative w-6 h-6 overflow-hidden shrink-0"
                 alt=""
-                src="/remixiconsfillbusinesscalendarcheckfill1.svg"
+                src="assets/images/remixiconsfillbusinesscalendarcheckfill1.svg"
               />
             </div>
             <div className="rounded-lg bg-gainsboro-100 w-[150px] flex flex-row py-[17px] px-4 box-border items-center justify-between">
@@ -103,7 +103,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
               <img
                 className="relative w-6 h-6 overflow-hidden shrink-0"
                 alt=""
-                src="/remixiconsfillbusinesscalendarcheckfill1.svg"
+                src="assets/images/remixiconsfillbusinesscalendarcheckfill1.svg"
               />
             </div>
           </div>
@@ -112,7 +112,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
             <img
               className="relative w-6 h-6 overflow-hidden shrink-0"
               alt=""
-              src="/remixiconslinesystemsearchline1.svg"
+              src="assets/images/remixiconslinesystemsearchline1.svg"
             />
           </div>
         </div>
@@ -183,7 +183,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                               <img
                                 className="relative w-4 h-4"
                                 alt=""
-                                src="/remixiconslinedocumentfilecodeline1.svg"
+                                src="assets/images/remixiconslinedocumentfilecodeline1.svg"
                               />
                             </button>
                           </div>
@@ -193,21 +193,21 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                                 <img
                                   className="relative w-3 h-[11.27px]"
                                   alt=""
-                                  src="/vector1.svg"
+                                  src="assets/images/vector1.svg"
                                 />
                               </button>
                               <button  className=" [border:none] p-0.5 bg-[transparent] overflow-hidden flex flex-row items-center justify-center">
                                 <img
                                   className="relative w-3 h-3"
                                   alt=""
-                                  src="/vector3.svg"
+                                  src="assets/images/vector3.svg"
                                 />
                               </button>
                               <button  className=" [border:none] p-0.5 bg-[transparent] overflow-hidden flex flex-col items-start justify-start">
                                 <img
                                   className="relative w-3 h-[11.33px]"
                                   alt=""
-                                  src="/vector4.svg"
+                                  src="assets/images/vector4.svg"
                                 />
                               </button>
                             </div>
@@ -221,7 +221,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                                 <img
                                   className="relative w-[8.49px] h-[5.19px]"
                                   alt=""
-                                  src="/vector5.svg"
+                                  src="assets/images/vector5.svg"
                                 />
                               </div>
                             </button>
@@ -232,14 +232,14 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                                 <img
                                   className="relative w-[11.77px] h-[11.77px]"
                                   alt=""
-                                  src="/vector6.svg"
+                                  src="assets/images/vector6.svg"
                                 />
                               </button>
                               <button  className=" [border:none] p-0 bg-[transparent] w-4 h-4 flex flex-row items-center justify-center">
                                 <img
                                   className="relative w-[13.63px] h-[13.63px]"
                                   alt=""
-                                  src="/vector7.svg"
+                                  src="assets/images/vector7.svg"
                                 />
                               </button>
                             </div>
@@ -253,7 +253,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                                 <img
                                   className="relative w-[7.49px] h-[5.19px]"
                                   alt=""
-                                  src="/vector8.svg"
+                                  src="assets/images/vector8.svg"
                                 />
                               </div>
                             </button>
@@ -263,7 +263,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                               <img
                                 className="relative w-[11.33px] h-3"
                                 alt=""
-                                src="/vector9.svg"
+                                src="assets/images/vector9.svg"
                               />
                             </button>
                           </div>
@@ -276,7 +276,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                       <img
                         className="relative w-4 h-4"
                         alt=""
-                        src="/remixiconslineeditorattachment21.svg"
+                        src="assets/images/remixiconslineeditorattachment21.svg"
                       />
                       <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
                         Add file
@@ -314,7 +314,7 @@ const MassContactNewMessage: FunctionComponent = memo(() => {
                   <img
                     className="relative w-6 h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/remixiconsfillbusinesssendplane2fill1.svg"
+                    src="assets/images/remixiconsfillbusinesssendplane2fill1.svg"
                   />
                   <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
                     Send

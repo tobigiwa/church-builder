@@ -60,7 +60,7 @@ const HamburgerMenu: FunctionComponent<HamburgerMenuType> = ({ onClose }) => {
   }, []);
 
   useEffect(() => {
-    console.log(isFlowIn);
+    // console.log(isFlowIn);
       if(isFlowIn)
         animate();
   });
@@ -80,7 +80,7 @@ const HamburgerMenu: FunctionComponent<HamburgerMenuType> = ({ onClose }) => {
         <a className="[text-decoration:none] w-[110px] flex flex-row px-0 box-border items-center justify-end relative gap-[10px] text-[inherit]">
           <button  className="[border:none] p-0 bg-[transparent] my-0 mx-[!important] absolute top-[12px] left-[0px] rounded-sm w-4 overflow-hidden shrink-0 flex flex-row items-start justify-center z-[1]"
             onClick={animateClose}>
-            <img className="relative w-4 h-4" alt="" src="/vector10.svg" />
+            <img className="relative w-4 h-4" alt="" src="assets/images/vector10.svg" />
           </button>
           <b className="relative uppercase z-[0]">LOGO</b>
         </a>

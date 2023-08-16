@@ -43,13 +43,13 @@ const Login: FunctionComponent = () => {
       const submitButton = document.querySelector('[type="submit"]');
       const loadingIndicator = document.getElementById("loadingIndicator");
 
-      console.log(loadingIndicator);
+      // console.log(loadingIndicator);
 
       submitButton?.setAttribute("disabled", "");
       loadingIndicator?.classList.remove("hidden");
 
       const { email, password } = document.forms[0];
-      console.log(email.value, password.value);
+      // console.log(email.value, password.value);
       const credentials = { email: email.value, password: password.value };
       try {
         const response = await axios.post(`/auth/jwt/create/`, credentials, {
@@ -63,6 +63,8 @@ const Login: FunctionComponent = () => {
             Authorization: `Bearer ${response.data?.access}`,
           },
         });
+        // console.log("Response: ", response.data?.access);
+
         if (
           signIn({
             token: response.data.access,
@@ -163,7 +165,7 @@ const Login: FunctionComponent = () => {
                 onMouseLeave={(e) => setPasswordVisible(false)}
                 onClick={(e) => e.preventDefault()}
               >
-                <img alt="view password" src="/group1.svg" />
+                <img alt="view password" src="assets/images/group1.svg" />
               </button>
               <div className="flex flex-col items-end justify-start">
                 <button

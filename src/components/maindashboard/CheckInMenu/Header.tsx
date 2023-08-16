@@ -15,7 +15,7 @@ const CheckInControl: FunctionComponent<CheckInProp> = ({
   value,
   activePage,
 }) => {
-  if (id === activePage) console.log("id ", id, "activePage", activePage);
+  // if (id === activePage) console.log("id ", id, "activePage", activePage);
 
   return (
     <div className="group">
@@ -24,7 +24,7 @@ const CheckInControl: FunctionComponent<CheckInProp> = ({
           id === activePage ? "bg-royalblue-100 text-night-ghost-text" : ""
         }`}
         onClick={(e) => {
-          console.log(activePage, id);
+          // console.log(activePage, id);
           e.preventDefault();
           publish(EVENT_NAME, { activePage: id });
         }}

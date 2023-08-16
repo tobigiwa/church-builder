@@ -57,7 +57,7 @@ const ChooseStation: FunctionComponent = () => {
 
   const processTemplateContinuation = useCallback(
     (member: AddFamilyDetail) => {
-      console.log("allMembers: ", family);
+      // console.log("allMembers: ", family);
       if (member.extension === "child" || member.extension === "visitor") {
         replaceOrInsertMember(family, member);
       } else addFamilyMember(member);
@@ -68,7 +68,7 @@ const ChooseStation: FunctionComponent = () => {
   );
   const processVisitorContinuation = useCallback(
     (member: AddFamilyDetail) => {
-      console.log("allMembers: ", family);
+      // console.log("allMembers: ", family);
       if (member.extension === "child" || member.extension === "visitor") {
         replaceOrInsertMember(family, member);
       } else addFamilyMember(member);
@@ -132,7 +132,7 @@ const ChooseStation: FunctionComponent = () => {
           <img
             className="relative w-6 h-6 overflow-hidden shrink-0"
             alt=""
-            src="/arrow-left.svg"
+            src="assets/images/arrow-left.svg"
           />
           <div className="relative font-semibold text-3xl">Back</div>
         </button>

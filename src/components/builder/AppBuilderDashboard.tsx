@@ -54,7 +54,7 @@ const AppBuilderDashboard: FunctionComponent = () => {
               className="bg-[transparent] [border:none]"
               onClick={() => setProjectNameEditable(!projectNameEditable)}
             >
-              <img className="relative w-6 h-6" alt="" src="/edit-gray.svg" />
+              <img className="relative w-6 h-6" alt="" src="assets/images/edit-gray.svg" />
             </button>
           </div>
           <div className="w-[352px] flex flex-row items-center justify-center gap-[16px] text-center text-gray-100 [@media(max-width:1024px)]:hidden">
@@ -62,12 +62,12 @@ const AppBuilderDashboard: FunctionComponent = () => {
               <img
                 className="relative w-4 h-4 overflow-hidden shrink-0"
                 alt=""
-                src="/pause.svg"
+                src="assets/images/pause.svg"
               />
               <div className="relative font-medium">Preview</div>
             </button>
             <button className="rounded-lg bg-royalblue-100 box-border w-[168px] h-[54px] overflow-hidden shrink-0 flex flex-row pt-[20px] pb-[20px] pr-[33px] pl-[32px] items-center justify-center gap-[8px] text-night-ghost-text border-[2px] border-solid border-night-ghost-text text-base">
-              <img className="relative w-4 h-4" alt="" src="/world.svg" />
+              <img className="relative w-4 h-4" alt="" src="assets/images/world.svg" />
               <div className="relative font-medium">Publish</div>
             </button>
           </div>
@@ -80,7 +80,7 @@ const AppBuilderDashboard: FunctionComponent = () => {
                   <img
                     className="relative w-6 h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/tile-white.svg"
+                    src="assets/images/tile-white.svg"
                   />
                   <div className="relative font-semibold">Projects</div>
                 </div>
@@ -90,7 +90,7 @@ const AppBuilderDashboard: FunctionComponent = () => {
                   <img
                     className="relative w-6 h-6 overflow-hidden shrink-0"
                     alt=""
-                    src="/design.svg"
+                    src="assets/images/design.svg"
                   />
                   <div className="relative font-semibold">Design</div>
                 </div>
@@ -110,7 +110,7 @@ const AppBuilderDashboard: FunctionComponent = () => {
                   <img
                     className="relative w-[80px] h-[80px]"
                     alt=""
-                    src="/new.svg"
+                    src="assets/images/new.svg"
                   />
                 </div>
               </button>

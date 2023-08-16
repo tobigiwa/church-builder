@@ -51,13 +51,13 @@ const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
             <img
               className="relative w-[12.73px] h-[12.73px]"
               alt=""
-              src="/cancel.svg"
+              src="assets/images/cancel.svg"
             />
           </button>
         </div>
         <div className="self-stretch flex flex-row flex-wrap items-center justify-center gap-[64px] text-primary-black-100">
           {Object.entries(flatMembers).map(([_, member]) => {
-            const image = member?.avatar ?? require("../assets/avatar.png");
+            const image = member?.avatar ?? require("assets/images/avatar.png");
             return (
               <div
                 key={generateUUID()}
@@ -75,7 +75,7 @@ const AddFamilyMain: FunctionComponent<AddFamilyMainType> = memo(
                   <img
                     className="relative w-4 h-4"
                     alt=""
-                    src="/edit-blue.svg"
+                    src="assets/images/edit-blue.svg"
                   />
                 </button>
               </div>

@@ -20,12 +20,12 @@ import ChooseStation from "./pages/ChooseStation";
 import BuilderDashboard from "./pages/BuilderDashboard";
 import WebsiteBuilderDashboard from "./pages/WebsiteBuilderDashboard";
 import DashboardDesignSelection from "./pages/DashboardDesignSelection";
-import CreateBuilderProject from "./components/CreateBuilderProject";
 import AppBuilderDashboard from "./components/builder/AppBuilderDashboard";
 import Family from "./pages/Family";
 import Register from "./pages/Register";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import WebsiteBuilderMain from "./pages/WebsiteBuilderMain";
 
 function App() {
   const action = useNavigationType();
@@ -96,11 +96,16 @@ function App() {
         element={
           <RequireAuth loginPath={"/login"}>
             <MainInteraction />
+            {/* <ChurchManagement /> */}
+            {/* <WebsiteBuilderDashboard /> */}
+            {/* <WebsiteBuilderMain /> */}
+            {/* <AppBuilderDashboard /> */}
           </RequireAuth>
         }
       />
       <Route path="/churchmanagement" element={<ChurchManagement />} />
       <Route path="/websitebuilder" element={<ChurchWebsiteBuilder />} />
+      <Route path="/websitebuildermain" element={<WebsiteBuilderMain />} />
       <Route path="/livestream" element={<LiveStream />} />
       <Route path="/passwordreset" element={<PasswordReset />} />
       <Route path="/login" element={<Login />} />

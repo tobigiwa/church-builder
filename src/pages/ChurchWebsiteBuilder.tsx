@@ -58,7 +58,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <img
                     className="absolute top-[16.9px] left-[17.33px] w-3.5 h-3.5 overflow-hidden"
                     alt=""
-                    src="/icon10.svg"
+                    src="assets/images/icon10.svg"
                   />
                 </button>
                 <div className="flex-1 flex flex-row py-0 pr-0 pl-0.5 items-center justify-between">
@@ -73,12 +73,12 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
             <img
               className="relative w-[531px] h-[514px] object-cover z-[0]"
               alt=""
-              src="/imac-24-inch1@2x.png"
+              src="assets/images/imac-24-inch1@2x.png"
             />
             <img
               className="absolute my-0 mx-[!important] h-[35.34%] w-[19.42%] top-[38.28%] right-[7.51%] bottom-[26.38%] left-[73.07%] max-w-full overflow-hidden max-h-full object-cover z-[1]"
               alt=""
-              src="/rectangle1@2x.png"
+              src="assets/images/rectangle1@2x.png"
             />
           </div>
         </div>
@@ -105,12 +105,12 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <img
                     className="absolute top-[152px] left-[163px] w-[61px] h-[61px] overflow-hidden"
                     alt=""
-                    src="/remixiconsfilldesigndragdropfill.svg"
+                    src="assets/images/remixiconsfilldesigndragdropfill.svg"
                   />
                   <img
                     className="absolute top-[92px] left-[102px] w-[91px] h-[91px] overflow-hidden"
                     alt=""
-                    src="/remixiconsfillmediaimage2fill1.svg"
+                    src="assets/images/remixiconsfillmediaimage2fill1.svg"
                   />
                   <div className="absolute top-[220px] left-[101px] font-extrabold">{`Drag & Drop`}</div>
                 </div>
@@ -127,7 +127,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <img
                     className="absolute top-[64px] left-[217px] w-[142px] h-[261px] object-cover"
                     alt=""
-                    src="/httpsunsplashcomphotos3mwdi5-6hrc@2x.png"
+                    src="assets/images/httpsunsplashcomphotos3mwdi5-6hrc@2x.png"
                   />
                   <div className="absolute h-[9.86%] w-full top-[0%] right-[0%] bottom-[90.14%] left-[0%] bg-primary-black-100 overflow-hidden">
                     <div className="absolute top-[calc(50%_-_10.04px)] left-[28.5px] flex flex-row items-center justify-start gap-[2.85px]">
@@ -177,22 +177,22 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     <img
                       className="relative w-[8.55px] h-[8.55px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosfacebookboxfill1.svg"
+                      src="assets/images/remixiconsfilllogosfacebookboxfill1.svg"
                     />
                     <img
                       className="relative w-[8.55px] h-[8.55px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosgooglefill1.svg"
+                      src="assets/images/remixiconsfilllogosgooglefill1.svg"
                     />
                     <img
                       className="relative w-[8.55px] h-[8.55px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogostwitterfill1.svg"
+                      src="assets/images/remixiconsfilllogostwitterfill1.svg"
                     />
                     <img
                       className="relative w-[8.55px] h-[8.55px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosinstagramfill1.svg"
+                      src="assets/images/remixiconsfilllogosinstagramfill1.svg"
                     />
                   </div>
                 </div>
@@ -200,7 +200,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <img
                     className="absolute top-[0px] left-[0px] w-[138.42px] h-[30.64px] overflow-hidden"
                     alt=""
-                    src="/frame-75.svg"
+                    src="assets/images/frame-75.svg"
                   />
                   <b className="absolute top-[12.92px] left-[9.97px] text-[8.86px] ">
                     LIVING STONE CHURCH
@@ -208,7 +208,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                   <img
                     className="absolute top-[129.19px] left-[5.17px] w-[128.36px] h-[141.74px] object-cover"
                     alt=""
-                    src="/httpsunsplashcomphotos3mwdi5-6hrc1@2x.png"
+                    src="assets/images/httpsunsplashcomphotos3mwdi5-6hrc1@2x.png"
                   />
                   <b className="absolute top-[58.69px] left-[9.97px] text-[11.81px] uppercase text-gray-500">
                     <p className="m-0">THE benefits of</p>
@@ -232,22 +232,22 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     <img
                       className="relative w-[8.86px] h-[8.86px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosfacebookboxfill2.svg"
+                      src="assets/images/remixiconsfilllogosfacebookboxfill2.svg"
                     />
                     <img
                       className="relative w-[8.86px] h-[8.86px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosgooglefill2.svg"
+                      src="assets/images/remixiconsfilllogosgooglefill2.svg"
                     />
                     <img
                       className="relative w-[8.86px] h-[8.86px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogostwitterfill2.svg"
+                      src="assets/images/remixiconsfilllogostwitterfill2.svg"
                     />
                     <img
                       className="relative w-[8.86px] h-[8.86px] overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilllogosinstagramfill2.svg"
+                      src="assets/images/remixiconsfilllogosinstagramfill2.svg"
                     />
                   </div>
                 </div>
@@ -271,7 +271,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container2.svg"
+                          src="assets/images/container.svg"
                         />
                         <div className="relative font-semibold">
                           Link
@@ -279,14 +279,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container3.svg"
+                          src="assets/images/container.svg"
                         />
                       </div>
                       <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container4.svg"
+                          src="assets/images/container.svg"
                         />
                         <div className="relative font-semibold">
                           Link
@@ -294,14 +294,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container5.svg"
+                          src="assets/images/container.svg"
                         />
                       </div>
                       <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container6.svg"
+                          src="assets/images/container.svg"
                         />
                         <div className="relative font-semibold">
                           Link
@@ -309,14 +309,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container7.svg"
+                          src="assets/images/container.svg"
                         />
                       </div>
                       <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container8.svg"
+                          src="assets/images/container.svg"
                         />
                         <div className="relative font-semibold">
                           Link
@@ -324,14 +324,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container9.svg"
+                          src="assets/images/container.svg"
                         />
                       </div>
                       <div className="rounded-[4.63px] overflow-hidden flex flex-row py-[4px] px-[5px] items-center justify-center gap-[2.31px]">
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container10.svg"
+                          src="assets/images/container.svg"
                         />
                         <div className="relative font-semibold">
                           Link
@@ -339,7 +339,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                         <img
                           className="relative w-[4.63px] h-[6.94px] hidden"
                           alt=""
-                          src="/container11.svg"
+                          src="assets/images/container.svg"
                         />
                       </div>
                     </div>
@@ -369,7 +369,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                             <img
                               className="absolute top-[0.29px] left-[5.64px] w-[312.95px] h-[124.69px] object-cover"
                               alt=""
-                              src="/httpsunsplashcomphotos53m8pcxqqe4@2x.png"
+                              src="assets/images/httpsunsplashcomphotos53m8pcxqqe4@2x.png"
                             />
                             <div className="absolute top-[0px] left-[0px] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[221.67px] h-[124.69px] overflow-hidden">
                               <div className="absolute top-[110.72px] left-[calc(50%_-_74.7px)] bg-night-ghost-text w-[149.51px] h-[0.92px] overflow-hidden" />
@@ -388,7 +388,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                               <img
                                 className="relative w-1.5 h-1.5 overflow-hidden shrink-0"
                                 alt=""
-                                src="/remixiconslinesystemarrowleftsline1.svg"
+                                src="assets/images/remixiconslinesystemarrowleftsline1.svg"
                               />
                               <div className="relative font-semibold">
                                 Faithful God
@@ -397,14 +397,14 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                             <img
                               className="absolute top-[108.64px] left-[26.55px] w-[5.08px] h-[5.08px] overflow-hidden"
                               alt=""
-                              src="/remixiconsfillmediarepeatonefill1.svg"
+                              src="assets/images/remixiconsfillmediarepeatonefill1.svg"
                             />
                           </div>
                         </div>
                         <img
                           className="absolute top-[calc(50%_-_14.89px)] right-[90.64px] w-[30.07px] h-[30.07px]"
                           alt=""
-                          src="/play.svg"
+                          src="assets/images/play.svg"
                         />
                       </div>
                     </div>
@@ -415,7 +415,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     <img
                       className="relative w-6 h-6 overflow-hidden shrink-0"
                       alt=""
-                      src="/remixiconsfilldesigntboxfill.svg"
+                      src="assets/images/remixiconsfilldesigntboxfill.svg"
                     />
                     <div className="relative font-semibold">
                       Aa
@@ -451,7 +451,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="absolute top-[0px] right-[-0.18px] w-[330px] h-[364px] object-cover"
                   alt=""
-                  src="/httpsunsplashcomphotos3xmcv5mjzpw@2x.png"
+                  src="assets/images/httpsunsplashcomphotos3xmcv5mjzpw@2x.png"
                 />
               </div>
               <div className="relative bg-gray-800 w-[330px] h-[364.09px]" />
@@ -465,7 +465,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                     <img
                       className="absolute top-[28.18px] left-[0px] w-[330px] h-[355.38px] object-cover"
                       alt=""
-                      src="/httpsunsplashcomphotosgdokeynofne@2x.png"
+                      src="assets/images/httpsunsplashcomphotosgdokeynofne@2x.png"
                     />
                   </div>
                 </div>
@@ -621,7 +621,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -631,7 +631,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -641,7 +641,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -651,7 +651,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -661,7 +661,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -671,7 +671,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -681,7 +681,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
               <div className="self-stretch rounded-3xs bg-whitesmoke-200 h-[60px] flex flex-row py-0 px-5 box-border items-center justify-between">
@@ -691,7 +691,7 @@ const ChurchWebsiteBuilder: FunctionComponent = () => {
                 <img
                   className="relative w-4 h-4 overflow-hidden shrink-0"
                   alt=""
-                  src="/svg1.svg"
+                  src="assets/images/svg1.svg"
                 />
               </div>
             </div>

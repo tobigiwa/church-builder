@@ -23,7 +23,7 @@ const Interaction: FunctionComponent<LocalNavigator> = ({ activePage }) => {
               />
               <ToggleIcon
                 className="relative w-6 h-6 overflow-hidden shrink-0"
-                src="/remixiconslinesystemarrowdownsline3.svg"
+                src="assets/images/remixiconslinesystemarrowdownsline3.svg"
               />
             </div>
           </div>
@@ -78,7 +78,7 @@ const Interaction: FunctionComponent<LocalNavigator> = ({ activePage }) => {
                 placeholder="17/06/23"
               />
               <div className="absolute w-full flex justify-end right-[8px]">
-              <img src="/calendar.svg"/>
+              <img src="assets/images/calendar.svg"/>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Interaction: FunctionComponent<LocalNavigator> = ({ activePage }) => {
               />
               <ToggleIcon
                 className="relative w-6 h-6 overflow-hidden shrink-0"
-                src="/remixiconslinesystemarrowdownsline3.svg"
+                src="assets/images/remixiconslinesystemarrowdownsline3.svg"
               />
             </div>
             <div className="self-stretch bg-whitesmoke-100 h-10 flex flex-row py-0 pr-0 pl-4 box-border items-center justify-start">

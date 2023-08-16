@@ -32,7 +32,7 @@ const MassContact: FunctionComponent = () => {
                   <img
                     className="relative w-4 h-4"
                     alt=""
-                    src="/remixiconsfilldesignedit2fill1.svg"
+                    src="assets/images/remixiconsfilldesignedit2fill1.svg"
                   />
                 </div>
                 <div className="relative text-base font-semibold font-label-medium-600 text-night-ghost-text text-center">
@@ -59,7 +59,7 @@ const MassContact: FunctionComponent = () => {
                 <img
                   className="relative w-6 h-6 overflow-hidden shrink-0"
                   alt=""
-                  src="/search.svg"
+                  src="assets/images/search.svg"
                 />
               </div>
             </div>
@@ -68,7 +68,7 @@ const MassContact: FunctionComponent = () => {
                 <img
                   className="absolute top-[0px] left-[0px] w-[131px] h-[131px]"
                   alt=""
-                  src="/message.svg"
+                  src="assets/images/message.svg"
                 />
               </button>
               <div className="relative font-semibold">

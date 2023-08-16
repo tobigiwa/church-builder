@@ -17,7 +17,7 @@ const Status: FunctionComponent<LocalNavigator> = ({ activePage }) => {
                 <img
                   className="absolute my-0 mx-[!important] top-[25.5px] left-[25.5px] w-[80.01px] h-[80.01px] overflow-hidden shrink-0 z-[1]"
                   alt=""
-                  src="/edit.svg"
+                  src="assets/images/edit.svg"
                 />
               </div>
               <div className="relative font-semibold">No status here yet</div>

@@ -35,7 +35,7 @@ const BuilderDashboard: FunctionComponent = () => {
                 <img
                   className="absolute top-[0px] left-[0px] w-[119px] h-[117px]"
                   alt=""
-                  src="/new.svg"
+                  src="assets/images/new.svg"
                 />
               </button>
               <div className="relative font-semibold flex items-center justify-center">
