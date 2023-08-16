@@ -147,16 +147,18 @@ const GrapesJsView: FunctionComponent = memo(() => {
             },
         });
 
-        (editor as any).on('load', (e: any) => {
-            setTimeout(() => {
-                editor.$('#loader').css('display', 'none');
-                editor.$('#gjs-breadcrumbs').css('display', 'block');
-                const saveKey = 'gjsProject';
-                const isNewSession = window.localStorage[saveKey] == null;
-                ToastSuccess(
-                    isNewSession ? 'Welcome to your website builder' : 'Your previous session has been loaded'
-                );
-            }, 3000);
+        editor.on('load', (e: any) => {
+            editor.$('#loader').css('display', 'none');
+            editor.$('#gjs-breadcrumbs').css('display', 'block');
+            const saveKey = 'gjsProject';
+            const isNewSession = window.localStorage[saveKey] == null;
+            if (isNewSession) editor.runCommand('core:canvas-clear');
+            ToastSuccess(isNewSession ? 'Welcome to your website builder' 
+            : 'Your previous session has been loaded', {
+                extras: {
+                    delay: 3000,
+                },
+            });
         });
 
         editor.on('storage:end:store', () => {

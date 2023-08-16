@@ -65,8 +65,10 @@ const Login: FunctionComponent = () => {
                         authState: { ...response?.data, ...userDetails?.data },
                     })
                 ) {
-                    ToastSuccess('Login successful', () => {
-                        navigate(nextLocation, { replace: true });
+                    ToastSuccess('Login successful', {
+                        onClose: () => {
+                            navigate(nextLocation, { replace: true });
+                        },
                     });
                 } else {
                     ToastFail('Unable to sign you in. An error occurred');
