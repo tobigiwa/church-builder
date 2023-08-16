@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const zlib = require('zlib');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const Modes = {
     DEVELOPMENT: 'development',
@@ -68,6 +69,9 @@ module.exports = () => {
                 template: path.join(__dirname, 'src', 'index.html'),
                 favicon: path.join(__dirname, 'public', 'assets', 'images', 'favicon.ico'),
             }),
+            new CopyWebpackPlugin({
+                patterns: [{ from: 'public/assets', to: 'assets' }],
+            }),
             new CompressionPlugin({
                 filename: '[path][base].gz',
                 algorithm: 'gzip',
@@ -96,7 +100,7 @@ module.exports = () => {
             maxAssetSize: 1024 ** 4,
         },
 
-        devtool: isProduction ?  'source-map' : 'inline-source-map',
+        devtool: isProduction ? 'source-map' : 'inline-source-map',
         devServer: {
             host: 'localhost',
             port: 3000,
